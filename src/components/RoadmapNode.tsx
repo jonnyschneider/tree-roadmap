@@ -14,6 +14,8 @@ import {
   Building,
   LucideIcon 
 } from 'lucide-react';
+import { useState } from 'react';
+import RoadmapTooltip from './RoadmapToolTip';
 
 const iconMap: Record<string, LucideIcon> = {
   Circle,
@@ -37,13 +39,36 @@ export type RoadmapNodeData = {
   label: string;
   icon?: string;
   status?: 'planned' | 'in-progress' | 'completed';
+  tooltip?: string;
 };
 
-export default function RoadmapNode({ data }: NodeProps<RoadmapNodeData>) {
+export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
+  const [showTooltip, setShowTooltip] = useState(false);
   const IconComponent = data.icon ? iconMap[data.icon] || Circle : Circle;
   
+  console.log('Node rendered:', {
+    id,
+    type: 'roadmapNode',
+    data: data,
+    hasTooltip: Boolean(data.tooltip),
+    tooltipContent: data.tooltip
+  });
+  
   return (
-    <div>
+    <div 
+      onMouseEnter={() => {
+        console.log('Mouse enter:', data.label, 'tooltip:', data.tooltip);
+        setShowTooltip(true);
+      }}
+      onMouseLeave={() => setShowTooltip(false)}
+      className="relative cursor-pointer"
+    >
+      {/* Debug render to check if tooltip exists */}
+      <div className="hidden">{JSON.stringify(data)}</div>
+      
+      {showTooltip && data.tooltip && (
+        <RoadmapTooltip>{data.tooltip}</RoadmapTooltip>
+      )}
       <Handle 
         type="target" 
         position={Position.Top}

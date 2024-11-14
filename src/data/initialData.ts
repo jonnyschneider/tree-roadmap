@@ -8,13 +8,24 @@ function createNode(
     position: { x: number; y: number },
     label: string,
     status: Status,
-    icon?: string
+    icon?: string,
+    tooltip?: string
 ): Node<RoadmapNodeData> {
+    const nodeData: RoadmapNodeData = {
+        label,
+        status
+    };
+
+    if (icon) nodeData.icon = icon;
+    if (tooltip) nodeData.tooltip = tooltip;
+
+    console.log('Creating node:', id, 'with data:', nodeData);
+
     return {
         id,
         type: 'roadmapNode',
         position,
-        data: { label, status, ...(icon ? { icon } : {}) }
+        data: nodeData
     };
 }
 
@@ -31,6 +42,18 @@ function getBranchPosition(startX: number, startY: number): { x: number; y: numb
         y: startY + (BRANCH_OFFSET * Math.sin(angleInRadians))
     };
 }
+
+// Add this before creating nodes
+const phantmGPTNode = createNode(
+    'de-phantmgpt',
+    getBranchPosition(700, LEVEL1_Y),
+    'Best Guess with PhantmGPT',
+    'in-progress',
+    'Brain',
+    'Uses advanced AI to analyze and enrich material data automatically'
+);
+
+console.log('PhantmGPT node created:', phantmGPTNode);
 
 export const initialNodes: Node<RoadmapNodeData>[] = [
     // Root node
@@ -114,20 +137,35 @@ export const initialNodes: Node<RoadmapNodeData>[] = [
     )),
 
     // Data Enrichment - PhantmGPT branch
-    createNode(
-        'de-phantmgpt',
-        getBranchPosition(700, LEVEL1_Y),
-        'Best Guess with PhantmGPT',
-        'in-progress'
-    ),
+    phantmGPTNode,
 
     // PhantmGPT children
     ...([
-        { label: 'Normative Range Tuning', status: 'in-progress' as Status },
-        { label: 'Advanced Prompts', status: 'planned' as Status },
-        { label: 'Expert Moderation', status: 'planned' as Status },
-        { label: 'Advanced LLM (Sonnet 3.5 / GPT-4o)', status: 'planned' as Status },
-        { label: 'LangChain Embeddings', status: 'planned' as Status }
+        { 
+            label: 'Normative Range Tuning', 
+            status: 'in-progress' as Status,
+            tooltip: 'Tunes AI models to recognize normal ranges for material properties'
+        },
+        { 
+            label: 'Advanced Prompts', 
+            status: 'planned' as Status,
+            tooltip: 'Sophisticated prompt engineering for better AI responses'
+        },
+        { 
+            label: 'Expert Moderation', 
+            status: 'planned' as Status,
+            tooltip: 'Human expert review and validation of AI suggestions'
+        },
+        { 
+            label: 'Advanced LLM (Sonnet 3.5 / GPT-4o)', 
+            status: 'planned' as Status,
+            tooltip: 'Integration with more advanced language models'
+        },
+        { 
+            label: 'LangChain Embeddings', 
+            status: 'planned' as Status,
+            tooltip: 'Vector embeddings for better semantic understanding'
+        }
     ].map((item, index) => 
         createNode(
             `gpt-${item.label.toLowerCase().replace(/[().,\s/]+/g, '-')}`,
@@ -136,7 +174,9 @@ export const initialNodes: Node<RoadmapNodeData>[] = [
                 y: getBranchPosition(700, LEVEL1_Y).y + (VERTICAL_SPACING * index)
             },
             item.label,
-            item.status
+            item.status,
+            undefined,
+            item.tooltip
         )
     )),
 

@@ -103,7 +103,6 @@ const nodes: Node<RoadmapNodeData>[] = [
     // Data Enrichment - Branch nodes
     createNode('de-phantmgpt', getBranchLeftPosition(900, LEVEL1_Y), 'Best Guess with PhantmGPT', 'in-progress'),
     createNode('de-llm-config', getBranchRightPosition(750, LEVEL1_Y), 'LLM Configuration', 'planned'),
-    createNode('de-general', getBranchRightPosition(1700, LEVEL1_Y), 'General', 'planned'),
 
 
     // Data Enrichment - PhantmGPT branch vertical children

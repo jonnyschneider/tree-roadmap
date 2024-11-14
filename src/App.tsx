@@ -1,21 +1,16 @@
-import React from 'react';
-import ReactFlow, {
-    Background,
-    Controls,
-    MiniMap,
-    NodeTypes,
-} from 'reactflow';
+import ReactFlow, { Background, Controls, MiniMap, NodeTypes } from 'reactflow';
 import 'reactflow/dist/style.css';
 
 import RoadmapNode from './components/RoadmapNode';
-import { initialNodes } from './data/initialNodes';
-import { initialEdges } from './data/initialEdges';
+import { initialNodes, initialEdges } from './data/initialData'; // Fix import path
 
 const nodeTypes: NodeTypes = {
     roadmapNode: RoadmapNode,
 };
 
-function App() {
+export default function App() {
+    // Debug log the PhantmGPT node specifically
+    console.log('PhantmGPT Node:', initialNodes.find(n => n.id === 'de-phantmgpt'));
     console.log('Nodes:', initialNodes);
     console.log('Edges:', initialEdges);
 
@@ -54,5 +49,3 @@ function App() {
         </div>
     );
 }
-
-export default App;

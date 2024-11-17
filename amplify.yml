@@ -3,8 +3,8 @@ frontend:
   phases:
     preBuild:
       commands:
-        - nvm install 16  # Specify Node.js version (adjust if needed)
-        - nvm use 16
+        - nvm install 22  # Specify Node.js version 18
+        - nvm use 22
         - npm install -g pnpm
         - pnpm install
     build:

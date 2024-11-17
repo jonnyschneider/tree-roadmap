@@ -182,4 +182,19 @@ const nodes: Node<RoadmapNodeData>[] = [
     )),
 ];
 
+// Function to load nodes from localStorage
+export function loadNodes(): Node<RoadmapNodeData>[] {
+  const savedNodes = localStorage.getItem('nodes');
+  if (savedNodes) {
+    return JSON.parse(savedNodes);
+  } else {
+    return nodes;
+  }
+}
+
+// Function to save nodes to localStorage
+export function saveNodes(updatedNodes: Node<RoadmapNodeData>[]) {
+  localStorage.setItem('nodes', JSON.stringify(updatedNodes));
+}
+
 export { nodes as initialNodes };

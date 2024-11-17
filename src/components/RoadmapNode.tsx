@@ -74,11 +74,11 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
         position={Position.Top}
         className="!bg-transparent !w-8 !h-1 !border-0 !rounded-none"
       />
-      <div className="rounded-[5px] bg-gray-800/90">
+      <div className="rounded-[5px] bg-gray-800/90 w-48"> {/* set width here*/}
         <div className="px-3 py-2">
           <div className="flex items-center gap-2">
-            <IconComponent className="w-4 h-4 text-gray-400" />
-            <span className="text-[10px] font-medium text-gray-300 tracking-tight">{data.label}</span>
+            <IconComponent className="w-4 h-4 text-gray-400 flex-shrink-0" />
+            <span className="text-[10px] font-medium text-gray-300 tracking-tight break-words">{data.label}</span>
           </div>
           {data.status && (
             <div className="mt-1.5 flex items-center gap-1.5">

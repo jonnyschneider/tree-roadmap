@@ -15,7 +15,7 @@ import {
   LucideIcon 
 } from 'lucide-react';
 import { useState } from 'react';
-import RoadmapTooltip from './RoadmapToolTip';
+import RoadmapTooltip from './RoadmapTooltip';
 
 const iconMap: Record<string, LucideIcon> = {
   Circle,

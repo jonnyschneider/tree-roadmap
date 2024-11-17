@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import ReactFlow, { Background, Controls, MiniMap, NodeTypes, useNodesState, useEdgesState } from 'reactflow';
 import 'reactflow/dist/style.css';
 
@@ -18,7 +18,7 @@ export default function App() {
     console.log('Nodes:', initialNodes);
     console.log('Edges:', initialEdges);
     const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
-    const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
+    const [edges, , onEdgesChange] = useEdgesState(initialEdges);
 
     // Save node positions to localStorage when nodes change
     useEffect(() => {
@@ -33,7 +33,7 @@ export default function App() {
                 nodeTypes={nodeTypes}
                 onNodesChange={onNodesChange}
                 onEdgesChange={onEdgesChange}
-                onNodeDragStop={(event, node) => {
+                onNodeDragStop={(_, node) => {
                     setNodes((nds) =>
                         nds.map((n) =>
                             n.id === node.id ? { ...n, position: node.position } : n

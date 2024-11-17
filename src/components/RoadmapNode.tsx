@@ -2,9 +2,6 @@ import { Handle, Position, NodeProps } from 'reactflow';
 import { 
   Circle,
   Map, 
-  User, 
-  CreditCard, 
-  Wallet,
   Database,
   FileText,
   Upload,

@@ -1,10 +1,11 @@
-
 version: 1
 frontend:
   phases:
     preBuild:
       commands:
-        - curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm
+        - nvm install 16  # Specify Node.js version (adjust if needed)
+        - nvm use 16
+        - npm install -g pnpm
         - pnpm install
     build:
       commands:

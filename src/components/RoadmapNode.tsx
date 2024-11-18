@@ -37,6 +37,7 @@ export type RoadmapNodeData = {
   icon?: string;
   status?: 'planned' | 'in-progress' | 'completed';
   tooltip?: string;
+  borderColor?: string;  // Add this
 };
 
 export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
@@ -71,7 +72,10 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
         position={Position.Top}
         className="!bg-transparent !w-8 !h-1 !border-0 !rounded-none"
       />
-      <div className="rounded-[5px] bg-gray-800/90 w-48"> {/* set width here*/}
+      <div 
+        className="rounded-[5px] bg-gray-800/90 w-48"
+        style={{ border: data.borderColor ? `2px solid ${data.borderColor}` : undefined }}
+      >
         <div className="px-3 py-2">
           <div className="flex items-center gap-2">
             <IconComponent className="w-4 h-4 text-gray-400 flex-shrink-0" />

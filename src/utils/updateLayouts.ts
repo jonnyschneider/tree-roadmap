@@ -42,10 +42,13 @@ function saveJSON(filePath: string, data: any): void {
 }
 
 export function layoutRadial(nodes: Node[], edges: { source: string; target: string }[]) {
+    console.log('Starting layout calculation...');
+    
     // Position root at center
     const root = nodes.find(n => n.id === 'root')!;
     root.position = { x: 0, y: 0 };
     root.borderColor = LAYOUT.borders.root;
+    console.log('Root node styled:', root);
 
     // Get and position Level 1 nodes (Areas of Value)
     const level1Nodes = edges
@@ -62,6 +65,7 @@ export function layoutRadial(nodes: Node[], edges: { source: string; target: str
             y: Math.sin(angle) * LAYOUT.radius.level1
         };
         node.borderColor = LAYOUT.borders.level1;
+        console.log(`Level 1 node styled: ${nodeId}`, node);
 
         // Position children by target release
         const children = edges
@@ -81,6 +85,7 @@ export function layoutRadial(nodes: Node[], edges: { source: string; target: str
                 y: Math.sin(childAngle) * radius
             };
             child.borderColor = borderColor;
+            console.log(`Child node styled: ${childId}`, child);
         });
     });
 

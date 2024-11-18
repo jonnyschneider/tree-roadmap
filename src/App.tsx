@@ -14,22 +14,20 @@ export default function App() {
     const [edges, setEdges, onEdgesChange] = useEdgesState([]);
 
     useEffect(() => {
-        // Transform JSON data into ReactFlow format
+        console.log('Raw nodes data:', nodesData);
+        
         const flowNodes = nodesData.map(node => ({
             id: node.id,
             type: 'roadmapNode',
             position: node.position,
+            style: { border: `2px solid ${node.borderColor}` },  // Add style here
             data: {
-                label: node.label,
-                icon: node.icon,
-                status: node.status,
-                borderColor: node.borderColor,
-                tooltip: node.tooltip,
-                target: node.target,
-                focus: node.focus,
-                backlog: node.backlog
+                ...node,  // Pass all node data
+                borderColor: node.borderColor  // Explicitly pass borderColor
             }
         }));
+
+        console.log('Transformed nodes:', flowNodes);
 
         const flowEdges = edgesData.map(edge => ({
             id: `${edge.source}-${edge.target}`,
@@ -39,6 +37,7 @@ export default function App() {
             style: { stroke: '#374151', strokeWidth: 1 }
         }));
 
+        console.log('Final nodes set to state:', flowNodes);
         setNodes(flowNodes);
         setEdges(flowEdges);
     }, []);

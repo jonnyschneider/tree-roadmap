@@ -6,391 +6,524 @@
       "y": 0
     },
     "label": "Phantm Captr",
-    "status": "completed",
     "icon": "Map",
-    "tooltip": "Root node of the roadmap"
+    "tooltip": "Root node of the roadmap",
+    "status": " "
   },
   {
     "id": "material-library",
     "position": {
+      "x": -1625,
+      "y": 120
+    },
+    "label": "Packaging Material Library",
+    "icon": "Database",
+    "tooltip": "Central source of truth for packaging data",
+    "status": " "
+  },
+  {
+    "id": "supplier-mgmt",
+    "position": {
       "x": -1000,
       "y": 120
     },
-    "label": "Material Library",
-    "status": "completed",
-    "icon": "Database",
-    "tooltip": "Contains core material data"
+    "label": "Supplier Management",
+    "icon": "Building",
+    "tooltip": "Supplier communication and document management",
+    "status": " "
   },
   {
-    "id": "data-io",
+    "id": "data-acquisition",
     "position": {
-      "x": -625,
+      "x": -500,
       "y": 120
     },
-    "label": "Data I/O",
-    "status": "in-progress",
-    "icon": "Database",
-    "tooltip": "Handles data input and output"
+    "label": "Data Acquisition",
+    "icon": "Download",
+    "tooltip": "Automated data management processes",
+    "status": " "
   },
   {
     "id": "data-enrichment",
     "position": {
-      "x": 125,
+      "x": -125,
       "y": 120
     },
     "label": "Data Enrichment",
-    "status": "in-progress",
     "icon": "Brain",
-    "tooltip": "Enriches data with additional insights"
+    "tooltip": "Tools to improve and activate packaging data",
+    "status": " "
   },
   {
     "id": "insights",
     "position": {
-      "x": 750,
+      "x": 375,
       "y": 120
     },
-    "label": "Insights",
-    "status": "planned",
+    "label": "Insights & Reporting",
     "icon": "ChartBar",
-    "tooltip": "Generates insights from data"
+    "tooltip": "Real-time insights and automated reporting",
+    "status": " "
   },
   {
-    "id": "supplier-data",
+    "id": "general",
     "position": {
       "x": 1000,
       "y": 120
     },
-    "label": "Supplier Data Management",
+    "label": "General",
+    "icon": "Settings",
+    "tooltip": "Core platform capabilities",
+    "status": " "
+  },
+  {
+    "id": "innovation",
+    "position": {
+      "x": 1625,
+      "y": 120
+    },
+    "label": "Innovation Pipeline",
+    "icon": "Lightbulb",
+    "tooltip": "Future platform capabilities under consideration",
+    "status": " "
+  },
+  {
+    "id": "materials-manager",
+    "position": {
+      "x": -1875,
+      "y": 240
+    },
+    "label": "Intuitive Packaging Data Explorer",
+    "tooltip": "Central command centre for packaging materials data, enabling teams to explore, analyze, and manage their complete packaging portfolio through a single, intuitive interface",
+    "status": "preview",
+    "target": "Friends and Family",
+    "focus": [
+      "Browse and search functionality",
+      "Correlated view of sales, product, and packaging data",
+      "Material analysis at component level",
+      "Supplier summary at SKU level",
+      "Data quality info and related messaging",
+      "Add/edit data (single entity)",
+      "Simple data visualisation",
+      "Simple relationship mapping"
+    ],
+    "backlog": [
+      "Variants and Versioning",
+      "Traceability Engine",
+      "Data Reconciliation",
+      "Secondary Packaging",
+      "Tertiary Packaging",
+      "Bulk Operations",
+      "Custom Views",
+      "Export/Report Builder",
+      "Alerts and Notifications",
+      "Data Inheritance"
+    ]
+  },
+  {
+    "id": "data-confidence-score",
+    "position": {
+      "x": -1625,
+      "y": 240
+    },
+    "label": "Data Quality Scoring System",
+    "tooltip": "Transparent scoring system that guides data improvement priorities and enables fit-for-purpose decisions about data usage, from compliance reporting to forecasting",
     "status": "planned",
-    "icon": "Building",
-    "tooltip": "Manages supplier data"
+    "target": "Pilot",
+    "focus": [
+      "Define core confidence metrics with 2-3 customers",
+      "Design initial scoring framework",
+      "Implement basic scoring for generated data",
+      "Create simple visual indicators",
+      "Test against known high/low quality datasets",
+      "Document customer reactions and feedback",
+      "Map scores to common use cases",
+      "Identify key drivers of score improvements"
+    ],
+    "backlog": [
+      "Score Explorer",
+      "Purpose Matcher",
+      "Progress Tracking"
+    ]
   },
   {
-    "id": "ml-core",
+    "id": "custom-schema",
     "position": {
-      "x": -1000,
+      "x": -1375,
       "y": 240
     },
-    "label": "Core",
-    "status": "completed"
+    "label": "Enterprise Data Extensions",
+    "tooltip": "Enterprise-ready data flexibility allowing customers to extend Captr's core data model with their own fields and tags, while maintaining platform integrity and scalability",
+    "status": "planned",
+    "target": "Pilot",
+    "focus": [
+      "Define custom field types and constraints",
+      "Implement basic field addition workflow",
+      "Create field visibility controls",
+      "Setup audit logging for custom fields",
+      "Document best practices",
+      "Build simple migration tools",
+      "Establish governance rules for Custom Fields"
+    ],
+    "backlog": [
+      "Advanced Validation",
+      "Field Dependencies",
+      "Impact Analysis",
+      "Bulk Operations",
+      "Template Library",
+      "Migration Tools"
+    ]
   },
   {
-    "id": "ml-custom-data-fields",
+    "id": "srm-light",
     "position": {
-      "x": -1000,
-      "y": 360
-    },
-    "label": "Custom Data Fields",
-    "status": "completed"
-  },
-  {
-    "id": "ml-variant-mapping",
-    "position": {
-      "x": -1000,
-      "y": 480
-    },
-    "label": "Variant Mapping",
-    "status": "completed"
-  },
-  {
-    "id": "ml-secondary-packaging",
-    "position": {
-      "x": -1000,
-      "y": 600
-    },
-    "label": "Secondary Packaging",
-    "status": "completed"
-  },
-  {
-    "id": "ml-tertiary-packaging",
-    "position": {
-      "x": -1000,
-      "y": 720
-    },
-    "label": "Tertiary Packaging",
-    "status": "completed"
-  },
-  {
-    "id": "io-in",
-    "position": {
-      "x": -750,
+      "x": -1125,
       "y": 240
     },
-    "label": "In",
-    "status": "in-progress",
-    "icon": "Upload"
+    "label": "Streamlined Supplier Hub",
+    "tooltip": "Central hub for supplier communications and specification management, making packaging information accessible to all team members without complex process changes",
+    "status": "preview",
+    "target": "Friends and Family",
+    "focus": [
+      "Supplier profile management",
+      "Document repository and viewer",
+      "Basic SKU-to-spec relationships",
+      "Simple search functionality",
+      "Team access controls",
+      "Activity logging"
+    ],
+    "backlog": [
+      "Basic supplier analytics",
+      "Communications timeline",
+      "Supplier Portal",
+      "Performance Dashboard",
+      "Catalog Digitisation",
+      "Compliance Tracking",
+      "Collaboration Tools",
+      "Bulk Operations"
+    ]
   },
   {
-    "id": "io-out",
+    "id": "email-integration",
     "position": {
-      "x": -500,
+      "x": -875,
       "y": 240
     },
-    "label": "Out",
-    "status": "in-progress",
-    "icon": "Download"
+    "label": "Email-First Spec Capture",
+    "tooltip": "Frictionless specification capture through familiar business tools, making it easy for suppliers to provide packaging information through email or simple file uploads",
+    "status": "planned",
+    "target": "Pilot",
+    "focus": [
+      "Unique supplier email addresses",
+      "Email capture and processing",
+      "File upload interface",
+      "Document classification",
+      "Storage structure",
+      "Basic metadata extraction",
+      "Activity logging"
+    ],
+    "backlog": [
+      "Smart Document Processing",
+      "Automated Validation",
+      "Bulk Upload Tools",
+      "Structured Data Requests",
+      "Template Management",
+      "Notification System"
+    ]
   },
   {
-    "id": "io-in-bulk-import-sql-csv-xls",
+    "id": "best-guess",
     "position": {
-      "x": -750,
-      "y": 360
-    },
-    "label": "Bulk Import (SQL, CSV, XLS)",
-    "status": "completed"
-  },
-  {
-    "id": "io-in-erp-batch-upload",
-    "position": {
-      "x": -750,
-      "y": 480
-    },
-    "label": "ERP Batch Upload",
-    "status": "completed"
-  },
-  {
-    "id": "io-in-middleware-ipaas",
-    "position": {
-      "x": -750,
-      "y": 600
-    },
-    "label": "Middleware iPaaS",
-    "status": "planned"
-  },
-  {
-    "id": "io-in-erp-adaptor",
-    "position": {
-      "x": -750,
-      "y": 720
-    },
-    "label": "ERP Adaptor",
-    "status": "planned"
-  },
-  {
-    "id": "io-in-datalake-slurp-slurp",
-    "position": {
-      "x": -750,
-      "y": 840
-    },
-    "label": "Datalake Slurp Slurp",
-    "status": "planned"
-  },
-  {
-    "id": "io-in-inbound-api-endpoint",
-    "position": {
-      "x": -750,
-      "y": 960
-    },
-    "label": "Inbound API endpoint",
-    "status": "in-progress"
-  },
-  {
-    "id": "io-out-powerbi",
-    "position": {
-      "x": -500,
-      "y": 360
-    },
-    "label": "PowerBI",
-    "status": "completed"
-  },
-  {
-    "id": "io-out-raw",
-    "position": {
-      "x": -500,
-      "y": 480
-    },
-    "label": "Raw",
-    "status": "completed"
-  },
-  {
-    "id": "de-phantmgpt",
-    "position": {
-      "x": -250,
+      "x": -625,
       "y": 240
     },
-    "label": "Best Guess with PhantmGPT",
-    "status": "in-progress",
-    "icon": "Brain",
-    "tooltip": "Uses advanced AI to analyze and enrich material data automatically"
+    "label": "AI-Powered Data Generation",
+    "tooltip": "AI-powered generation of baseline packaging data from existing product information, enabling rapid platform adoption for large product catalogues without manual data entry bottlenecks",
+    "status": "in-development",
+    "target": "Friends and Family",
+    "focus": [
+      "Get Product/Sales from 1-3 customers",
+      "Confirm target data entity model for core use cases",
+      "Experiment with public LLMs for plausible outputs",
+      "Ingest generated data into Captr",
+      "Analyse accuracy against known data",
+      "Expert confidence assessment",
+      "Use case validation of generated data",
+      "Document improvement areas for future nodes"
+    ],
+    "backlog": [
+      "Expert Moderation UI",
+      "Customer Review Flow",
+      "Confidence Scoring",
+      "Multi-LLM Pipeline",
+      "Reference Library",
+      "Auto-Validation Rules"
+    ]
   },
   {
-    "id": "de-llm-config",
+    "id": "flexible-ingestion",
     "position": {
-      "x": 0,
+      "x": -375,
       "y": 240
     },
-    "label": "LLM Configuration",
-    "status": "planned"
+    "label": "Flexible Data Import Hub",
+    "tooltip": "Flexible data ingestion that meets customers where they are, transforming disparate data sources into actionable packaging information without requiring technical expertise from brands",
+    "status": "in-development",
+    "target": "Friends and Family",
+    "focus": [
+      "CSV templates for core data types",
+      "Basic validation rules",
+      "Consultant support",
+      "Data transformation toolkit",
+      "Lightweight assurance process"
+    ],
+    "backlog": [
+      "ERP Integration Framework",
+      "API Development",
+      "Advanced Integrations",
+      "Transformation Tools"
+    ]
   },
   {
-    "id": "gpt-normative-range-tuning",
+    "id": "portfolio-report",
     "position": {
-      "x": -250,
-      "y": 360
-    },
-    "label": "Normative Range Tuning",
-    "status": "in-progress"
-  },
-  {
-    "id": "gpt-advanced-prompts",
-    "position": {
-      "x": -250,
-      "y": 480
-    },
-    "label": "Advanced Prompts",
-    "status": "planned"
-  },
-  {
-    "id": "gpt-expert-moderation",
-    "position": {
-      "x": -250,
-      "y": 600
-    },
-    "label": "Expert Moderation",
-    "status": "planned"
-  },
-  {
-    "id": "gpt-advanced-llm-sonnet-3-5-gpt-4o",
-    "position": {
-      "x": -250,
-      "y": 720
-    },
-    "label": "Advanced LLM (Sonnet 3.5 / GPT-4o)",
-    "status": "planned"
-  },
-  {
-    "id": "gpt-langchain-embeddings",
-    "position": {
-      "x": -250,
-      "y": 840
-    },
-    "label": "LangChain Embeddings",
-    "status": "planned"
-  },
-  {
-    "id": "llm-hybrid-extrapolation",
-    "position": {
-      "x": 0,
-      "y": 360
-    },
-    "label": "Hybrid Extrapolation",
-    "status": "planned"
-  },
-  {
-    "id": "llm-client-moderation",
-    "position": {
-      "x": 0,
-      "y": 480
-    },
-    "label": "Client Moderation",
-    "status": "planned"
-  },
-  {
-    "id": "de-version-control",
-    "position": {
-      "x": 500,
+      "x": 125,
       "y": 240
     },
-    "label": "Version control",
-    "status": "in-progress"
+    "label": "Automated Portfolio Analysis",
+    "tooltip": "Instant access to professional-grade packaging analysis that typically requires expensive consulting, powered by customer's own data on-file",
+    "status": "preview",
+    "target": "Friends and Family",
+    "focus": [
+      "Core analysis algorithms",
+      "Report template design",
+      "Data confidence integration",
+      "PDF generation",
+      "Automated calculations",
+      "Share/export functions"
+    ],
+    "backlog": [
+      "Report: APCO",
+      "Report: Material Audit",
+      "Regulation Interpreter",
+      "Interactive Reports",
+      "Custom Metrics",
+      "Benchmark Integration",
+      "Historical Analysis",
+      "Scenario Planning"
+    ]
   },
   {
-    "id": "de-traceability",
+    "id": "data-export",
     "position": {
-      "x": 500,
-      "y": 360
-    },
-    "label": "Traceability",
-    "status": "in-progress"
-  },
-  {
-    "id": "de-data-confidence-score",
-    "position": {
-      "x": 500,
-      "y": 480
-    },
-    "label": "Data Confidence Score",
-    "status": "planned"
-  },
-  {
-    "id": "de-sku-to-spec-reconciliation",
-    "position": {
-      "x": 500,
-      "y": 600
-    },
-    "label": "SKU-to-spec Reconciliation",
-    "status": "planned"
-  },
-  {
-    "id": "insights-phantm-portfolio-report",
-    "position": {
-      "x": 750,
+      "x": 375,
       "y": 240
     },
-    "label": "Phantm Portfolio Report",
-    "status": "planned"
+    "label": "Business Intelligence Export",
+    "tooltip": "Flexible access to packaging data enabling teams to leverage existing business intelligence tools and processes",
+    "status": "in-development",
+    "target": "Friends and Family",
+    "focus": [
+      "CSV export functionality",
+      "Data format options",
+      "Basic filtering tools",
+      "Export logs",
+      "Field selection",
+      "Error handling"
+    ],
+    "backlog": [
+      "API Access",
+      "Advanced Filters",
+      "Scheduled Exports",
+      "Custom Formats",
+      "Delta Updates",
+      "Bulk Export"
+    ]
   },
   {
-    "id": "insights-custom-reporting",
+    "id": "continuous-insights",
     "position": {
-      "x": 750,
-      "y": 360
-    },
-    "label": "Custom Reporting",
-    "status": "planned"
-  },
-  {
-    "id": "insights-apco",
-    "position": {
-      "x": 750,
-      "y": 480
-    },
-    "label": "APCO",
-    "status": "planned"
-  },
-  {
-    "id": "insights-material-audit",
-    "position": {
-      "x": 750,
-      "y": 600
-    },
-    "label": "Material Audit",
-    "status": "planned"
-  },
-  {
-    "id": "sdm-document-management",
-    "position": {
-      "x": 1000,
+      "x": 625,
       "y": 240
     },
-    "label": "Document Management",
-    "status": "planned"
+    "label": "AI Sustainability Co-pilot",
+    "tooltip": "AI-powered sustainability co-pilot providing continuous analysis and actionable recommendations based on packaging portfolio patterns",
+    "status": "planned",
+    "target": "Pilot",
+    "focus": [
+      "Core insights engine",
+      "Priority framework",
+      "Basic recommendations",
+      "User interface design",
+      "Notification system",
+      "Feedback capture",
+      "Action tracking"
+    ],
+    "backlog": [
+      "Predictive Analytics",
+      "Custom Rules",
+      "Learning System",
+      "Industry Benchmarks",
+      "Impact Modeling"
+    ]
   },
   {
-    "id": "sdm-file-upload",
+    "id": "progressive-augmentation",
     "position": {
-      "x": 1000,
-      "y": 360
+      "x": -125,
+      "y": 240
     },
-    "label": "File Upload",
-    "status": "planned"
+    "label": "Progressive Data Enhancement",
+    "tooltip": "Flexible menu of data improvement methods allowing teams to incrementally enhance their packaging data through a combination of automated tools, benchmarks, and collaborative options",
+    "status": "planned",
+    "target": "Pilot",
+    "focus": [
+      "Map existing customer improvement methods",
+      "Identify quickest win opportunities",
+      "Build simple category matching tool",
+      "Document improvement impact on confidence scores",
+      "Measure time/effort vs value gained",
+      "Capture customer priorities for next tools",
+      "Create improvement method selection guide"
+    ],
+    "backlog": [
+      "LLM Continuous Improvement",
+      "Extrapolation",
+      "Tiny Queries",
+      "Product Spec Interpreter",
+      "Data Reconciliation",
+      "Quick Match",
+      "Benchmark Compare",
+      "Supplier Portal",
+      "Industry DB Link",
+      "Bulk Enhance",
+      "Impact Preview"
+    ]
   },
   {
-    "id": "sdm-upload-by-email",
+    "id": "auth-basic",
     "position": {
-      "x": 1000,
-      "y": 480
+      "x": 875,
+      "y": 240
     },
-    "label": "Upload by Email",
-    "status": "planned"
+    "label": "Basic Authentication",
+    "tooltip": "Essential user authentication and access control for early platform access",
+    "status": "in-development",
+    "target": "Pilot",
+    "focus": [
+      "User login/logout",
+      "Password management",
+      "Basic role management",
+      "Session handling",
+      "Security best practices"
+    ],
+    "backlog": [
+      "SSO Integration",
+      "Advanced roles",
+      "Audit logging",
+      "Multi-factor auth",
+      "User provisioning"
+    ]
   },
   {
-    "id": "sdm-supplier-portal",
+    "id": "soc2",
     "position": {
-      "x": 1000,
-      "y": 600
+      "x": 1125,
+      "y": 240
     },
-    "label": "Supplier Portal",
-    "status": "planned"
+    "label": "SOC 2 Compliance",
+    "tooltip": "Core security framework implementation and SOC 2 compliance readiness",
+    "status": "in-development",
+    "target": "Pilot",
+    "focus": [
+      "Security policy documentation",
+      "Access control implementation",
+      "Data encryption standards",
+      "Monitoring setup",
+      "Incident response planning",
+      "Security training program"
+    ],
+    "backlog": [
+      "Advanced monitoring",
+      "Automated compliance checks",
+      "Vendor management",
+      "Risk assessment framework",
+      "Regular security audits"
+    ]
+  },
+  {
+    "id": "compliance-automation",
+    "position": {
+      "x": 1375,
+      "y": 240
+    },
+    "label": "Smart Compliance Engine",
+    "tooltip": "Automated compliance monitoring and reporting across multiple jurisdictions",
+    "status": "considering",
+    "target": "future",
+    "focus": [
+      "EPR reporting automation",
+      "Multi-jurisdiction compliance checks",
+      "Regulation change alerts",
+      "Impact assessment of regulatory changes",
+      "Compliance risk scoring"
+    ],
+    "backlog": [
+      "Automated report generation",
+      "Regulatory requirement mapping",
+      "Compliance forecast modeling",
+      "Cross-border requirements",
+      "Audit trail automation"
+    ]
+  },
+  {
+    "id": "cost-management",
+    "position": {
+      "x": 1625,
+      "y": 240
+    },
+    "label": "Financial Impact Tools",
+    "tooltip": "Comprehensive cost analysis and financial planning for packaging decisions",
+    "status": "considering",
+    "target": "future",
+    "focus": [
+      "Budget tracking dashboard",
+      "Change impact calculator",
+      "Cost forecasting",
+      "Procurement insights",
+      "Logistics cost optimisation"
+    ],
+    "backlog": [
+      "ROI calculator",
+      "Scenario modeling",
+      "Supplier cost comparison",
+      "Volume-based pricing",
+      "Transport cost analysis"
+    ]
+  },
+  {
+    "id": "sustainability-metrics",
+    "position": {
+      "x": 1875,
+      "y": 240
+    },
+    "label": "Impact Assessment Suite",
+    "tooltip": "Environmental impact measurement and circularity analysis tools",
+    "status": "considering",
+    "target": "future",
+    "focus": [
+      "Circularity scoring",
+      "Environmental impact calculator",
+      "Industry trend analysis",
+      "Benchmark comparisons",
+      "Improvement recommendations"
+    ],
+    "backlog": [
+      "Life cycle assessment",
+      "Material flow analysis",
+      "Recycling pathway mapping",
+      "Alternative material comparison",
+      "Impact reduction modeling"
+    ]
   }
 ]

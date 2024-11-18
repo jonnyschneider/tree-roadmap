@@ -5,7 +5,11 @@
   },
   {
     "source": "root",
-    "target": "data-io"
+    "target": "supplier-mgmt"
+  },
+  {
+    "source": "root",
+    "target": "data-acquisition"
   },
   {
     "source": "root",
@@ -17,154 +21,74 @@
   },
   {
     "source": "root",
-    "target": "supplier-data"
+    "target": "general"
+  },
+  {
+    "source": "root",
+    "target": "innovation"
   },
   {
     "source": "material-library",
-    "target": "ml-core"
+    "target": "materials-manager"
   },
   {
-    "source": "ml-core",
-    "target": "ml-custom-data-fields"
+    "source": "material-library",
+    "target": "data-confidence-score"
   },
   {
-    "source": "ml-custom-data-fields",
-    "target": "ml-variant-mapping"
+    "source": "material-library",
+    "target": "custom-schema"
   },
   {
-    "source": "ml-variant-mapping",
-    "target": "ml-secondary-packaging"
+    "source": "supplier-mgmt",
+    "target": "srm-light"
   },
   {
-    "source": "ml-secondary-packaging",
-    "target": "ml-tertiary-packaging"
+    "source": "supplier-mgmt",
+    "target": "email-integration"
   },
   {
-    "source": "data-io",
-    "target": "io-in"
+    "source": "data-acquisition",
+    "target": "best-guess"
   },
   {
-    "source": "data-io",
-    "target": "io-out"
-  },
-  {
-    "source": "io-in",
-    "target": "io-in-bulk-import-sql-csv-xls"
-  },
-  {
-    "source": "io-in-bulk-import-sql-csv-xls",
-    "target": "io-in-erp-batch-upload"
-  },
-  {
-    "source": "io-in-erp-batch-upload",
-    "target": "io-in-middleware-ipaas"
-  },
-  {
-    "source": "io-in-middleware-ipaas",
-    "target": "io-in-erp-adaptor"
-  },
-  {
-    "source": "io-in-erp-adaptor",
-    "target": "io-in-datalake-slurp-slurp"
-  },
-  {
-    "source": "io-in-datalake-slurp-slurp",
-    "target": "io-in-inbound-api-endpoint"
-  },
-  {
-    "source": "io-out",
-    "target": "io-out-powerbi"
-  },
-  {
-    "source": "io-out-powerbi",
-    "target": "io-out-raw"
+    "source": "data-acquisition",
+    "target": "flexible-ingestion"
   },
   {
     "source": "data-enrichment",
-    "target": "de-phantmgpt"
-  },
-  {
-    "source": "data-enrichment",
-    "target": "de-llm-config"
-  },
-  {
-    "source": "data-enrichment",
-    "target": "de-version-control"
-  },
-  {
-    "source": "de-phantmgpt",
-    "target": "gpt-normative-range-tuning"
-  },
-  {
-    "source": "gpt-normative-range-tuning",
-    "target": "gpt-advanced-prompts"
-  },
-  {
-    "source": "gpt-advanced-prompts",
-    "target": "gpt-expert-moderation"
-  },
-  {
-    "source": "gpt-expert-moderation",
-    "target": "gpt-advanced-llm-sonnet-3-5-gpt-4o"
-  },
-  {
-    "source": "gpt-advanced-llm-sonnet-3-5-gpt-4o",
-    "target": "gpt-langchain-embeddings"
-  },
-  {
-    "source": "de-llm-config",
-    "target": "llm-hybrid-extrapolation"
-  },
-  {
-    "source": "llm-hybrid-extrapolation",
-    "target": "llm-client-moderation"
-  },
-  {
-    "source": "data-enrichment",
-    "target": "de-version-control"
-  },
-  {
-    "source": "de-version-control",
-    "target": "de-traceability"
-  },
-  {
-    "source": "de-traceability",
-    "target": "de-data-confidence-score"
-  },
-  {
-    "source": "de-data-confidence-score",
-    "target": "de-sku-to-spec-reconciliation"
+    "target": "progressive-augmentation"
   },
   {
     "source": "insights",
-    "target": "insights-phantm-portfolio-report"
+    "target": "portfolio-report"
   },
   {
-    "source": "insights-phantm-portfolio-report",
-    "target": "insights-custom-reporting"
+    "source": "insights",
+    "target": "data-export"
   },
   {
-    "source": "insights-custom-reporting",
-    "target": "insights-apco"
+    "source": "insights",
+    "target": "continuous-insights"
   },
   {
-    "source": "insights-apco",
-    "target": "insights-material-audit"
+    "source": "general",
+    "target": "auth-basic"
   },
   {
-    "source": "supplier-data",
-    "target": "sdm-document-management"
+    "source": "general",
+    "target": "soc2"
   },
   {
-    "source": "sdm-document-management",
-    "target": "sdm-file-upload"
+    "source": "innovation",
+    "target": "compliance-automation"
   },
   {
-    "source": "sdm-file-upload",
-    "target": "sdm-upload-by-email"
+    "source": "innovation",
+    "target": "cost-management"
   },
   {
-    "source": "sdm-upload-by-email",
-    "target": "sdm-supplier-portal"
+    "source": "innovation",
+    "target": "sustainability-metrics"
   }
 ]

@@ -1,0 +1,269 @@
+[
+  {
+    "id": "root",
+    "position": { "x": 600, "y": 50 },
+    "label": "Phantm Captr",
+    "status": "completed",
+    "icon": "Map",
+    "tooltip": "Root node of the roadmap"
+  },
+  {
+    "id": "material-library",
+    "position": { "x": 0, "y": 150 },
+    "label": "Material Library",
+    "status": "completed",
+    "icon": "Database",
+    "tooltip": "Contains core material data"
+  },
+  {
+    "id": "data-io",
+    "position": { "x": 400, "y": 150 },
+    "label": "Data I/O",
+    "status": "in-progress",
+    "icon": "Database",
+    "tooltip": "Handles data input and output"
+  },
+  {
+    "id": "data-enrichment",
+    "position": { "x": 800, "y": 150 },
+    "label": "Data Enrichment",
+    "status": "in-progress",
+    "icon": "Brain",
+    "tooltip": "Enriches data with additional insights"
+  },
+  {
+    "id": "insights",
+    "position": { "x": 1200, "y": 150 },
+    "label": "Insights",
+    "status": "planned",
+    "icon": "ChartBar",
+    "tooltip": "Generates insights from data"
+  },
+  {
+    "id": "supplier-data",
+    "position": { "x": 1400, "y": 150 },
+    "label": "Supplier Data Management",
+    "status": "planned",
+    "icon": "Building",
+    "tooltip": "Manages supplier data"
+  },
+  {
+    "id": "ml-core",
+    "position": { "x": 0, "y": 230 },
+    "label": "Core",
+    "status": "completed"
+  },
+  {
+    "id": "ml-custom-data-fields",
+    "position": { "x": 0, "y": 310 },
+    "label": "Custom Data Fields",
+    "status": "completed"
+  },
+  {
+    "id": "ml-variant-mapping",
+    "position": { "x": 0, "y": 390 },
+    "label": "Variant Mapping",
+    "status": "completed"
+  },
+  {
+    "id": "ml-secondary-packaging",
+    "position": { "x": 0, "y": 470 },
+    "label": "Secondary Packaging",
+    "status": "completed"
+  },
+  {
+    "id": "ml-tertiary-packaging",
+    "position": { "x": 0, "y": 550 },
+    "label": "Tertiary Packaging",
+    "status": "completed"
+  },
+  {
+    "id": "io-in",
+    "position": { "x": 250, "y": 230 },
+    "label": "In",
+    "status": "in-progress",
+    "icon": "Upload"
+  },
+  {
+    "id": "io-out",
+    "position": { "x": 550, "y": 230 },
+    "label": "Out",
+    "status": "in-progress",
+    "icon": "Download"
+  },
+  {
+    "id": "io-in-bulk-import-sql-csv-xls",
+    "position": { "x": 250, "y": 310 },
+    "label": "Bulk Import (SQL, CSV, XLS)",
+    "status": "completed"
+  },
+  {
+    "id": "io-in-erp-batch-upload",
+    "position": { "x": 250, "y": 390 },
+    "label": "ERP Batch Upload",
+    "status": "completed"
+  },
+  {
+    "id": "io-in-middleware-ipaas",
+    "position": { "x": 250, "y": 470 },
+    "label": "Middleware iPaaS",
+    "status": "planned"
+  },
+  {
+    "id": "io-in-erp-adaptor",
+    "position": { "x": 250, "y": 550 },
+    "label": "ERP Adaptor",
+    "status": "planned"
+  },
+  {
+    "id": "io-in-datalake-slurp-slurp",
+    "position": { "x": 250, "y": 630 },
+    "label": "Datalake Slurp Slurp",
+    "status": "planned"
+  },
+  {
+    "id": "io-in-inbound-api-endpoint",
+    "position": { "x": 250, "y": 710 },
+    "label": "Inbound API endpoint",
+    "status": "in-progress"
+  },
+  {
+    "id": "io-out-powerbi",
+    "position": { "x": 550, "y": 310 },
+    "label": "PowerBI",
+    "status": "completed"
+  },
+  {
+    "id": "io-out-raw",
+    "position": { "x": 550, "y": 390 },
+    "label": "Raw",
+    "status": "completed"
+  },
+  {
+    "id": "de-phantmgpt",
+    "position": { "x": 650, "y": 230 },
+    "label": "Bestestest Guess with PhantmGPT",
+    "status": "in-progress",
+    "tooltip": "everything you need it to be"
+  },
+  {
+    "id": "de-llm-config",
+    "position": { "x": 950, "y": 230 },
+    "label": "LLM Configuration",
+    "status": "planned"
+  },
+  {
+    "id": "gpt-normative-range-tuning",
+    "position": { "x": 650, "y": 310 },
+    "label": "Normative Range Tuning",
+    "status": "in-progress"
+  },
+  {
+    "id": "gpt-advanced-prompts",
+    "position": { "x": 650, "y": 390 },
+    "label": "Advanced Prompts",
+    "status": "planned"
+  },
+  {
+    "id": "gpt-expert-moderation",
+    "position": { "x": 650, "y": 470 },
+    "label": "Expert Moderation",
+    "status": "planned"
+  },
+  {
+    "id": "gpt-advanced-llm-sonnet-3-5-gpt-4o",
+    "position": { "x": 650, "y": 550 },
+    "label": "Advanced LLM (Sonnet 3.5 / GPT-4o)",
+    "status": "planned"
+  },
+  {
+    "id": "gpt-langchain-embeddings",
+    "position": { "x": 650, "y": 630 },
+    "label": "LangChain Embeddings",
+    "status": "planned"
+  },
+  {
+    "id": "llm-hybrid-extrapolation",
+    "position": { "x": 950, "y": 310 },
+    "label": "Hybrid Extrapolation",
+    "status": "planned"
+  },
+  {
+    "id": "llm-client-moderation",
+    "position": { "x": 950, "y": 390 },
+    "label": "Client Moderation",
+    "status": "planned"
+  },
+  {
+    "id": "de-version-control",
+    "position": { "x": 1250, "y": 230 },
+    "label": "Version control",
+    "status": "in-progress"
+  },
+  {
+    "id": "de-traceability",
+    "position": { "x": 1250, "y": 310 },
+    "label": "Traceability",
+    "status": "in-progress"
+  },
+  {
+    "id": "de-data-confidence-score",
+    "position": { "x": 1250, "y": 390 },
+    "label": "Data Confidence Score",
+    "status": "planned"
+  },
+  {
+    "id": "de-sku-to-spec-reconciliation",
+    "position": { "x": 1250, "y": 470 },
+    "label": "SKU-to-spec Reconciliation",
+    "status": "planned"
+  },
+  {
+    "id": "insights-phantm-portfolio-report",
+    "position": { "x": 1200, "y": 230 },
+    "label": "Phantm Portfolio Report",
+    "status": "planned"
+  },
+  {
+    "id": "insights-custom-reporting",
+    "position": { "x": 1200, "y": 310 },
+    "label": "Custom Reporting",
+    "status": "planned"
+  },
+  {
+    "id": "insights-apco",
+    "position": { "x": 1200, "y": 390 },
+    "label": "APCO",
+    "status": "planned"
+  },
+  {
+    "id": "insights-material-audit",
+    "position": { "x": 1200, "y": 470 },
+    "label": "Material Audit",
+    "status": "planned"
+  },
+  {
+    "id": "sdm-document-management",
+    "position": { "x": 1400, "y": 230 },
+    "label": "Document Management",
+    "status": "planned"
+  },
+  {
+    "id": "sdm-file-upload",
+    "position": { "x": 1400, "y": 310 },
+    "label": "File Upload",
+    "status": "planned"
+  },
+  {
+    "id": "sdm-upload-by-email",
+    "position": { "x": 1400, "y": 390 },
+    "label": "Upload by Email",
+    "status": "planned"
+  },
+  {
+    "id": "sdm-supplier-portal",
+    "position": { "x": 1400, "y": 470 },
+    "label": "Supplier Portal",
+    "status": "planned"
+  }
+]

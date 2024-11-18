@@ -3,20 +3,18 @@ import ReactFlow, { Background, Controls, MiniMap, NodeTypes, useNodesState, use
 import 'reactflow/dist/style.css';
 
 import RoadmapNode from './components/RoadmapNode';
-import { loadNodes, saveNodes } from './data/initialNodes';
+import { initialNodes } from './data/initialNodes';
 import { initialEdges } from './data/initialEdges';
 
 const nodeTypes: NodeTypes = {
     roadmapNode: RoadmapNode,
 };
 
-export default function App() {
-    const initialNodes = loadNodes();
+function saveNodes(nodes: any) {
+    localStorage.setItem('nodes', JSON.stringify(nodes));
+}
 
-    // Debug log the PhantmGPT node specifically
-    console.log('PhantmGPT Node:', initialNodes.find(n => n.id === 'de-phantmgpt'));
-    console.log('Nodes:', initialNodes);
-    console.log('Edges:', initialEdges);
+export default function App() {
     const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
     const [edges, , onEdgesChange] = useEdgesState(initialEdges);
 
@@ -25,8 +23,20 @@ export default function App() {
         saveNodes(nodes);
     }, [nodes]);
 
+    const handleClearStorage = () => {
+        localStorage.clear();
+        // Reload the page to reset to initial nodes
+        window.location.reload();
+    };
+
     return (
-        <div className="h-screen w-screen bg-gray-900">
+        <div className="h-screen w-screen bg-gray-900 relative">
+            <button
+                onClick={handleClearStorage}
+                className="absolute top-4 right-4 z-10 px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-md text-sm"
+            >
+                Reset Layout
+            </button>
             <ReactFlow
                 nodes={nodes}
                 edges={edges}

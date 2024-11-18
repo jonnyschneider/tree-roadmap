@@ -4,6 +4,7 @@ export interface RoadmapNode {
   position: { x: number; y: number };
   borderColor?: string;  // Add at root level
   data: {
+    
     label: string;
     icon?: string;
     status?: 'planned' | 'in-progress' | 'completed';
@@ -12,5 +13,6 @@ export interface RoadmapNode {
     target?: string;
     focus?: string[];
     backlog?: string[];
+    backgroundColor?: string;
   };
 }

@@ -10,7 +10,8 @@
     "tooltip": "Root node of the roadmap",
     "status": " ",
     "borderColor": "#64748b",
-    "backgroundColor": "bg-gray-800"
+    "backgroundColor": "bg-gray-800",
+    "more-info": ""
   },
   {
     "id": "material-library",
@@ -23,7 +24,8 @@
     "tooltip": "Central source of truth for packaging data",
     "status": " ",
     "borderColor": "#a855f7",
-    "backgroundColor": "bg-gray-800"
+    "backgroundColor": "bg-gray-800",
+    "more-info": ""
   },
   {
     "id": "supplier-mgmt",
@@ -36,7 +38,8 @@
     "tooltip": "Supplier communication and document management",
     "status": " ",
     "borderColor": "#a855f7",
-    "backgroundColor": "bg-gray-800"
+    "backgroundColor": "bg-gray-800",
+    "more-info": ""
   },
   {
     "id": "data-acquisition",
@@ -49,7 +52,8 @@
     "tooltip": "Automated data management processes",
     "status": " ",
     "borderColor": "#a855f7",
-    "backgroundColor": "bg-gray-800"
+    "backgroundColor": "bg-gray-800",
+    "more-info": ""
   },
   {
     "id": "data-enrichment",
@@ -62,7 +66,8 @@
     "tooltip": "Tools to improve and activate packaging data",
     "status": " ",
     "borderColor": "#a855f7",
-    "backgroundColor": "bg-gray-800"
+    "backgroundColor": "bg-gray-800",
+    "more-info": ""
   },
   {
     "id": "insights",
@@ -75,7 +80,8 @@
     "tooltip": "Real-time insights and automated reporting",
     "status": " ",
     "borderColor": "#a855f7",
-    "backgroundColor": "bg-gray-800"
+    "backgroundColor": "bg-gray-800",
+    "more-info": ""
   },
   {
     "id": "general",
@@ -88,7 +94,8 @@
     "tooltip": "Core platform capabilities",
     "status": " ",
     "borderColor": "#a855f7",
-    "backgroundColor": "bg-gray-800"
+    "backgroundColor": "bg-gray-800",
+    "more-info": ""
   },
   {
     "id": "innovation",
@@ -101,7 +108,8 @@
     "tooltip": "Future platform capabilities under consideration",
     "status": " ",
     "borderColor": "#a855f7",
-    "backgroundColor": "bg-gray-800"
+    "backgroundColor": "bg-gray-800",
+    "more-info": ""
   },
   {
     "id": "materials-manager",
@@ -136,6 +144,7 @@
       "Alerts and Notifications",
       "Data Inheritance"
     ],
+    "more-info": "https://www.notion.so/Intuitive-Packaging-Data-Explorer-1",
     "borderColor": "#22c55e",
     "backgroundColor": "bg-gray-800"
   },
@@ -165,6 +174,7 @@
       "Purpose Matcher",
       "Progress Tracking"
     ],
+    "more-info": "",
     "borderColor": "#3b82f6",
     "backgroundColor": "bg-gray-800"
   },
@@ -196,6 +206,7 @@
       "Template Library",
       "Migration Tools"
     ],
+    "more-info": "",
     "borderColor": "#3b82f6",
     "backgroundColor": "bg-gray-800"
   },
@@ -228,6 +239,7 @@
       "Collaboration Tools",
       "Bulk Operations"
     ],
+    "more-info": "",
     "borderColor": "#22c55e",
     "backgroundColor": "bg-gray-800"
   },
@@ -259,6 +271,7 @@
       "Template Management",
       "Notification System"
     ],
+    "more-info": "",
     "borderColor": "#3b82f6",
     "backgroundColor": "bg-gray-800"
   },
@@ -291,6 +304,7 @@
       "Reference Library",
       "Auto-Validation Rules"
     ],
+    "more-info": "",
     "borderColor": "#22c55e",
     "backgroundColor": "bg-gray-800"
   },
@@ -318,6 +332,7 @@
       "Advanced Integrations",
       "Transformation Tools"
     ],
+    "more-info": "",
     "borderColor": "#22c55e",
     "backgroundColor": "bg-gray-800"
   },
@@ -350,6 +365,7 @@
       "Historical Analysis",
       "Scenario Planning"
     ],
+    "more-info": "",
     "borderColor": "#22c55e",
     "backgroundColor": "bg-gray-800"
   },
@@ -380,6 +396,7 @@
       "Delta Updates",
       "Bulk Export"
     ],
+    "more-info": "",
     "borderColor": "#22c55e",
     "backgroundColor": "bg-gray-800"
   },
@@ -410,6 +427,7 @@
       "Industry Benchmarks",
       "Impact Modeling"
     ],
+    "more-info": "",
     "borderColor": "#3b82f6",
     "backgroundColor": "bg-gray-800"
   },
@@ -446,6 +464,7 @@
       "Bulk Enhance",
       "Impact Preview"
     ],
+    "more-info": "",
     "borderColor": "#3b82f6",
     "backgroundColor": "bg-gray-800"
   },
@@ -474,6 +493,7 @@
       "Multi-factor auth",
       "User provisioning"
     ],
+    "more-info": "",
     "borderColor": "#3b82f6",
     "backgroundColor": "bg-gray-800"
   },
@@ -503,6 +523,7 @@
       "Risk assessment framework",
       "Regular security audits"
     ],
+    "more-info": "",
     "borderColor": "#3b82f6",
     "backgroundColor": "bg-gray-800"
   },
@@ -531,6 +552,7 @@
       "Cross-border requirements",
       "Audit trail automation"
     ],
+    "more-info": "",
     "borderColor": "#ec4899",
     "backgroundColor": "bg-gray-800"
   },
@@ -559,6 +581,7 @@
       "Volume-based pricing",
       "Transport cost analysis"
     ],
+    "more-info": "",
     "borderColor": "#ec4899",
     "backgroundColor": "bg-gray-800"
   },
@@ -587,6 +610,7 @@
       "Alternative material comparison",
       "Impact reduction modeling"
     ],
+    "more-info": "",
     "borderColor": "#ec4899",
     "backgroundColor": "bg-gray-800"
   }

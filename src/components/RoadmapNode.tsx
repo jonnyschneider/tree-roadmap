@@ -87,6 +87,8 @@ export type RoadmapNodeData = {
   tooltip?: string;
   borderColor?: string;
   backgroundColor?: string;
+  moreInfo?: string;
+  focus?: string[];
 };
 
 export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
@@ -114,7 +116,11 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
       <div className="hidden">{JSON.stringify(data)}</div>
       
       {showTooltip && data.tooltip && (
-        <RoadmapTooltip>{data.tooltip}</RoadmapTooltip>
+        <RoadmapTooltip
+          summary={data.tooltip}
+          focus={data.focus || []}
+          moreInfo={data.moreInfo}
+        />
       )}
       <Handle 
         type="target" 

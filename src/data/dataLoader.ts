@@ -1,5 +1,5 @@
 import { Node, Edge } from 'reactflow';
-import { RoadmapNodeData } from '../components/RoadmapNode';
+import { RoadmapNodeData } from '../components/RoadmapNode'; // Correct import path
 import nodesData from './nodes.json';
 import edgesData from './edges.json';
 
@@ -18,6 +18,8 @@ export function loadNodes(): Node<RoadmapNodeData>[] {
     status: string;
     icon?: string;
     tooltip?: string;
+    focus?: string[];
+    moreInfo?: string;
   }) => ({
     id: node.id,
     type: 'roadmapNode',
@@ -27,6 +29,8 @@ export function loadNodes(): Node<RoadmapNodeData>[] {
       status: node.status as Status,
       icon: node.icon,
       tooltip: node.tooltip,
+      focus: node.focus,
+      moreInfo: node.moreInfo,
     },
   }));
 }

@@ -29,11 +29,12 @@ function createNode(
     };
 }
 
-const VERTICAL_SPACING = 80;
-const HORIZONTAL_SPACING = 500;
-const BRANCH_OFFSET = 50;
-const LEVEL1_Y = 500;
-const BRANCH_ANGLE = 30;
+export const VERTICAL_GAP = 80;
+export const HORIZONTAL_GAP = 500;
+export const LEVEL1_X_POSITIONS = [200, 450, 700, 950, 1200]; // Example positions for level-1 items
+export const LEVEL1_Y = 500;
+export const BRANCH_OFFSET = 0;
+export const BRANCH_ANGLE = 30;
 
 function getBranchPosition(startX: number, startY: number): { x: number; y: number } {
     const angleInRadians = BRANCH_ANGLE * (Math.PI / 180);
@@ -60,11 +61,11 @@ export const initialNodes: Node<RoadmapNodeData>[] = [
     createNode('root', { x: 600, y: 50 }, 'Phantm Captr', 'completed', 'Map'),
 
     // Level 1 nodes
-    createNode('material-library', { x: 200, y: LEVEL1_Y }, 'Material Library', 'completed', 'Database'),
-    createNode('data-io', { x: 450, y: LEVEL1_Y }, 'Data I/O', 'in-progress', 'Database'),
-    createNode('data-enrichment', { x: 700, y: LEVEL1_Y }, 'Data Enrichment', 'in-progress', 'Brain'),
-    createNode('insights', { x: 950, y: LEVEL1_Y }, 'Insights', 'planned', 'ChartBar'),
-    createNode('supplier-data', { x: 1200, y: LEVEL1_Y }, 'Supplier Data Management', 'planned', 'Building'),
+    createNode('material-library', { x: LEVEL1_X_POSITIONS[0], y: LEVEL1_Y }, 'Material Library', 'completed', 'Database'),
+    createNode('data-io', { x: LEVEL1_X_POSITIONS[1], y: LEVEL1_Y }, 'Data I/O', 'in-progress', 'Database'),
+    createNode('data-enrichment', { x: LEVEL1_X_POSITIONS[2], y: LEVEL1_Y }, 'Data Enrichment', 'in-progress', 'Brain'),
+    createNode('insights', { x: LEVEL1_X_POSITIONS[3], y: LEVEL1_Y }, 'Insights', 'planned', 'ChartBar'),
+    createNode('supplier-data', { x: LEVEL1_X_POSITIONS[4], y: LEVEL1_Y }, 'Supplier Data Management', 'planned', 'Building'),
 
     // Material Library children
     ...([
@@ -77,8 +78,8 @@ export const initialNodes: Node<RoadmapNodeData>[] = [
         createNode(
             `ml-${label.toLowerCase().replace(/\s+/g, '-')}`,
             {
-                x: getBranchPosition(200, LEVEL1_Y).x,
-                y: getBranchPosition(200, LEVEL1_Y).y + (VERTICAL_SPACING * index)
+                x: LEVEL1_X_POSITIONS[0],
+                y: LEVEL1_Y + (VERTICAL_GAP * (index + 1))
             },
             label,
             'completed'
@@ -86,7 +87,7 @@ export const initialNodes: Node<RoadmapNodeData>[] = [
     ),
 
     // Data I/O - Input branch
-    createNode('io-in', getBranchPosition(450, LEVEL1_Y), 'In', 'in-progress', 'Upload'),
+    createNode('io-in', { x: LEVEL1_X_POSITIONS[1] - HORIZONTAL_GAP, y: LEVEL1_Y + VERTICAL_GAP }, 'In', 'in-progress', 'Upload'),
 
     // Data I/O - Input children
     ...([
@@ -100,8 +101,8 @@ export const initialNodes: Node<RoadmapNodeData>[] = [
         createNode(
             `io-in-${item.label.toLowerCase().replace(/[().,\s]+/g, '-')}`,
             {
-                x: getBranchPosition(getBranchPosition(450, LEVEL1_Y).x, getBranchPosition(450, LEVEL1_Y).y).x,
-                y: getBranchPosition(450, LEVEL1_Y).y + (VERTICAL_SPACING * index)
+                x: LEVEL1_X_POSITIONS[1] - HORIZONTAL_GAP,
+                y: LEVEL1_Y + VERTICAL_GAP + (VERTICAL_GAP * (index + 1))
             },
             item.label,
             item.status
@@ -112,8 +113,8 @@ export const initialNodes: Node<RoadmapNodeData>[] = [
     createNode(
         'io-out',
         { 
-            x: getBranchPosition(450, LEVEL1_Y).x + HORIZONTAL_SPACING, 
-            y: getBranchPosition(450, LEVEL1_Y).y 
+            x: LEVEL1_X_POSITIONS[1] + HORIZONTAL_GAP, 
+            y: LEVEL1_Y + VERTICAL_GAP 
         },
         'Out',
         'in-progress',
@@ -128,8 +129,8 @@ export const initialNodes: Node<RoadmapNodeData>[] = [
         createNode(
             `io-out-${item.label.toLowerCase().replace(/\s+/g, '-')}`,
             {
-                x: getBranchPosition(450, LEVEL1_Y).x + HORIZONTAL_SPACING,
-                y: getBranchPosition(450, LEVEL1_Y).y + (VERTICAL_SPACING * (index + 1))
+                x: LEVEL1_X_POSITIONS[1] + HORIZONTAL_GAP,
+                y: LEVEL1_Y + VERTICAL_GAP + (VERTICAL_GAP * (index + 1))
             },
             item.label,
             item.status
@@ -170,8 +171,8 @@ export const initialNodes: Node<RoadmapNodeData>[] = [
         createNode(
             `gpt-${item.label.toLowerCase().replace(/[().,\s/]+/g, '-')}`,
             {
-                x: getBranchPosition(getBranchPosition(700, LEVEL1_Y).x, getBranchPosition(700, LEVEL1_Y).y).x,
-                y: getBranchPosition(700, LEVEL1_Y).y + (VERTICAL_SPACING * index)
+                x: LEVEL1_X_POSITIONS[2] - HORIZONTAL_GAP,
+                y: LEVEL1_Y + VERTICAL_GAP + (VERTICAL_GAP * (index + 1))
             },
             item.label,
             item.status,
@@ -184,8 +185,8 @@ export const initialNodes: Node<RoadmapNodeData>[] = [
     createNode(
         'de-llm-config',
         {
-            x: getBranchPosition(700, LEVEL1_Y).x + HORIZONTAL_SPACING,
-            y: getBranchPosition(700, LEVEL1_Y).y
+            x: LEVEL1_X_POSITIONS[2] + HORIZONTAL_GAP,
+            y: LEVEL1_Y + VERTICAL_GAP
         },
         'LLM Configuration',
         'planned'
@@ -199,8 +200,8 @@ export const initialNodes: Node<RoadmapNodeData>[] = [
         createNode(
             `llm-${item.label.toLowerCase().replace(/\s+/g, '-')}`,
             {
-                x: getBranchPosition(700, LEVEL1_Y).x + HORIZONTAL_SPACING,
-                y: getBranchPosition(700, LEVEL1_Y).y + (VERTICAL_SPACING * (index + 1))
+                x: LEVEL1_X_POSITIONS[2] + HORIZONTAL_GAP,
+                y: LEVEL1_Y + VERTICAL_GAP + (VERTICAL_GAP * (index + 1))
             },
             item.label,
             item.status
@@ -217,8 +218,8 @@ export const initialNodes: Node<RoadmapNodeData>[] = [
         createNode(
             `de-${item.label.toLowerCase().replace(/[-.]\s+/g, '-')}`,
             {
-                x: getBranchPosition(700, LEVEL1_Y).x + (HORIZONTAL_SPACING * 2),
-                y: getBranchPosition(700, LEVEL1_Y).y + (VERTICAL_SPACING * index)
+                x: LEVEL1_X_POSITIONS[2] + (HORIZONTAL_GAP * 2),
+                y: LEVEL1_Y + VERTICAL_GAP + (VERTICAL_GAP * (index + 1))
             },
             item.label,
             item.status
@@ -235,8 +236,8 @@ export const initialNodes: Node<RoadmapNodeData>[] = [
         createNode(
             `insights-${item.label.toLowerCase().replace(/\s+/g, '-')}`,
             {
-                x: getBranchPosition(950, LEVEL1_Y).x,
-                y: getBranchPosition(950, LEVEL1_Y).y + (VERTICAL_SPACING * index)
+                x: LEVEL1_X_POSITIONS[3],
+                y: LEVEL1_Y + VERTICAL_GAP + (VERTICAL_GAP * (index + 1))
             },
             item.label,
             item.status
@@ -253,14 +254,15 @@ export const initialNodes: Node<RoadmapNodeData>[] = [
         createNode(
             `sdm-${item.label.toLowerCase().replace(/\s+/g, '-')}`,
             {
-                x: getBranchPosition(1200, LEVEL1_Y).x,
-                y: getBranchPosition(1200, LEVEL1_Y).y + (VERTICAL_SPACING * index)
+                x: LEVEL1_X_POSITIONS[4],
+                y: LEVEL1_Y + VERTICAL_GAP + (VERTICAL_GAP * (index + 1))
             },
             item.label,
             item.status
         )
     )),
 ];
+
 // Add after the initialNodes in the same file
 
 function createEdge(source: string, target: string): Edge {

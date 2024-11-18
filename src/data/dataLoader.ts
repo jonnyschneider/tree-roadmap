@@ -5,39 +5,30 @@ import edgesData from './edges.json';
 
 type Status = 'completed' | 'in-progress' | 'planned';
 
-interface NodeData {
-  id: string;
-  position: { x: number; y: number };
-  label: string;
-  status: Status;
-  icon?: string;
-  tooltip?: string;
-}
-
 interface EdgeData {
   source: string;
   target: string;
 }
 
 export function loadNodes(): Node<RoadmapNodeData>[] {
-return nodesData.map((node: {
+  return nodesData.map((node: {
     id: string;
-    position: { x: number; y: number };
+    position: { x: number | null; y: number | null };
     label: string;
     status: string;
     icon?: string;
     tooltip?: string;
-}) => ({
+  }) => ({
     id: node.id,
     type: 'roadmapNode',
-    position: node.position,
+    position: { x: node.position.x ?? 0, y: node.position.y ?? 0 },
     data: {
-        label: node.label,
-        status: node.status as Status,
-        icon: node.icon,
-        tooltip: node.tooltip,
+      label: node.label,
+      status: node.status as Status,
+      icon: node.icon,
+      tooltip: node.tooltip,
     },
-}));
+  }));
 }
 
 export function loadEdges(): Edge[] {

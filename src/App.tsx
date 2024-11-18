@@ -1,60 +1,56 @@
 import { useEffect } from 'react';
 import ReactFlow, { Background, Controls, MiniMap, NodeTypes, useNodesState, useEdgesState } from 'reactflow';
 import 'reactflow/dist/style.css';
-
 import RoadmapNode from './components/RoadmapNode';
-import { initialNodes } from './data/initialNodes';
-import { initialEdges } from './data/initialEdges';
+import nodesData from './data/nodes.json';
+import edgesData from './data/edges.json';
 
 const nodeTypes: NodeTypes = {
     roadmapNode: RoadmapNode,
 };
 
-function saveNodes(nodes: any) {
-    localStorage.setItem('nodes', JSON.stringify(nodes));
-}
-
 export default function App() {
-    const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
-    const [edges, , onEdgesChange] = useEdgesState(initialEdges);
+    const [nodes, setNodes, onNodesChange] = useNodesState([]);
+    const [edges, setEdges, onEdgesChange] = useEdgesState([]);
 
-    // Save node positions to localStorage when nodes change
     useEffect(() => {
-        saveNodes(nodes);
-    }, [nodes]);
+        // Transform JSON data into ReactFlow format
+        const flowNodes = nodesData.map(node => ({
+            id: node.id,
+            type: 'roadmapNode',
+            position: node.position,
+            data: {
+                label: node.label,
+                icon: node.icon,
+                status: node.status,
+                borderColor: node.borderColor,
+                tooltip: node.tooltip,
+                target: node.target,
+                focus: node.focus,
+                backlog: node.backlog
+            }
+        }));
 
-    const handleClearStorage = () => {
-        localStorage.clear();
-        // Reload the page to reset to initial nodes
-        window.location.reload();
-    };
+        const flowEdges = edgesData.map(edge => ({
+            id: `${edge.source}-${edge.target}`,
+            source: edge.source,
+            target: edge.target,
+            type: 'straight',
+            style: { stroke: '#374151', strokeWidth: 1 }
+        }));
+
+        setNodes(flowNodes);
+        setEdges(flowEdges);
+    }, []);
 
     return (
-        <div className="h-screen w-screen bg-gray-900 relative">
-            <button
-                onClick={handleClearStorage}
-                className="absolute top-4 right-4 z-10 px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-md text-sm"
-            >
-                Reset Layout
-            </button>
+        <div className="h-screen w-screen bg-gray-900">
             <ReactFlow
                 nodes={nodes}
                 edges={edges}
                 nodeTypes={nodeTypes}
                 onNodesChange={onNodesChange}
                 onEdgesChange={onEdgesChange}
-                onNodeDragStop={(_, node) => {
-                    setNodes((nds) =>
-                        nds.map((n) =>
-                            n.id === node.id ? { ...n, position: node.position } : n
-                        )
-                    );
-                }}
-                defaultEdgeOptions={{
-                    type: 'straight',
-                    style: { stroke: '#374151', strokeWidth: 1 },
-                    animated: false,
-                }}
                 fitView
                 minZoom={0.5}
                 maxZoom={1.5}

@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react';
 import ReactFlow, { Background, Controls, MiniMap, NodeTypes, useNodesState, useEdgesState } from 'reactflow';
 import 'reactflow/dist/style.css';
 import RoadmapNode from './components/RoadmapNode';
-import nodesData from './data/nodes.json';
-import edgesData from './data/edges.json';
+import { nodesData, edgesData } from './data/nodes.json';
 
 const RELEASE_FILTERS = {
     'Friends and Family': 'F&F',

@@ -1,7 +1,6 @@
 import { Node, Edge } from 'reactflow';
 import { RoadmapNodeData } from '../components/RoadmapNode'; // Correct import path
-import nodesData from './nodes.json';
-import edgesData from './edges.json';
+import data from './nodes.json';
 
 type Status = 'completed' | 'in-progress' | 'planned';
 
@@ -11,7 +10,7 @@ interface EdgeData {
 }
 
 export function loadNodes(): Node<RoadmapNodeData>[] {
-  return nodesData.map((node: {
+  return data.nodesData.map((node: {
     id: string;
     position: { x: number | null; y: number | null };
     label: string;
@@ -36,7 +35,7 @@ export function loadNodes(): Node<RoadmapNodeData>[] {
 }
 
 export function loadEdges(): Edge[] {
-  return edgesData.map((edge: EdgeData) => ({
+  return data.edgesData.map((edge: EdgeData) => ({
     id: `${edge.source}-${edge.target}`,
     source: edge.source,
     target: edge.target,

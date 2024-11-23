@@ -80,11 +80,12 @@ const targetDisplay: Record<string, string> = {
 };
 
 export type RoadmapNodeData = {
-  label: string;
+  //label: string;
+  project?: string;
   icon?: string;
-  status?: string;
+  status: string;
   target?: string;
-  tooltip?: string;
+  description?: string;
   borderColor?: string;
   backgroundColor?: string;
   moreInfo?: string;
@@ -99,14 +100,14 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
     id,
     type: 'roadmapNode',
     data: data,
-    hasTooltip: Boolean(data.tooltip),
-    tooltipContent: data.tooltip
+    hasTooltip: Boolean(data.description),
+    tooltipContent: data.description
   });
   
   return (
     <div 
       onMouseEnter={() => {
-        console.log('Mouse enter:', data.label, 'tooltip:', data.tooltip);
+        console.log('Mouse enter:', data.status, 'description:', data.description);
         setShowTooltip(true);
       }}
       onMouseLeave={() => setShowTooltip(false)}
@@ -115,9 +116,9 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
       {/* Debug render to check if tooltip exists */}
       <div className="hidden">{JSON.stringify(data)}</div>
       
-      {showTooltip && data.tooltip && (
+      {showTooltip && data.description && (
         <RoadmapTooltip
-          summary={data.tooltip}
+          summary={data.description}
           focus={data.focus || []}
           moreInfo={data.moreInfo}
         />
@@ -137,7 +138,7 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
         <div className="px-3 py-2">
           <div className="flex items-center gap-2">
             <IconComponent className="w-4 h-4 text-gray-400 flex-shrink-0" />
-            <span className="text-[10px] font-medium text-gray-300 tracking-tight break-words">{data.label}</span>
+            <span className="text-[10px] font-medium text-gray-300 tracking-tight break-words">{data.status}</span>
           </div>
           <div className="mt-1.5 flex justify-between items-center">
             {data.target && (

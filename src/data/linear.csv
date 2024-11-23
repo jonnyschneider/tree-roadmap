@@ -1,0 +1,203 @@
+ID,Title,Description,Status,Project,Project Milestone
+PHANTM-85,Thankyou Group,[https://drive.google.com/drive/folders/1W7XWmc4Lf6lj2etFYibEZcxd_y34cqX6?usp=drive_link](https://drive.google.com/drive/folders/1W7XWmc4Lf6lj2etFYibEZcxd_y34cqX6?usp=drive_link),Backlog,Customer Onboarding,
+PHANTM-83,Reece - Data,[https://drive.google.com/drive/folders/1gtyetPu_glOSghuW_bffCcVO1zSGvdkj?usp=drive_link](https://drive.google.com/drive/folders/1gtyetPu_glOSghuW_bffCcVO1zSGvdkj?usp=drive_link),Backlog,Customer Onboarding,
+PHANTM-82,Qantas - Data,[https://drive.google.com/drive/folders/10rgw33tYgypu7pozqs2eh3sxaCWZcmbT?usp=drive_link](https://drive.google.com/drive/folders/10rgw33tYgypu7pozqs2eh3sxaCWZcmbT?usp=drive_link),Backlog,Customer Onboarding,
+PHANTM-81,PAC Trading,[https://drive.google.com/drive/folders/11JbpK71EvxA-H_qXulB4qj5zJhEYksxx?usp=drive_link](https://drive.google.com/drive/folders/11JbpK71EvxA-H_qXulB4qj5zJhEYksxx?usp=drive_link),Backlog,Customer Onboarding,
+PHANTM-80,Mountain Blue - Data,[https://drive.google.com/drive/folders/1oM_WTMYNVqXQ62895ybeT0rM_ULwD3sR?usp=drive_link](https://drive.google.com/drive/folders/1oM_WTMYNVqXQ62895ybeT0rM_ULwD3sR?usp=drive_link),Backlog,Customer Onboarding,
+PHANTM-79,Moose Toys - Data,[https://drive.google.com/drive/folders/1mf4KU7NWsNwax15oP7v5y6qTifKydPtd?usp=drive_link](https://drive.google.com/drive/folders/1mf4KU7NWsNwax15oP7v5y6qTifKydPtd?usp=drive_link),Backlog,Customer Onboarding,
+PHANTM-78,Mecca - Data,[https://drive.google.com/drive/folders/1Z3CNg7173CAO_d4eXKWqytyU9OADqCzC?usp=drive_link](https://drive.google.com/drive/folders/1Z3CNg7173CAO_d4eXKWqytyU9OADqCzC?usp=drive_link),Backlog,Customer Onboarding,
+PHANTM-77,Market Lane - Data,[https://drive.google.com/drive/folders/1ZsFUGDrESkDz4QBPB2ZDK1TUktSNgidE?usp=drive_link](https://drive.google.com/drive/folders/1ZsFUGDrESkDz4QBPB2ZDK1TUktSNgidE?usp=drive_link),Backlog,Customer Onboarding,
+PHANTM-75,Glen Dimplex - Supplier Emails,"[Technical PoC (August)](https://phantm.notion.site/Artefacts-from-Captr-Proof-of-Concept-0f341d4ecda047cebedbc6c9fb7c3467?pvs=4) captured emails going back and forth between Phantm and Glen Dimplex when requesting packaging information. 
+
+Let's plug these into the Captr Supplier Dashboard. It will help us see what we're really dealing with, and it *might* be helpful for sales efforts on Glen Dimplex. ",Backlog,Customer Onboarding,
+PHANTM-73,Scenario Planning,'What if' Analysis,Backlog,Reporting and Insights,
+PHANTM-72,Report: Industry Benchmarks,Compare performance with industry peers,Backlog,Reporting and Insights,
+PHANTM-50,Structured Data Requests,"Excel templates provided to Suppliers
+
+Data automatically extracted when received by Phantm",Backlog,Supplier Management,
+PHANTM-48,Email integration and file upload for supplier specifications,"*Frictionless specification capture through familiar business tools, making it easy for suppliers to provide packaging information through email or simple file uploads.*
+
+* Unique supplier email addresses
+* Store communications and attached files
+* File upload interface
+* Inbox / Activity Log
+* Document storage
+* Basic document management (view, delete, assign to SKU)
+
+*Enable seamless capture of supplier communications and documents through multiple channels while maintaining organisation and traceability.*
+
+* Unique supplier project address
+* Email parsing and routing
+* Document storage
+* Basic metadata
+* Version control",Backlog,Supplier Management,
+PHANTM-49,Bulk Upload Tools for Suppliers,Mass document processing,Backlog,Supplier Management,
+PHANTM-45,Advanced Data Integrations,"* Datalake extraction tools
+* iPaaS connectors (Zapier etc)
+* Custom integration patterns, e.g. integrating directly with customer's bespoke setup",Backlog,Data Integration,
+PHANTM-44,API Development,"* end-point for Inbound data (e.g. to support customers who collect data at Purchase Order)
+* Two-way API, for selected scenarios
+* Authentication/security",Backlog,Data Integration,
+PHANTM-43,ERP Integrations,"* Batch synchronisation engine
+* Direct integration to selected ERP systems
+* Handling data changes",Backlog,Data Integration,
+PHANTM-41,Import data with CSV Template,"* Template for product, sales, packaging data (individually or all together)
+* Import data to customer database by file upload
+* Basic validation ",Backlog,Data Integration,
+PHANTM-40,Customer Moderation of Best Guess Data,"Enable customer to adjust generated data. 
+Part of a data reconciliation and quality control workflow. ",Backlog,Data Enrichment,
+PHANTM-32,Custom Data Schema Support,"*Enterprise-ready data flexibility allowing customers to extend Captr's core data model with their own fields and tags, while maintaining platform integrity and scalability.*
+
+### **General Direction**
+
+*Balance customer flexibility with platform scalability through controlled customisation capabilities, leveraging our medallion architecture and flexible schema approach.*
+
+* Schema extension mechanisms
+* Custom field validation rules
+* Field visibility controls
+* Data migration tooling
+* Performance monitoring",Backlog,Data Integration,
+PHANTM-25,Multipart Data Import and Reconciliation,"Case 1:
+
+Import Sales Data Only 
+**THEN** Import Product Data Only 
+**REQUIRES** Data Reconciliation to join Product and Sales Data Together
+
+Case 2: 
+
+Import Sales Data Only **OR** Product Data Only
+**THEN** Import Packaging Data
+**REQUIRES** Data Reconciliation to join Packaging Data Together",Backlog,Data Enrichment,
+PHANTM-39,Data quality improvement tracking,Visualise improvement over time. Gamify.,Backlog,Packaging Library,
+PHANTM-38,Extract Data from Specification Docs,"Programatically Interpret Spec Documents provided by suppliers
+
+Pre-populate data model and correlate with products (where possible)
+
+First step before approval/reconciliation process to manage quality and fill in the gaps",Backlog,Data Enrichment,
+PHANTM-37,Supplier Task Management (productivity),"Document Comments, Task Creation, Assign Tasks.
+Enable team to coordinate data acquisition with sources and suppliers in an organised way. ",Backlog,Supplier Management,
+PHANTM-36,Supplier Catalog Digitisation,"Codify a suppliers entire range of packaging products.
+Make this information available to brands who consume those products. 
+
+e.g. Norwood -> Bunnings",Backlog,Supplier Management,
+PHANTM-35,Supplier Performance Dashboard,Analysis and scoring of packaging materials associated with that supplier,Backlog,Supplier Management,
+PHANTM-34,Supplier Portal: Self-service specification management,,Backlog,Supplier Management,
+PHANTM-68,Managed Reports,"* [PHANTM-68](https://linear.app/phantm/issue/PHANTM-undefined/report-apco)
+* [PHANTM-68](https://linear.app/phantm/issue/PHANTM-undefined/report-material-audit)
+* [PHANTM-68](https://linear.app/phantm/issue/PHANTM-undefined/policy-interpretation-create-reports-based-on-new-regulations)",Backlog,Reporting and Insights,
+PHANTM-51,Material Library - Advanced Functionality,"* [PHANTM-26](https://linear.app/phantm/issue/PHANTM-undefined/variants-and-versioning-track-material-changes-over-time)
+* [PHANTM-26](https://linear.app/phantm/issue/PHANTM-undefined/traceability-data-origin-and-modification-history)
+* [PHANTM-51](https://linear.app/phantm/issue/PHANTM-undefined/data-reconciliation-automated-sku-to-spec-matching)
+* [PHANTM-51](https://linear.app/phantm/issue/PHANTM-undefined/secondary-packaging-box-carton-pallet-materials)
+* [PHANTM-51](https://linear.app/phantm/issue/PHANTM-undefined/tertiary-packaging-transport-and-logistics-data)
+* [PHANTM-51](https://linear.app/phantm/issue/PHANTM-undefined/bulk-records-operations-mass-updates-and-changes)
+* [PHANTM-51](https://linear.app/phantm/issue/PHANTM-undefined/custom-views-role-based-interface-configurations)
+* [PHANTM-26](https://linear.app/phantm/issue/PHANTM-undefined/exportreport-builder-custom-data-extracts)
+* [PHANTM-26](https://linear.app/phantm/issue/PHANTM-undefined/alerts-and-notifications-changes-and-updates)",Backlog,Packaging Library,
+PHANTM-76,Glen Dimplex - Data,"Currently collecting data from Glen Dimplex. 
+Can we get it into Material Library? Is that helpful for sales?
+
+[https://drive.google.com/drive/folders/1Q8g5qR7D9uGAyXxH5qOUp4F4fzcKhZf2?usp=drive_link](https://drive.google.com/drive/folders/1Q8g5qR7D9uGAyXxH5qOUp4F4fzcKhZf2?usp=drive_link)",Todo,Customer Onboarding,
+PHANTM-46,Data Transformation and Migration Utilities,"Tools and utilities for processing raw data as part of customer migration. Some are bespoke, others are reusable. 
+
+* Advanced mapping scripts
+* Bulk processing scripts
+* Validation rules and test automation
+* Custom transformations",Todo,Data Integration,Customer Pilot
+PHANTM-86,Norwood - Data,"Not sure what we can do with Norwood yet. 
+We have logins to some of their internal tools, and there's a fortnightly sync with Adam that should be set up soon.",Todo,Customer Onboarding,
+PHANTM-28,Visual Indicators of data quality,Make it clear when data is 'estimated' and to what degree it can be relied upon,Todo,Data Enrichment,Friends and Family
+PHANTM-14,Analytics configuration,"What are we going to track customer interactions with the frontend?
+
+Google Analytics, Posthog, etc",Todo,Technical Foundation,
+PHANTM-15,Monitoring configuration,"How are we going to monitor issues in the frontend?
+
+Sentry, Datadog, Graphana, etc.",Todo,Technical Foundation,
+PHANTM-29,Compare and improve (tuning),"Run tests to measure accuracy of estimates against known data.
+Create a mechanism to do this systematically on going (e.g. as we get real data, use it to check quality of previous estimations)",Todo,Data Enrichment,Customer Pilot
+PHANTM-61,Data Intelligence Co-pilot,"Continuous analysis and actionable recommendations based on AI-powered packaging portfolio patterns.
+
+## General Approach
+
+*Create an intelligent system that identifies opportunities and risks, providing actionable insights through pattern recognition and rules-based analysis.*
+
+* Pattern detection
+* Recommendation engine
+* Measuring improvement from action
+* Continuous improvement
+* Value prioritisation",Todo,Reporting and Insights,Customer Pilot 
+PHANTM-84,Stackpack - Data,[https://drive.google.com/drive/folders/1bV3aKrhzCGeUeFTeAeNRP-iddkNbBUuC?usp=drive_link](https://drive.google.com/drive/folders/1bV3aKrhzCGeUeFTeAeNRP-iddkNbBUuC?usp=drive_link),Todo,Customer Onboarding,
+PHANTM-24,Data quality info and related messaging,,Todo,Packaging Library,Friends and Family
+PHANTM-27,Use Case Mapping,"What level of data quality is recommended for different use cases for the data
+e.g. Identifying an area for further investigation vs. APCO report vs. LCA",Todo,Data Enrichment,Customer Pilot
+PHANTM-26,Data Scoring Rubric,"What are the key factors for determining a score?
+
+What levels are there?
+
+What does it look like to get from Level 1 to Level 3?",Todo,Data Enrichment,Friends and Family
+PHANTM-31,Expert moderation of Best Guess results,"Solutions Team eyeball it, and normalise the results. 
+Adjust prompts to 'train' the model. ",Todo,Data Enrichment,Friends and Family
+PHANTM-47,Progressive Data Enhancement,"Flexible menu of data improvement methods allowing teams to incrementally enhance their packaging data through a combination of automated tools, benchmarks, and collaborative options.
+
+## General Direction
+
+* Automated enhancement tools
+* Rule-based pattern detection
+* Micro-questions for continuous data enrichment
+* Targeted data interventions to maximise customer value
+* External reference data
+* Category matching algorithms
+* Reference data (e.g. customers like you…)
+* Validation frameworks
+* 'Human in the loop' mechanisms
+
+```markdown
+Add Sub-tasks as they become clear
+```",Todo,Data Enrichment,Customer Pilot
+PHANTM-74,Emma Lewisham,"Data includes Product and Packing Specs.
+Manually transform to target data model and migrate to Captr.",In Progress,Customer Onboarding,
+PHANTM-67,Phantm Portfolio Report,"Instant access to professional-grade packaging analysis that typically requires expensive consulting, powered by customer's own data on-file.
+
+## General Direction
+
+*Focus on automated generation of comprehensive analysis, with clear communication of data confidence levels and insights validity.*
+
+* Simple Reports
+* Data confidence integration
+* Automated calculations",In Progress,Reporting and Insights,Customer Pilot 
+PHANTM-33,Supplier Relationship Manager (Lite),"*Central hub for supplier communications and specification management, making packaging information accessible to all team members without complex process changes.*
+
+### **Overall Considerations and General Direction**
+
+*Focus on simplifying information capture and access, with minimal disruption to established workflows of supplier and retailer.*
+
+* Contact information management
+* Document organisation and search
+* Activity tracking/Inbox
+* Assign supplier documents to products (without automated processing of data)",In Progress,Supplier Management,
+PHANTM-16,User Authentication with username and password,,In Progress,Technical Foundation,
+PHANTM-42,'White glove' data migration services,"Customer provides their data in whatever format they have it, 
+Phantm team transforms it to correct structure, and works alongside customer to migrate it to Captre",In Progress,Data Integration,Friends and Family
+PHANTM-13,CI/CD Configuration,,In Progress,Technical Foundation,
+PHANTM-30,Generate packaging data with Public LLMs using real Sales/Product Data,,In Progress,Data Integration,Friends and Family
+PHANTM-12,Deployment configuration,How are we going to deploy the frontend to different environments? Setup Github workflows to push main to production. ,In Progress,Technical Foundation,
+PHANTM-17,Material Library - Basic,"### **Customer Value**
+
+Central command centre for packaging materials data, enabling teams to explore, analyse, and manage their complete packaging portfolio through a single, intuitive interface.
+
+### **General Direction**
+
+*Focus on intuitive data exploration and management, emphasising critical data and clear visual indicators to help business users find the right information and understand it*
+
+* Simple add/edit (e.g. one item at a time)
+* Component-based material breakdown
+* Integrated supplier documentation
+* Search and filter optimisation
+* Data quality indicators
+* Bulk data management tools",In Progress,Packaging Library,Friends and Family
+PHANTM-11,Agree on frontend framework,"What are we going to write the frontend using?
+
+React, Vue, etc",Done,Technical Foundation,
+PHANTM-10,Buildpack setup,"What are we going to use to package up the frontend?
+
+Vite, Webpack, etc",Done,Technical Foundation,

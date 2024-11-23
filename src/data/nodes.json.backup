@@ -1,0 +1,410 @@
+{
+  "nodesData": [
+    {
+      "id": "root",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "label": "Phantm Captr",
+      "tooltip": "Root node of the roadmap",
+      "status": " ",
+      "target": "",
+      "borderColor": "#64748b",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "material-library",
+      "position": {
+        "x": 250,
+        "y": 0
+      },
+      "label": "Packaging Material Library",
+      "tooltip": "Central source of truth for packaging data",
+      "status": " ",
+      "target": "",
+      "borderColor": "#a855f7",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "supplier-mgmt",
+      "position": {
+        "x": 155.8724504646834,
+        "y": 195.45787061700744
+      },
+      "label": "Supplier Management",
+      "tooltip": "Supplier communication and document management",
+      "status": " ",
+      "target": "",
+      "borderColor": "#a855f7",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "data-acquisition",
+      "position": {
+        "x": -55.630233489078584,
+        "y": 243.73197804545592
+      },
+      "label": "Data Acquisition",
+      "tooltip": "Automated data management processes",
+      "status": " ",
+      "target": "",
+      "borderColor": "#a855f7",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "data-enrichment",
+      "position": {
+        "x": -225.24221697560475,
+        "y": 108.47093477938955
+      },
+      "label": "Data Enrichment",
+      "tooltip": "Tools to improve and activate packaging data",
+      "status": " ",
+      "target": "",
+      "borderColor": "#a855f7",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "insights",
+      "position": {
+        "x": -225.24221697560478,
+        "y": -108.47093477938951
+      },
+      "label": "Insights & Reporting",
+      "tooltip": "Real-time insights and automated reporting",
+      "status": " ",
+      "target": "",
+      "borderColor": "#a855f7",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "general",
+      "position": {
+        "x": -55.63023348907865,
+        "y": -243.73197804545592
+      },
+      "label": "General",
+      "tooltip": "Core platform capabilities",
+      "status": " ",
+      "target": "",
+      "borderColor": "#a855f7",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "innovation",
+      "position": {
+        "x": 155.87245046468334,
+        "y": -195.45787061700747
+      },
+      "label": "Innovation Pipeline",
+      "tooltip": "Future platform capabilities under consideration",
+      "status": " ",
+      "target": "",
+      "borderColor": "#a855f7",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "materials-manager",
+      "position": {
+        "x": 477.7864028930704,
+        "y": -147.37758720545207
+      },
+      "label": "Material Library - Basic",
+      "tooltip": "Central command centre for packaging materials data, enabling teams to explore, analyse, and manage their complete packaging portfolio through a single, intuitive interface.",
+      "status": "preview",
+      "target": "Friends and Family",
+      "borderColor": "#22c55e",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "data-confidence-score",
+      "position": {
+        "x": 700,
+        "y": 0
+      },
+      "label": "Data Quality Scoring System",
+      "tooltip": "Transparent scoring system that guides data improvement priorities and enables fit-for-purpose decisions about data usage, from compliance reporting to forecasting",
+      "status": "planned",
+      "target": "Pilot",
+      "borderColor": "#3b82f6",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "custom-schema",
+      "position": {
+        "x": 668.9009640502985,
+        "y": 206.328622087633
+      },
+      "label": "Enterprise Data Extensions",
+      "tooltip": "Enterprise-ready data flexibility allowing customers to extend Captr's core data model with their own fields and tags, while maintaining platform integrity and scalability",
+      "status": "planned",
+      "target": "Pilot",
+      "borderColor": "#3b82f6",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "srm-light",
+      "position": {
+        "x": 390.9157412340149,
+        "y": 311.74490092936674
+      },
+      "label": "Streamlined Supplier Hub",
+      "tooltip": "Central hub for supplier communications and specification management, making packaging information accessible to all team members without complex process changes",
+      "status": "preview",
+      "target": "Friends and Family",
+      "borderColor": "#22c55e",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "email-integration",
+      "position": {
+        "x": 303.71861738229074,
+        "y": 630.6782075316934
+      },
+      "label": "Email-First Spec Capture",
+      "tooltip": "Frictionless specification capture through familiar business tools, making it easy for suppliers to provide packaging information through email or simple file uploads",
+      "status": "planned",
+      "target": "Pilot",
+      "borderColor": "#3b82f6",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "best-guess",
+      "position": {
+        "x": 3.061616997868383e-14,
+        "y": 500
+      },
+      "label": "AI-Powered Data Generation",
+      "tooltip": "AI-powered generation of baseline packaging data from existing product information, enabling rapid platform adoption for large product catalogues without manual data entry bottlenecks",
+      "status": "in-development",
+      "target": "Friends and Family",
+      "borderColor": "#22c55e",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "flexible-ingestion",
+      "position": {
+        "x": -216.94186955877905,
+        "y": 450.48443395120955
+      },
+      "label": "Flexible Data Import Hub",
+      "tooltip": "Flexible data ingestion that meets customers where they are, transforming disparate data sources into actionable packaging information without requiring technical expertise from brands",
+      "status": "in-development",
+      "target": "Friends and Family",
+      "borderColor": "#22c55e",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "portfolio-report",
+      "position": {
+        "x": -494.41541311256424,
+        "y": -74.52113308808724
+      },
+      "label": "Automated Portfolio Analysis",
+      "tooltip": "Instant access to professional-grade packaging analysis that typically requires expensive consulting, powered by customer's own data on-file",
+      "status": "preview",
+      "target": "Friends and Family",
+      "borderColor": "#22c55e",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "data-export",
+      "position": {
+        "x": -450.48443395120955,
+        "y": -216.94186955877902
+      },
+      "label": "Business Intelligence Export",
+      "tooltip": "Flexible access to packaging data enabling teams to leverage existing business intelligence tools and processes",
+      "status": "in-development",
+      "target": "Friends and Family",
+      "borderColor": "#22c55e",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "continuous-insights",
+      "position": {
+        "x": -513.1363102808783,
+        "y": -476.1209164396436
+      },
+      "label": "AI Sustainability Co-pilot",
+      "tooltip": "AI-powered sustainability co-pilot providing continuous analysis and actionable recommendations based on packaging portfolio patterns",
+      "status": "planned",
+      "target": "Pilot",
+      "borderColor": "#3b82f6",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "progressive-augmentation",
+      "position": {
+        "x": -630.6782075316934,
+        "y": 303.71861738229074
+      },
+      "label": "Progressive Data Enhancement",
+      "tooltip": "Flexible menu of data improvement methods allowing teams to incrementally enhance their packaging data through a combination of automated tools, benchmarks, and collaborative options",
+      "status": "planned",
+      "target": "Pilot",
+      "borderColor": "#3b82f6",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "auth-basic",
+      "position": {
+        "x": -303.7186173822908,
+        "y": -630.6782075316934
+      },
+      "label": "Basic Authentication",
+      "tooltip": "Essential user authentication and access control for early platform access",
+      "status": "in-development",
+      "target": "Pilot",
+      "borderColor": "#3b82f6",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "soc2",
+      "position": {
+        "x": -1.2858791391047208e-13,
+        "y": -700
+      },
+      "label": "SOC 2 Compliance",
+      "tooltip": "Core security framework implementation and SOC 2 compliance readiness",
+      "status": "in-development",
+      "target": "Pilot",
+      "borderColor": "#3b82f6",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "compliance-automation",
+      "position": {
+        "x": 401.875126803034,
+        "y": -1023.961123508625
+      },
+      "label": "Smart Compliance Engine",
+      "tooltip": "Automated compliance monitoring and reporting across multiple jurisdictions",
+      "status": "considering",
+      "target": "future",
+      "borderColor": "#ec4899",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "cost-management",
+      "position": {
+        "x": 685.8387820446067,
+        "y": -860.014630714833
+      },
+      "label": "Financial Impact Tools",
+      "tooltip": "Comprehensive cost analysis and financial planning for packaging decisions",
+      "status": "considering",
+      "target": "future",
+      "borderColor": "#ec4899",
+      "backgroundColor": "bg-gray-800"
+    },
+    {
+      "id": "sustainability-metrics",
+      "position": {
+        "x": 908.8626517475944,
+        "y": -619.6520638699842
+      },
+      "label": "Impact Assessment Suite",
+      "tooltip": "Environmental impact measurement and circularity analysis tools",
+      "status": "considering",
+      "target": "future",
+      "borderColor": "#ec4899",
+      "backgroundColor": "bg-gray-800"
+    }
+  ],
+  "edgesData": [
+    {
+      "source": "root",
+      "target": "material-library"
+    },
+    {
+      "source": "root",
+      "target": "supplier-mgmt"
+    },
+    {
+      "source": "root",
+      "target": "data-acquisition"
+    },
+    {
+      "source": "root",
+      "target": "data-enrichment"
+    },
+    {
+      "source": "root",
+      "target": "insights"
+    },
+    {
+      "source": "root",
+      "target": "general"
+    },
+    {
+      "source": "root",
+      "target": "innovation"
+    },
+    {
+      "source": "material-library",
+      "target": "materials-manager"
+    },
+    {
+      "source": "material-library",
+      "target": "data-confidence-score"
+    },
+    {
+      "source": "material-library",
+      "target": "custom-schema"
+    },
+    {
+      "source": "supplier-mgmt",
+      "target": "srm-light"
+    },
+    {
+      "source": "supplier-mgmt",
+      "target": "email-integration"
+    },
+    {
+      "source": "data-acquisition",
+      "target": "best-guess"
+    },
+    {
+      "source": "data-acquisition",
+      "target": "flexible-ingestion"
+    },
+    {
+      "source": "data-enrichment",
+      "target": "progressive-augmentation"
+    },
+    {
+      "source": "insights",
+      "target": "portfolio-report"
+    },
+    {
+      "source": "insights",
+      "target": "data-export"
+    },
+    {
+      "source": "insights",
+      "target": "continuous-insights"
+    },
+    {
+      "source": "general",
+      "target": "auth-basic"
+    },
+    {
+      "source": "general",
+      "target": "soc2"
+    },
+    {
+      "source": "innovation",
+      "target": "compliance-automation"
+    },
+    {
+      "source": "innovation",
+      "target": "cost-management"
+    },
+    {
+      "source": "innovation",
+      "target": "sustainability-metrics"
+    }
+  ]
+}

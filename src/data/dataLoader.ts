@@ -13,22 +13,21 @@ export function loadNodes(): Node<RoadmapNodeData>[] {
   return data.nodesData.map((node: {
     id: string;
     position: { x: number | null; y: number | null };
-    label: string;
-    status: string;
+    title?: string;
+    description?: string;
+    status?: string;
+    project?: string;
     icon?: string;
-    tooltip?: string;
-    focus?: string[];
     moreInfo?: string;
   }) => ({
     id: node.id,
     type: 'roadmapNode',
     position: { x: node.position.x ?? 0, y: node.position.y ?? 0 },
     data: {
-      label: node.label,
+      title: node.title,
+      description: node.description,
       status: node.status as Status,
       icon: node.icon,
-      tooltip: node.tooltip,
-      focus: node.focus,
       moreInfo: node.moreInfo,
     },
   }));

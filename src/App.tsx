@@ -4,13 +4,6 @@ import 'reactflow/dist/style.css';
 import RoadmapNode from './components/RoadmapNode';
 import data from './data/nodes.json';
 
-const RELEASE_FILTERS = {
-    'Friends and Family': 'F&F',
-    'Pilot': 'Pilot',
-    'Beta': 'Beta',
-    'future': 'Future'
-} as const;
-
 const nodeTypes: NodeTypes = {
     roadmapNode: RoadmapNode,
 };
@@ -18,24 +11,27 @@ const nodeTypes: NodeTypes = {
 export default function App() {
     const [nodes, setNodes, onNodesChange] = useNodesState([]);
     const [edges, setEdges, onEdgesChange] = useEdgesState([]);
-    const [activeFilters, setActiveFilters] = useState<Set<string>>(new Set());
 
     useEffect(() => {
         console.log('Raw nodes data:', data.nodesData);
         
-        const flowNodes = data.nodesData.map(node => ({
-            id: node.id,
-            type: 'roadmapNode',
-            position: node.position,
-            style: { 
-                opacity: 1
-            },
-            data: {
-                ...node,  // Pass all node data
-                borderColor: node.borderColor,  // Explicitly pass borderColor
-                backgroundColor: node.backgroundColor
-            }
-        }));
+        const flowNodes = data.nodesData
+            .filter(node => node.target !== "") // Filter out nodes with empty target
+            .map(node => ({
+                id: node.id,
+                type: 'roadmapNode',
+                position: node.position,
+                style: { 
+                    opacity: 1
+                },
+                data: {
+                    title: node.title,
+                    description: node.description,
+                    status: node.status,
+                    borderColor: node.borderColor,  // Explicitly pass borderColor
+                    backgroundColor: node.backgroundColor
+                }
+            }));
 
         console.log('Transformed nodes:', flowNodes);
 
@@ -52,48 +48,8 @@ export default function App() {
         setEdges(flowEdges);
     }, []);
 
-    // Update node visibility when filters change
-    useEffect(() => {
-        setNodes(nodes => nodes.map(node => ({
-            ...node,
-            style: {
-                ...node.style,
-                opacity: activeFilters.size === 0 || activeFilters.has(node.data.target) ? 1 : 0.2
-            }
-        })));
-    }, [activeFilters, setNodes]);
-
-    const toggleFilter = (filter: string) => {
-        setActiveFilters(current => {
-            const newFilters = new Set(current);
-            if (newFilters.has(filter)) {
-                newFilters.delete(filter);
-            } else {
-                newFilters.add(filter);
-            }
-            return newFilters;
-        });
-    };
-
     return (
         <div className="h-screen w-screen bg-gray-900">
-            {/* Add filter buttons */}
-            <div className="absolute top-4 left-4 z-10 flex gap-2">
-                {Object.entries(RELEASE_FILTERS).map(([key, label]) => (
-                    <button
-                        key={key}
-                        onClick={() => toggleFilter(key)}
-                        className={`px-3 py-1 text-xs rounded-full transition-colors ${
-                            activeFilters.has(key)
-                                ? 'bg-blue-500 text-white'
-                                : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-                        }`}
-                    >
-                        {label}
-                    </button>
-                ))}
-            </div>
-
             <ReactFlow
                 nodes={nodes}
                 edges={edges}

@@ -1,32 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
-
 .react-flow__node {
-  @apply select-none font-mono;
   font-family: 'JetBrains Mono', monospace;
 }
 
 .react-flow__handle {
-  @apply w-2 h-2 bg-blue-500;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #3b82f6;
 }
 
 .react-flow__edge-path {
-  @apply stroke-[1.5px];
+  stroke-width: 1.5px;
 }
 
 .react-flow-dark .react-flow__node {
-  @apply bg-gray-800 text-white border border-gray-700;
+  background-color: #1f2937;
+  color: #ffffff;
+  border: 1px solid #374151;
 }
 
 .react-flow__controls-dark button {
-  @apply bg-gray-800 border-gray-700 text-white;
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  color: #ffffff;
 }
 
 .react-flow__controls-dark button:hover {
-  @apply bg-gray-700;
+  background-color: #374151;
 }
 
 .react-flow-dark .react-flow__edge-path {

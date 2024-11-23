@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactFlow, { Background, Controls, MiniMap, NodeTypes, useNodesState, useEdgesState } from 'reactflow';
 import 'reactflow/dist/style.css';
 import RoadmapNode from './components/RoadmapNode';
@@ -28,7 +28,8 @@ export default function App() {
                     title: node.title,
                     description: node.description,
                     status: node.status,
-                    borderColor: node.borderColor,  // Explicitly pass borderColor
+                    target: node.target, // Include target in data
+                    borderColor: node.borderColor,
                     backgroundColor: node.backgroundColor
                 }
             }));

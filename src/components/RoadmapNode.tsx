@@ -1,5 +1,5 @@
 import { Handle, Position, NodeProps } from 'reactflow';
-import { useState } from 'react';
+import React, { useState } from 'react'; // Ensure useState is imported from React
 import RoadmapTooltip from './RoadmapTooltip';
 
 export type RoadmapNodeData = {
@@ -47,13 +47,18 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
         className="!bg-transparent !w-8 !h-1 !border-0 !rounded-none"
       />
       <div 
-        className="rounded-[5px] w-48"
+        className="rounded-[5px] w-48 p-2"
         style={{ 
           border: data.borderColor ? `1px solid ${data.borderColor}` : undefined,
           backgroundColor: data.backgroundColor || '#f8fafc',
         }}
       >
+        <div className="text-center font-bold mb-2">{data.title}</div>
         {/* Render node content here */}
+        <div className="flex justify-between text-sm mt-2">
+          <span>{data.status}</span>
+          <span>{data.target}</span>
+        </div>
       </div>
       <Handle 
         type="source" 

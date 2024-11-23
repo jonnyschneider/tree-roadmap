@@ -1,18 +1,47 @@
 {
     "root": true,
-    "env": { "browser": true, "es2020": true },
+    "env": { "browser": true, "es2021": true, "node": true },
     "extends": [
       "eslint:recommended",
+      "plugin:react/recommended",
       "plugin:@typescript-eslint/recommended",
-      "plugin:react-hooks/recommended"
+      "plugin:react-hooks/recommended",
+      "plugin:prettier/recommended"
     ],
     "ignorePatterns": ["dist", ".eslintrc.json"],
     "parser": "@typescript-eslint/parser",
-    "plugins": ["react-refresh"],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": ["react-refresh",
+      "@typescript-eslint",
+      "react",
+      "react-hooks",
+      "prettier"
+    ],
     "rules": {
-      "react-refresh/only-export-components": [
-        "warn",
-        { "allowConstantExport": true }
-      ]
+      "prettier/prettier": "error",
+      "react/react-in-jsx-scope": "off", //not needed with new JSX transform
+      "@typescript-eslint/no-unused-vars": ["warn",{ "argsIgnorePattern": "^_" }],
+      "react/prop-types": "off", //disable prop-types as we use Typescript for type checking
+      "typescript-eslint/explicit-module-boundary-types": "off", //disable explicit return types on functions
+      "react-refresh/only-export-components": ["warn",{ "allowConstantExport": true }]
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "overrides": [
+    {
+      "files": ["postcss.config.js", "tailwind.config.js"],
+      "env": {
+        "node": true
+      }
     }
+  ]
   }

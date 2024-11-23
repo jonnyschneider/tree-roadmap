@@ -50,7 +50,7 @@ export default function App() {
     }, []);
 
     return (
-        <div className="h-screen w-screen bg-gray-900">
+        <div style={{ height: 800 }} className="h-screen w-screen bg-gray-900">
             <ReactFlow
                 nodes={nodes}
                 edges={edges}

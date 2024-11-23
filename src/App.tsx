@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import ReactFlow, { Background, Controls, MiniMap, NodeTypes, useNodesState, useEdgesState } from 'reactflow';
 import 'reactflow/dist/style.css';
 import RoadmapNode from './components/RoadmapNode';
-import { nodesData, edgesData } from './data/nodes.json';
+import data from './data/nodes.json';
 
 const RELEASE_FILTERS = {
     'Friends and Family': 'F&F',
@@ -21,9 +21,9 @@ export default function App() {
     const [activeFilters, setActiveFilters] = useState<Set<string>>(new Set());
 
     useEffect(() => {
-        console.log('Raw nodes data:', nodesData);
+        console.log('Raw nodes data:', data.nodesData);
         
-        const flowNodes = nodesData.map(node => ({
+        const flowNodes = data.nodesData.map(node => ({
             id: node.id,
             type: 'roadmapNode',
             position: node.position,
@@ -39,7 +39,7 @@ export default function App() {
 
         console.log('Transformed nodes:', flowNodes);
 
-        const flowEdges = edgesData.map(edge => ({
+        const flowEdges = data.edgesData.map(edge => ({
             id: `${edge.source}-${edge.target}`,
             source: edge.source,
             target: edge.target,

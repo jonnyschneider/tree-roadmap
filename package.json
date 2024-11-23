@@ -12,6 +12,7 @@
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}'"
   },
   "dependencies": {
+    "csv-parser": "^3.0.0",
     "lucide-react": "^0.456.0",
     "node.js": "0.0.1-security",
     "react": "^18.2.0",

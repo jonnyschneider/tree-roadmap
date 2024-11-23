@@ -1,17 +1,17 @@
-{ "nodesData": [
-    { 
+{
+  "nodesData": [
+    {
       "id": "root",
       "position": {
         "x": 0,
         "y": 0
       },
       "label": "Phantm Captr",
-      "icon": "LayoutDashboard",
       "tooltip": "Root node of the roadmap",
       "status": " ",
+      "target": "",
       "borderColor": "#64748b",
-      "backgroundColor": "bg-gray-800",
-      "more-info": ""
+      "backgroundColor": "bg-gray-800"
     },
     {
       "id": "material-library",
@@ -20,12 +20,11 @@
         "y": 0
       },
       "label": "Packaging Material Library",
-      "icon": "Database",
       "tooltip": "Central source of truth for packaging data",
       "status": " ",
+      "target": "",
       "borderColor": "#a855f7",
-      "backgroundColor": "bg-gray-800",
-      "more-info": ""
+      "backgroundColor": "bg-gray-800"
     },
     {
       "id": "supplier-mgmt",
@@ -34,12 +33,11 @@
         "y": 195.45787061700744
       },
       "label": "Supplier Management",
-      "icon": "Building2",
       "tooltip": "Supplier communication and document management",
       "status": " ",
+      "target": "",
       "borderColor": "#a855f7",
-      "backgroundColor": "bg-gray-800",
-      "more-info": ""
+      "backgroundColor": "bg-gray-800"
     },
     {
       "id": "data-acquisition",
@@ -48,12 +46,11 @@
         "y": 243.73197804545592
       },
       "label": "Data Acquisition",
-      "icon": "Download",
       "tooltip": "Automated data management processes",
       "status": " ",
+      "target": "",
       "borderColor": "#a855f7",
-      "backgroundColor": "bg-gray-800",
-      "more-info": ""
+      "backgroundColor": "bg-gray-800"
     },
     {
       "id": "data-enrichment",
@@ -62,12 +59,11 @@
         "y": 108.47093477938955
       },
       "label": "Data Enrichment",
-      "icon": "Sparkles",
       "tooltip": "Tools to improve and activate packaging data",
       "status": " ",
+      "target": "",
       "borderColor": "#a855f7",
-      "backgroundColor": "bg-gray-800",
-      "more-info": ""
+      "backgroundColor": "bg-gray-800"
     },
     {
       "id": "insights",
@@ -76,12 +72,11 @@
         "y": -108.47093477938951
       },
       "label": "Insights & Reporting",
-      "icon": "BarChart2",
       "tooltip": "Real-time insights and automated reporting",
       "status": " ",
+      "target": "",
       "borderColor": "#a855f7",
-      "backgroundColor": "bg-gray-800",
-      "more-info": ""
+      "backgroundColor": "bg-gray-800"
     },
     {
       "id": "general",
@@ -90,12 +85,11 @@
         "y": -243.73197804545592
       },
       "label": "General",
-      "icon": "Settings",
       "tooltip": "Core platform capabilities",
       "status": " ",
+      "target": "",
       "borderColor": "#a855f7",
-      "backgroundColor": "bg-gray-800",
-      "more-info": ""
+      "backgroundColor": "bg-gray-800"
     },
     {
       "id": "innovation",
@@ -104,12 +98,11 @@
         "y": -195.45787061700747
       },
       "label": "Innovation Pipeline",
-      "icon": "Lightbulb",
       "tooltip": "Future platform capabilities under consideration",
       "status": " ",
+      "target": "",
       "borderColor": "#a855f7",
-      "backgroundColor": "bg-gray-800",
-      "more-info": ""
+      "backgroundColor": "bg-gray-800"
     },
     {
       "id": "materials-manager",
@@ -117,34 +110,10 @@
         "x": 477.7864028930704,
         "y": -147.37758720545207
       },
-      "label": "Intuitive Packaging Data Explorer",
-      "icon": "Package",
-      "tooltip": "Central command centre for packaging materials data, enabling teams to explore, analyze, and manage their complete packaging portfolio through a single, intuitive interface",
+      "label": "Material Library - Basic",
+      "tooltip": "Central command centre for packaging materials data, enabling teams to explore, analyse, and manage their complete packaging portfolio through a single, intuitive interface.",
       "status": "preview",
       "target": "Friends and Family",
-      "focus": [
-        "Browse and search functionality",
-        "Correlated view of sales, product, and packaging data",
-        "Material analysis at component level",
-        "Supplier summary at SKU level",
-        "Data quality info and related messaging",
-        "Add/edit data (single entity)",
-        "Simple data visualisation",
-        "Simple relationship mapping"
-      ],
-      "backlog": [
-        "Variants and Versioning",
-        "Traceability Engine",
-        "Data Reconciliation",
-        "Secondary Packaging",
-        "Tertiary Packaging",
-        "Bulk Operations",
-        "Custom Views",
-        "Export/Report Builder",
-        "Alerts and Notifications",
-        "Data Inheritance"
-      ],
-      "more-info": "https://www.notion.so/Intuitive-Packaging-Data-Explorer-1",
       "borderColor": "#22c55e",
       "backgroundColor": "bg-gray-800"
     },
@@ -155,26 +124,9 @@
         "y": 0
       },
       "label": "Data Quality Scoring System",
-      "icon": "GaugeCircle",
       "tooltip": "Transparent scoring system that guides data improvement priorities and enables fit-for-purpose decisions about data usage, from compliance reporting to forecasting",
       "status": "planned",
       "target": "Pilot",
-      "focus": [
-        "Define core confidence metrics with 2-3 customers",
-        "Design initial scoring framework",
-        "Implement basic scoring for generated data",
-        "Create simple visual indicators",
-        "Test against known high/low quality datasets",
-        "Document customer reactions and feedback",
-        "Map scores to common use cases",
-        "Identify key drivers of score improvements"
-      ],
-      "backlog": [
-        "Score Explorer",
-        "Purpose Matcher",
-        "Progress Tracking"
-      ],
-      "more-info": "",
       "borderColor": "#3b82f6",
       "backgroundColor": "bg-gray-800"
     },
@@ -185,28 +137,9 @@
         "y": 206.328622087633
       },
       "label": "Enterprise Data Extensions",
-      "icon": "TableProperties",
       "tooltip": "Enterprise-ready data flexibility allowing customers to extend Captr's core data model with their own fields and tags, while maintaining platform integrity and scalability",
       "status": "planned",
       "target": "Pilot",
-      "focus": [
-        "Define custom field types and constraints",
-        "Implement basic field addition workflow",
-        "Create field visibility controls",
-        "Setup audit logging for custom fields",
-        "Document best practices",
-        "Build simple migration tools",
-        "Establish governance rules for Custom Fields"
-      ],
-      "backlog": [
-        "Advanced Validation",
-        "Field Dependencies",
-        "Impact Analysis",
-        "Bulk Operations",
-        "Template Library",
-        "Migration Tools"
-      ],
-      "more-info": "",
       "borderColor": "#3b82f6",
       "backgroundColor": "bg-gray-800"
     },
@@ -217,29 +150,9 @@
         "y": 311.74490092936674
       },
       "label": "Streamlined Supplier Hub",
-      "icon": "Users",
       "tooltip": "Central hub for supplier communications and specification management, making packaging information accessible to all team members without complex process changes",
       "status": "preview",
       "target": "Friends and Family",
-      "focus": [
-        "Supplier profile management",
-        "Document repository and viewer",
-        "Basic SKU-to-spec relationships",
-        "Simple search functionality",
-        "Team access controls",
-        "Activity logging"
-      ],
-      "backlog": [
-        "Basic supplier analytics",
-        "Communications timeline",
-        "Supplier Portal",
-        "Performance Dashboard",
-        "Catalog Digitisation",
-        "Compliance Tracking",
-        "Collaboration Tools",
-        "Bulk Operations"
-      ],
-      "more-info": "",
       "borderColor": "#22c55e",
       "backgroundColor": "bg-gray-800"
     },
@@ -250,28 +163,9 @@
         "y": 630.6782075316934
       },
       "label": "Email-First Spec Capture",
-      "icon": "Mail",
       "tooltip": "Frictionless specification capture through familiar business tools, making it easy for suppliers to provide packaging information through email or simple file uploads",
       "status": "planned",
       "target": "Pilot",
-      "focus": [
-        "Unique supplier email addresses",
-        "Email capture and processing",
-        "File upload interface",
-        "Document classification",
-        "Storage structure",
-        "Basic metadata extraction",
-        "Activity logging"
-      ],
-      "backlog": [
-        "Smart Document Processing",
-        "Automated Validation",
-        "Bulk Upload Tools",
-        "Structured Data Requests",
-        "Template Management",
-        "Notification System"
-      ],
-      "more-info": "",
       "borderColor": "#3b82f6",
       "backgroundColor": "bg-gray-800"
     },
@@ -282,29 +176,9 @@
         "y": 500
       },
       "label": "AI-Powered Data Generation",
-      "icon": "Brain",
       "tooltip": "AI-powered generation of baseline packaging data from existing product information, enabling rapid platform adoption for large product catalogues without manual data entry bottlenecks",
       "status": "in-development",
       "target": "Friends and Family",
-      "focus": [
-        "Get Product/Sales from 1-3 customers",
-        "Confirm target data entity model for core use cases",
-        "Experiment with public LLMs for plausible outputs",
-        "Ingest generated data into Captr",
-        "Analyse accuracy against known data",
-        "Expert confidence assessment",
-        "Use case validation of generated data",
-        "Document improvement areas for future nodes"
-      ],
-      "backlog": [
-        "Expert Moderation UI",
-        "Customer Review Flow",
-        "Confidence Scoring",
-        "Multi-LLM Pipeline",
-        "Reference Library",
-        "Auto-Validation Rules"
-      ],
-      "more-info": "",
       "borderColor": "#22c55e",
       "backgroundColor": "bg-gray-800"
     },
@@ -315,24 +189,9 @@
         "y": 450.48443395120955
       },
       "label": "Flexible Data Import Hub",
-      "icon": "ArrowRightLeft",
       "tooltip": "Flexible data ingestion that meets customers where they are, transforming disparate data sources into actionable packaging information without requiring technical expertise from brands",
       "status": "in-development",
       "target": "Friends and Family",
-      "focus": [
-        "CSV templates for core data types",
-        "Basic validation rules",
-        "Consultant support",
-        "Data transformation toolkit",
-        "Lightweight assurance process"
-      ],
-      "backlog": [
-        "ERP Integration Framework",
-        "API Development",
-        "Advanced Integrations",
-        "Transformation Tools"
-      ],
-      "more-info": "",
       "borderColor": "#22c55e",
       "backgroundColor": "bg-gray-800"
     },
@@ -343,29 +202,9 @@
         "y": -74.52113308808724
       },
       "label": "Automated Portfolio Analysis",
-      "icon": "FileBarChart",
       "tooltip": "Instant access to professional-grade packaging analysis that typically requires expensive consulting, powered by customer's own data on-file",
       "status": "preview",
       "target": "Friends and Family",
-      "focus": [
-        "Core analysis algorithms",
-        "Report template design",
-        "Data confidence integration",
-        "PDF generation",
-        "Automated calculations",
-        "Share/export functions"
-      ],
-      "backlog": [
-        "Report: APCO",
-        "Report: Material Audit",
-        "Regulation Interpreter",
-        "Interactive Reports",
-        "Custom Metrics",
-        "Benchmark Integration",
-        "Historical Analysis",
-        "Scenario Planning"
-      ],
-      "more-info": "",
       "borderColor": "#22c55e",
       "backgroundColor": "bg-gray-800"
     },
@@ -376,27 +215,9 @@
         "y": -216.94186955877902
       },
       "label": "Business Intelligence Export",
-      "icon": "FileOutput",
       "tooltip": "Flexible access to packaging data enabling teams to leverage existing business intelligence tools and processes",
       "status": "in-development",
       "target": "Friends and Family",
-      "focus": [
-        "CSV export functionality",
-        "Data format options",
-        "Basic filtering tools",
-        "Export logs",
-        "Field selection",
-        "Error handling"
-      ],
-      "backlog": [
-        "API Access",
-        "Advanced Filters",
-        "Scheduled Exports",
-        "Custom Formats",
-        "Delta Updates",
-        "Bulk Export"
-      ],
-      "more-info": "",
       "borderColor": "#22c55e",
       "backgroundColor": "bg-gray-800"
     },
@@ -407,27 +228,9 @@
         "y": -476.1209164396436
       },
       "label": "AI Sustainability Co-pilot",
-      "icon": "Bot",
       "tooltip": "AI-powered sustainability co-pilot providing continuous analysis and actionable recommendations based on packaging portfolio patterns",
       "status": "planned",
       "target": "Pilot",
-      "focus": [
-        "Core insights engine",
-        "Priority framework",
-        "Basic recommendations",
-        "User interface design",
-        "Notification system",
-        "Feedback capture",
-        "Action tracking"
-      ],
-      "backlog": [
-        "Predictive Analytics",
-        "Custom Rules",
-        "Learning System",
-        "Industry Benchmarks",
-        "Impact Modeling"
-      ],
-      "more-info": "",
       "borderColor": "#3b82f6",
       "backgroundColor": "bg-gray-800"
     },
@@ -438,33 +241,9 @@
         "y": 303.71861738229074
       },
       "label": "Progressive Data Enhancement",
-      "icon": "ArrowUpCircle",
       "tooltip": "Flexible menu of data improvement methods allowing teams to incrementally enhance their packaging data through a combination of automated tools, benchmarks, and collaborative options",
       "status": "planned",
       "target": "Pilot",
-      "focus": [
-        "Map existing customer improvement methods",
-        "Identify quickest win opportunities",
-        "Build simple category matching tool",
-        "Document improvement impact on confidence scores",
-        "Measure time/effort vs value gained",
-        "Capture customer priorities for next tools",
-        "Create improvement method selection guide"
-      ],
-      "backlog": [
-        "LLM Continuous Improvement",
-        "Extrapolation",
-        "Tiny Queries",
-        "Product Spec Interpreter",
-        "Data Reconciliation",
-        "Quick Match",
-        "Benchmark Compare",
-        "Supplier Portal",
-        "Industry DB Link",
-        "Bulk Enhance",
-        "Impact Preview"
-      ],
-      "more-info": "",
       "borderColor": "#3b82f6",
       "backgroundColor": "bg-gray-800"
     },
@@ -475,25 +254,9 @@
         "y": -630.6782075316934
       },
       "label": "Basic Authentication",
-      "icon": "Lock",
       "tooltip": "Essential user authentication and access control for early platform access",
       "status": "in-development",
       "target": "Pilot",
-      "focus": [
-        "User login/logout",
-        "Password management",
-        "Basic role management",
-        "Session handling",
-        "Security best practices"
-      ],
-      "backlog": [
-        "SSO Integration",
-        "Advanced roles",
-        "Audit logging",
-        "Multi-factor auth",
-        "User provisioning"
-      ],
-      "more-info": "",
       "borderColor": "#3b82f6",
       "backgroundColor": "bg-gray-800"
     },
@@ -504,26 +267,9 @@
         "y": -700
       },
       "label": "SOC 2 Compliance",
-      "icon": "Shield",
       "tooltip": "Core security framework implementation and SOC 2 compliance readiness",
       "status": "in-development",
       "target": "Pilot",
-      "focus": [
-        "Security policy documentation",
-        "Access control implementation",
-        "Data encryption standards",
-        "Monitoring setup",
-        "Incident response planning",
-        "Security training program"
-      ],
-      "backlog": [
-        "Advanced monitoring",
-        "Automated compliance checks",
-        "Vendor management",
-        "Risk assessment framework",
-        "Regular security audits"
-      ],
-      "more-info": "",
       "borderColor": "#3b82f6",
       "backgroundColor": "bg-gray-800"
     },
@@ -534,25 +280,9 @@
         "y": -1023.961123508625
       },
       "label": "Smart Compliance Engine",
-      "icon": "CheckCircle2",
       "tooltip": "Automated compliance monitoring and reporting across multiple jurisdictions",
       "status": "considering",
       "target": "future",
-      "focus": [
-        "EPR reporting automation",
-        "Multi-jurisdiction compliance checks",
-        "Regulation change alerts",
-        "Impact assessment of regulatory changes",
-        "Compliance risk scoring"
-      ],
-      "backlog": [
-        "Automated report generation",
-        "Regulatory requirement mapping",
-        "Compliance forecast modeling",
-        "Cross-border requirements",
-        "Audit trail automation"
-      ],
-      "more-info": "",
       "borderColor": "#ec4899",
       "backgroundColor": "bg-gray-800"
     },
@@ -563,25 +293,9 @@
         "y": -860.014630714833
       },
       "label": "Financial Impact Tools",
-      "icon": "DollarSign",
       "tooltip": "Comprehensive cost analysis and financial planning for packaging decisions",
       "status": "considering",
       "target": "future",
-      "focus": [
-        "Budget tracking dashboard",
-        "Change impact calculator",
-        "Cost forecasting",
-        "Procurement insights",
-        "Logistics cost optimisation"
-      ],
-      "backlog": [
-        "ROI calculator",
-        "Scenario modeling",
-        "Supplier cost comparison",
-        "Volume-based pricing",
-        "Transport cost analysis"
-      ],
-      "more-info": "",
       "borderColor": "#ec4899",
       "backgroundColor": "bg-gray-800"
     },
@@ -592,31 +306,14 @@
         "y": -619.6520638699842
       },
       "label": "Impact Assessment Suite",
-      "icon": "Leaf",
       "tooltip": "Environmental impact measurement and circularity analysis tools",
       "status": "considering",
       "target": "future",
-      "focus": [
-        "Circularity scoring",
-        "Environmental impact calculator",
-        "Industry trend analysis",
-        "Benchmark comparisons",
-        "Improvement recommendations"
-      ],
-      "backlog": [
-        "Life cycle assessment",
-        "Material flow analysis",
-        "Recycling pathway mapping",
-        "Alternative material comparison",
-        "Impact reduction modeling"
-      ],
-      "more-info": "",
       "borderColor": "#ec4899",
       "backgroundColor": "bg-gray-800"
     }
   ],
-"edgesData":
-  [
+  "edgesData": [
     {
       "source": "root",
       "target": "material-library"

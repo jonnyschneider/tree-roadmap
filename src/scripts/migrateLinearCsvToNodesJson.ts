@@ -16,7 +16,6 @@ interface CsvData {
 
 interface NodeData {
   id: string;
-  position: { x: number; y: number };
   title: string;
   description: string;
   status: string;
@@ -24,7 +23,26 @@ interface NodeData {
   target: string;
 }
 
+// Works with commonjs module system, but not ES modules
 const nodesData: NodeData[] = [];
+
+function generateProjectNodes(nodes: NodeData[]): NodeData[] {
+  const projects = new Set<string>();
+  nodes.forEach(node => {
+    if (node.project) {
+      projects.add(node.project);
+    }
+  });
+
+  return Array.from(projects).map(project => ({
+    id: project.toLowerCase().replace(/\s+/g, '-'),
+    title: project,
+    description: `Project node for ${project}`,
+    status: 'Project',
+    project: project,
+    target: ''
+  }));
+}
 
 fs.createReadStream(csvFilePath)
   .pipe(csv())
@@ -32,7 +50,6 @@ fs.createReadStream(csvFilePath)
     console.log('CSV Row:', row); // Debugging statement
     nodesData.push({
       id: row.ID,
-      position: { x: 0, y: 0 }, // Default position, can be updated later
       title: row.Title,
       description: row.Description,
       status: row.Status,
@@ -43,7 +60,8 @@ fs.createReadStream(csvFilePath)
   .on('end', () => {
     console.log('Parsed Nodes Data:', nodesData); // Debugging statement
     const nodesJson = JSON.parse(fs.readFileSync(nodesFilePath, 'utf-8'));
-    nodesJson.nodesData = nodesJson.nodesData.concat(nodesData);
+    const projectNodes = generateProjectNodes(nodesData);
+    nodesJson.nodesData = projectNodes.concat(nodesJson.nodesData, nodesData);
     fs.writeFileSync(nodesFilePath, JSON.stringify(nodesJson, null, 2));
     console.log('CSV data has been migrated to nodes.json');
   });

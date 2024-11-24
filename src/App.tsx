@@ -27,7 +27,8 @@ export default function App() {
       .map((node) => ({
         id: node.id,
         type: 'roadmapNode',
-        position: node.position,
+        //position: node.position || { x: 0, y: 0 },
+        position: { x: 0, y: 0 }, // Add the position property
         style: {
           opacity: 1,
         },
@@ -36,8 +37,9 @@ export default function App() {
           description: node.description,
           status: node.status,
           target: node.target, // Include target in data
-          borderColor: node.borderColor,
-          backgroundColor: node.backgroundColor,
+          //borderColor: node.borderColor,
+          //backgroundColor: node.backgroundColor,
+          project: node.project, // Add project to data
         },
       }));
 

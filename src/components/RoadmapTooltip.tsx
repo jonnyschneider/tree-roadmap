@@ -17,11 +17,12 @@ export default function RoadmapTooltip({
       <div
         className="bg-gray-900/95 text-gray-200 px-4 py-2 rounded-md text-sm shadow-lg"
         style={{
-          width: '550px',
+          width: '250',
           whiteSpace: 'normal',
-          fontFamily: 'Arial, sans-serif',
+          fontFamily: 'mono',
           lineHeight: '1.5',
           border: '1px solid white',
+
         }}
       >
         <p className="mb-2">{title}</p>

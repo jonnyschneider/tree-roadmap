@@ -12,6 +12,7 @@ export type RoadmapNodeData = {
   borderColor?: string;
   backgroundColor?: string;
   moreInfo?: string;
+  position?: { x: number; y: number };
 };
 
 export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
@@ -23,6 +24,8 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
     data: data,
     hasTooltip: Boolean(data.description),
     tooltipContent: data.description,
+    project: data.project,
+    position: [0,0] 
   });
 
   return (
@@ -57,10 +60,11 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
           border: data.borderColor
             ? `1px solid ${data.borderColor}`
             : undefined,
-          backgroundColor: data.backgroundColor || '#f8fafc',
+          backgroundColor: data.backgroundColor,
         }}
       >
-        <div className="text-center font-bold mb-2">{data.title}</div>
+        <div className="font-sans mb-2 text-sm bg-gray-100 text-gray-900">{data.project}</div>
+        <div className="font-bold font-sans mb-2 text-sm ">{data.title}</div>
         <div className="flex justify-between text-sm mt-2">
           <span>{data.status}</span>
           <span>{data.target}</span>

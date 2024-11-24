@@ -1,30 +1,6 @@
 {
   "nodesData": [
     {
-      "id": "customer-onboarding",
-      "title": "Customer Onboarding",
-      "description": "Project node for Customer Onboarding",
-      "status": "Project",
-      "project": "Customer Onboarding",
-      "target": ""
-    },
-    {
-      "id": "reporting-and-insights",
-      "title": "Reporting and Insights",
-      "description": "Project node for Reporting and Insights",
-      "status": "Project",
-      "project": "Reporting and Insights",
-      "target": ""
-    },
-    {
-      "id": "supplier-management",
-      "title": "Supplier Management",
-      "description": "Project node for Supplier Management",
-      "status": "Project",
-      "project": "Supplier Management",
-      "target": ""
-    },
-    {
       "id": "data-integration",
       "title": "Data Integration",
       "description": "Project node for Data Integration",
@@ -41,259 +17,19 @@
       "target": ""
     },
     {
+      "id": "reporting-and-insights",
+      "title": "Reporting and Insights",
+      "description": "Project node for Reporting and Insights",
+      "status": "Project",
+      "project": "Reporting and Insights",
+      "target": ""
+    },
+    {
       "id": "packaging-library",
       "title": "Packaging Library",
       "description": "Project node for Packaging Library",
       "status": "Project",
       "project": "Packaging Library",
-      "target": ""
-    },
-    {
-      "id": "technical-foundation",
-      "title": "Technical Foundation",
-      "description": "Project node for Technical Foundation",
-      "status": "Project",
-      "project": "Technical Foundation",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-85",
-      "title": "Thankyou Group",
-      "description": "[https://drive.google.com/drive/folders/1W7XWmc4Lf6lj2etFYibEZcxd_y34cqX6?usp=drive_link](https://drive.google.com/drive/folders/1W7XWmc4Lf6lj2etFYibEZcxd_y34cqX6?usp=drive_link)",
-      "status": "Backlog",
-      "project": "Customer Onboarding",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-83",
-      "title": "Reece - Data",
-      "description": "[https://drive.google.com/drive/folders/1gtyetPu_glOSghuW_bffCcVO1zSGvdkj?usp=drive_link](https://drive.google.com/drive/folders/1gtyetPu_glOSghuW_bffCcVO1zSGvdkj?usp=drive_link)",
-      "status": "Backlog",
-      "project": "Customer Onboarding",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-82",
-      "title": "Qantas - Data",
-      "description": "[https://drive.google.com/drive/folders/10rgw33tYgypu7pozqs2eh3sxaCWZcmbT?usp=drive_link](https://drive.google.com/drive/folders/10rgw33tYgypu7pozqs2eh3sxaCWZcmbT?usp=drive_link)",
-      "status": "Backlog",
-      "project": "Customer Onboarding",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-81",
-      "title": "PAC Trading",
-      "description": "[https://drive.google.com/drive/folders/11JbpK71EvxA-H_qXulB4qj5zJhEYksxx?usp=drive_link](https://drive.google.com/drive/folders/11JbpK71EvxA-H_qXulB4qj5zJhEYksxx?usp=drive_link)",
-      "status": "Backlog",
-      "project": "Customer Onboarding",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-80",
-      "title": "Mountain Blue - Data",
-      "description": "[https://drive.google.com/drive/folders/1oM_WTMYNVqXQ62895ybeT0rM_ULwD3sR?usp=drive_link](https://drive.google.com/drive/folders/1oM_WTMYNVqXQ62895ybeT0rM_ULwD3sR?usp=drive_link)",
-      "status": "Backlog",
-      "project": "Customer Onboarding",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-79",
-      "title": "Moose Toys - Data",
-      "description": "[https://drive.google.com/drive/folders/1mf4KU7NWsNwax15oP7v5y6qTifKydPtd?usp=drive_link](https://drive.google.com/drive/folders/1mf4KU7NWsNwax15oP7v5y6qTifKydPtd?usp=drive_link)",
-      "status": "Backlog",
-      "project": "Customer Onboarding",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-78",
-      "title": "Mecca - Data",
-      "description": "[https://drive.google.com/drive/folders/1Z3CNg7173CAO_d4eXKWqytyU9OADqCzC?usp=drive_link](https://drive.google.com/drive/folders/1Z3CNg7173CAO_d4eXKWqytyU9OADqCzC?usp=drive_link)",
-      "status": "Backlog",
-      "project": "Customer Onboarding",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-77",
-      "title": "Market Lane - Data",
-      "description": "[https://drive.google.com/drive/folders/1ZsFUGDrESkDz4QBPB2ZDK1TUktSNgidE?usp=drive_link](https://drive.google.com/drive/folders/1ZsFUGDrESkDz4QBPB2ZDK1TUktSNgidE?usp=drive_link)",
-      "status": "Backlog",
-      "project": "Customer Onboarding",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-75",
-      "title": "Glen Dimplex - Supplier Emails",
-      "description": "[Technical PoC (August)](https://phantm.notion.site/Artefacts-from-Captr-Proof-of-Concept-0f341d4ecda047cebedbc6c9fb7c3467?pvs=4) captured emails going back and forth between Phantm and Glen Dimplex when requesting packaging information. \n\nLet's plug these into the Captr Supplier Dashboard. It will help us see what we're really dealing with, and it *might* be helpful for sales efforts on Glen Dimplex. ",
-      "status": "Backlog",
-      "project": "Customer Onboarding",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-73",
-      "title": "Scenario Planning",
-      "description": "'What if' Analysis",
-      "status": "Backlog",
-      "project": "Reporting and Insights",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-72",
-      "title": "Report: Industry Benchmarks",
-      "description": "Compare performance with industry peers",
-      "status": "Backlog",
-      "project": "Reporting and Insights",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-50",
-      "title": "Structured Data Requests",
-      "description": "Excel templates provided to Suppliers\n\nData automatically extracted when received by Phantm",
-      "status": "Backlog",
-      "project": "Supplier Management",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-48",
-      "title": "Email integration and file upload for supplier specifications",
-      "description": "*Frictionless specification capture through familiar business tools, making it easy for suppliers to provide packaging information through email or simple file uploads.*\n\n* Unique supplier email addresses\n* Store communications and attached files\n* File upload interface\n* Inbox / Activity Log\n* Document storage\n* Basic document management (view, delete, assign to SKU)\n\n*Enable seamless capture of supplier communications and documents through multiple channels while maintaining organisation and traceability.*\n\n* Unique supplier project address\n* Email parsing and routing\n* Document storage\n* Basic metadata\n* Version control",
-      "status": "Backlog",
-      "project": "Supplier Management",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-49",
-      "title": "Bulk Upload Tools for Suppliers",
-      "description": "Mass document processing",
-      "status": "Backlog",
-      "project": "Supplier Management",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-45",
-      "title": "Advanced Data Integrations",
-      "description": "* Datalake extraction tools\n* iPaaS connectors (Zapier etc)\n* Custom integration patterns, e.g. integrating directly with customer's bespoke setup",
-      "status": "Backlog",
-      "project": "Data Integration",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-44",
-      "title": "API Development",
-      "description": "* end-point for Inbound data (e.g. to support customers who collect data at Purchase Order)\n* Two-way API, for selected scenarios\n* Authentication/security",
-      "status": "Backlog",
-      "project": "Data Integration",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-43",
-      "title": "ERP Integrations",
-      "description": "* Batch synchronisation engine\n* Direct integration to selected ERP systems\n* Handling data changes",
-      "status": "Backlog",
-      "project": "Data Integration",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-41",
-      "title": "Import data with CSV Template",
-      "description": "* Template for product, sales, packaging data (individually or all together)\n* Import data to customer database by file upload\n* Basic validation ",
-      "status": "Backlog",
-      "project": "Data Integration",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-40",
-      "title": "Customer Moderation of Best Guess Data",
-      "description": "Enable customer to adjust generated data. \nPart of a data reconciliation and quality control workflow. ",
-      "status": "Backlog",
-      "project": "Data Enrichment",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-32",
-      "title": "Custom Data Schema Support",
-      "description": "*Enterprise-ready data flexibility allowing customers to extend Captr's core data model with their own fields and tags, while maintaining platform integrity and scalability.*\n\n### **General Direction**\n\n*Balance customer flexibility with platform scalability through controlled customisation capabilities, leveraging our medallion architecture and flexible schema approach.*\n\n* Schema extension mechanisms\n* Custom field validation rules\n* Field visibility controls\n* Data migration tooling\n* Performance monitoring",
-      "status": "Backlog",
-      "project": "Data Integration",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-25",
-      "title": "Multipart Data Import and Reconciliation",
-      "description": "Case 1:\n\nImport Sales Data Only \n**THEN** Import Product Data Only \n**REQUIRES** Data Reconciliation to join Product and Sales Data Together\n\nCase 2: \n\nImport Sales Data Only **OR** Product Data Only\n**THEN** Import Packaging Data\n**REQUIRES** Data Reconciliation to join Packaging Data Together",
-      "status": "Backlog",
-      "project": "Data Enrichment",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-39",
-      "title": "Data quality improvement tracking",
-      "description": "Visualise improvement over time. Gamify.",
-      "status": "Backlog",
-      "project": "Packaging Library",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-38",
-      "title": "Extract Data from Specification Docs",
-      "description": "Programatically Interpret Spec Documents provided by suppliers\n\nPre-populate data model and correlate with products (where possible)\n\nFirst step before approval/reconciliation process to manage quality and fill in the gaps",
-      "status": "Backlog",
-      "project": "Data Enrichment",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-37",
-      "title": "Supplier Task Management (productivity)",
-      "description": "Document Comments, Task Creation, Assign Tasks.\nEnable team to coordinate data acquisition with sources and suppliers in an organised way. ",
-      "status": "Backlog",
-      "project": "Supplier Management",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-36",
-      "title": "Supplier Catalog Digitisation",
-      "description": "Codify a suppliers entire range of packaging products.\nMake this information available to brands who consume those products. \n\ne.g. Norwood -> Bunnings",
-      "status": "Backlog",
-      "project": "Supplier Management",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-35",
-      "title": "Supplier Performance Dashboard",
-      "description": "Analysis and scoring of packaging materials associated with that supplier",
-      "status": "Backlog",
-      "project": "Supplier Management",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-34",
-      "title": "Supplier Portal: Self-service specification management",
-      "description": "",
-      "status": "Backlog",
-      "project": "Supplier Management",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-68",
-      "title": "Managed Reports",
-      "description": "* [PHANTM-68](https://linear.app/phantm/issue/PHANTM-undefined/report-apco)\n* [PHANTM-68](https://linear.app/phantm/issue/PHANTM-undefined/report-material-audit)\n* [PHANTM-68](https://linear.app/phantm/issue/PHANTM-undefined/policy-interpretation-create-reports-based-on-new-regulations)",
-      "status": "Backlog",
-      "project": "Reporting and Insights",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-51",
-      "title": "Material Library - Advanced Functionality",
-      "description": "* [PHANTM-26](https://linear.app/phantm/issue/PHANTM-undefined/variants-and-versioning-track-material-changes-over-time)\n* [PHANTM-26](https://linear.app/phantm/issue/PHANTM-undefined/traceability-data-origin-and-modification-history)\n* [PHANTM-51](https://linear.app/phantm/issue/PHANTM-undefined/data-reconciliation-automated-sku-to-spec-matching)\n* [PHANTM-51](https://linear.app/phantm/issue/PHANTM-undefined/secondary-packaging-box-carton-pallet-materials)\n* [PHANTM-51](https://linear.app/phantm/issue/PHANTM-undefined/tertiary-packaging-transport-and-logistics-data)\n* [PHANTM-51](https://linear.app/phantm/issue/PHANTM-undefined/bulk-records-operations-mass-updates-and-changes)\n* [PHANTM-51](https://linear.app/phantm/issue/PHANTM-undefined/custom-views-role-based-interface-configurations)\n* [PHANTM-26](https://linear.app/phantm/issue/PHANTM-undefined/exportreport-builder-custom-data-extracts)\n* [PHANTM-26](https://linear.app/phantm/issue/PHANTM-undefined/alerts-and-notifications-changes-and-updates)",
-      "status": "Backlog",
-      "project": "Packaging Library",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-76",
-      "title": "Glen Dimplex - Data",
-      "description": "Currently collecting data from Glen Dimplex. \nCan we get it into Material Library? Is that helpful for sales?\n\n[https://drive.google.com/drive/folders/1Q8g5qR7D9uGAyXxH5qOUp4F4fzcKhZf2?usp=drive_link](https://drive.google.com/drive/folders/1Q8g5qR7D9uGAyXxH5qOUp4F4fzcKhZf2?usp=drive_link)",
-      "status": "Todo",
-      "project": "Customer Onboarding",
       "target": ""
     },
     {
@@ -305,36 +41,12 @@
       "target": "Customer Pilot"
     },
     {
-      "id": "PHANTM-86",
-      "title": "Norwood - Data",
-      "description": "Not sure what we can do with Norwood yet. \nWe have logins to some of their internal tools, and there's a fortnightly sync with Adam that should be set up soon.",
-      "status": "Todo",
-      "project": "Customer Onboarding",
-      "target": ""
-    },
-    {
       "id": "PHANTM-28",
       "title": "Visual Indicators of data quality",
       "description": "Make it clear when data is 'estimated' and to what degree it can be relied upon",
       "status": "Todo",
       "project": "Data Enrichment",
       "target": "Friends and Family"
-    },
-    {
-      "id": "PHANTM-14",
-      "title": "Analytics configuration",
-      "description": "What are we going to track customer interactions with the frontend?\n\nGoogle Analytics, Posthog, etc",
-      "status": "Todo",
-      "project": "Technical Foundation",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-15",
-      "title": "Monitoring configuration",
-      "description": "How are we going to monitor issues in the frontend?\n\nSentry, Datadog, Graphana, etc.",
-      "status": "Todo",
-      "project": "Technical Foundation",
-      "target": ""
     },
     {
       "id": "PHANTM-29",
@@ -351,14 +63,6 @@
       "status": "Todo",
       "project": "Reporting and Insights",
       "target": "Customer Pilot "
-    },
-    {
-      "id": "PHANTM-84",
-      "title": "Stackpack - Data",
-      "description": "[https://drive.google.com/drive/folders/1bV3aKrhzCGeUeFTeAeNRP-iddkNbBUuC?usp=drive_link](https://drive.google.com/drive/folders/1bV3aKrhzCGeUeFTeAeNRP-iddkNbBUuC?usp=drive_link)",
-      "status": "Todo",
-      "project": "Customer Onboarding",
-      "target": ""
     },
     {
       "id": "PHANTM-24",
@@ -401,36 +105,12 @@
       "target": "Customer Pilot"
     },
     {
-      "id": "PHANTM-74",
-      "title": "Emma Lewisham",
-      "description": "Data includes Product and Packing Specs.\nManually transform to target data model and migrate to Captr.",
-      "status": "In Progress",
-      "project": "Customer Onboarding",
-      "target": ""
-    },
-    {
       "id": "PHANTM-67",
       "title": "Phantm Portfolio Report",
       "description": "Instant access to professional-grade packaging analysis that typically requires expensive consulting, powered by customer's own data on-file.\n\n## General Direction\n\n*Focus on automated generation of comprehensive analysis, with clear communication of data confidence levels and insights validity.*\n\n* Simple Reports\n* Data confidence integration\n* Automated calculations",
       "status": "In Progress",
       "project": "Reporting and Insights",
       "target": "Customer Pilot "
-    },
-    {
-      "id": "PHANTM-33",
-      "title": "Supplier Relationship Manager (Lite)",
-      "description": "*Central hub for supplier communications and specification management, making packaging information accessible to all team members without complex process changes.*\n\n### **Overall Considerations and General Direction**\n\n*Focus on simplifying information capture and access, with minimal disruption to established workflows of supplier and retailer.*\n\n* Contact information management\n* Document organisation and search\n* Activity tracking/Inbox\n* Assign supplier documents to products (without automated processing of data)",
-      "status": "In Progress",
-      "project": "Supplier Management",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-16",
-      "title": "User Authentication with username and password",
-      "description": "",
-      "status": "In Progress",
-      "project": "Technical Foundation",
-      "target": ""
     },
     {
       "id": "PHANTM-42",
@@ -441,14 +121,6 @@
       "target": "Friends and Family"
     },
     {
-      "id": "PHANTM-13",
-      "title": "CI/CD Configuration",
-      "description": "",
-      "status": "In Progress",
-      "project": "Technical Foundation",
-      "target": ""
-    },
-    {
       "id": "PHANTM-30",
       "title": "Generate packaging data with Public LLMs using real Sales/Product Data",
       "description": "",
@@ -457,130 +129,66 @@
       "target": "Friends and Family"
     },
     {
-      "id": "PHANTM-12",
-      "title": "Deployment configuration",
-      "description": "How are we going to deploy the frontend to different environments? Setup Github workflows to push main to production. ",
-      "status": "In Progress",
-      "project": "Technical Foundation",
-      "target": ""
-    },
-    {
       "id": "PHANTM-17",
       "title": "Material Library - Basic",
       "description": "### **Customer Value**\n\nCentral command centre for packaging materials data, enabling teams to explore, analyse, and manage their complete packaging portfolio through a single, intuitive interface.\n\n### **General Direction**\n\n*Focus on intuitive data exploration and management, emphasising critical data and clear visual indicators to help business users find the right information and understand it*\n\n* Simple add/edit (e.g. one item at a time)\n* Component-based material breakdown\n* Integrated supplier documentation\n* Search and filter optimisation\n* Data quality indicators\n* Bulk data management tools",
       "status": "In Progress",
       "project": "Packaging Library",
       "target": "Friends and Family"
-    },
-    {
-      "id": "PHANTM-11",
-      "title": "Agree on frontend framework",
-      "description": "What are we going to write the frontend using?\n\nReact, Vue, etc",
-      "status": "Done",
-      "project": "Technical Foundation",
-      "target": ""
-    },
-    {
-      "id": "PHANTM-10",
-      "title": "Buildpack setup",
-      "description": "What are we going to use to package up the frontend?\n\nVite, Webpack, etc",
-      "status": "Done",
-      "project": "Technical Foundation",
-      "target": ""
     }
   ],
   "edgesData": [
     {
-      "source": "root",
-      "target": "material-library"
-    },
-    {
-      "source": "root",
-      "target": "supplier-mgmt"
-    },
-    {
-      "source": "root",
-      "target": "data-acquisition"
-    },
-    {
-      "source": "root",
-      "target": "data-enrichment"
-    },
-    {
-      "source": "root",
-      "target": "insights"
-    },
-    {
-      "source": "root",
-      "target": "general"
-    },
-    {
-      "source": "root",
-      "target": "innovation"
-    },
-    {
-      "source": "material-library",
-      "target": "materials-manager"
-    },
-    {
-      "source": "material-library",
-      "target": "data-confidence-score"
-    },
-    {
-      "source": "material-library",
-      "target": "custom-schema"
-    },
-    {
-      "source": "supplier-mgmt",
-      "target": "srm-light"
-    },
-    {
-      "source": "supplier-mgmt",
-      "target": "email-integration"
-    },
-    {
-      "source": "data-acquisition",
-      "target": "best-guess"
-    },
-    {
-      "source": "data-acquisition",
-      "target": "flexible-ingestion"
+      "source": "data-integration",
+      "target": "PHANTM-46"
     },
     {
       "source": "data-enrichment",
-      "target": "progressive-augmentation"
+      "target": "PHANTM-28"
     },
     {
-      "source": "insights",
-      "target": "portfolio-report"
+      "source": "data-enrichment",
+      "target": "PHANTM-29"
     },
     {
-      "source": "insights",
-      "target": "data-export"
+      "source": "reporting-and-insights",
+      "target": "PHANTM-61"
     },
     {
-      "source": "insights",
-      "target": "continuous-insights"
+      "source": "packaging-library",
+      "target": "PHANTM-24"
     },
     {
-      "source": "general",
-      "target": "auth-basic"
+      "source": "data-enrichment",
+      "target": "PHANTM-27"
     },
     {
-      "source": "general",
-      "target": "soc2"
+      "source": "data-enrichment",
+      "target": "PHANTM-26"
     },
     {
-      "source": "innovation",
-      "target": "compliance-automation"
+      "source": "data-enrichment",
+      "target": "PHANTM-31"
     },
     {
-      "source": "innovation",
-      "target": "cost-management"
+      "source": "data-enrichment",
+      "target": "PHANTM-47"
     },
     {
-      "source": "innovation",
-      "target": "sustainability-metrics"
+      "source": "reporting-and-insights",
+      "target": "PHANTM-67"
+    },
+    {
+      "source": "data-integration",
+      "target": "PHANTM-42"
+    },
+    {
+      "source": "data-integration",
+      "target": "PHANTM-30"
+    },
+    {
+      "source": "packaging-library",
+      "target": "PHANTM-17"
     }
   ]
 }

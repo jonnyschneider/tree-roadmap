@@ -22,30 +22,25 @@ export default function App() {
   useEffect(() => {
     console.log('Raw nodes data:', data.nodesData);
 
-    const flowNodes = data.nodesData
-      .filter((node) => node.target !== '') // Filter out nodes with empty target
-      .map((node) => ({
-        id: node.id,
-        type: 'roadmapNode',
-        //position: node.position || { x: 0, y: 0 },
-        position: { x: 0, y: 0 }, // Add the position property
-        style: {
-          opacity: 1,
-        },
-        data: {
-          title: node.title,
-          description: node.description,
-          status: node.status,
-          target: node.target, // Include target in data
-          //borderColor: node.borderColor,
-          //backgroundColor: node.backgroundColor,
-          project: node.project, // Add project to data
-        },
-      }));
+    const flowNodes = data.nodesData.map((node: { id: string; title: string; description: string; status: string; target: string; project: string }) => ({
+      id: node.id,
+      type: 'roadmapNode',
+      position: { x: 0, y: 0 }, // Add the position property
+      style: {
+        opacity: 1,
+      },
+      data: {
+        title: node.title,
+        description: node.description,
+        status: node.status,
+        target: node.target, // Include target in data
+        project: node.project, // Add project to data
+      },
+    }));
 
     console.log('Transformed nodes:', flowNodes);
 
-    const flowEdges = data.edgesData.map((edge) => ({
+    const flowEdges = data.edgesData.map((edge: { source: string; target: string }) => ({
       id: `${edge.source}-${edge.target}`,
       source: edge.source,
       target: edge.target,
@@ -60,7 +55,7 @@ export default function App() {
 
   return (
     <div style={{ height: 800 }} className="h-screen w-screen bg-gray-900">
-      <div className="text-center text-white bg-blue-500 p-4">Tailwind CSS Test</div> {/* Add this line */}
+      <div className="text-center text-white bg-blue-500 p-4">Tailwind CSS Test</div>
       <ReactFlow
         nodes={nodes}
         edges={edges}

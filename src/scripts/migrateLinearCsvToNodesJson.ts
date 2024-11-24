@@ -23,8 +23,38 @@ interface NodeData {
   target: string;
 }
 
-// Works with commonjs module system, but not ES modules
+interface EdgeData {
+  source: string;
+  target: string;
+}
+
 const nodesData: NodeData[] = [];
+
+fs.createReadStream(csvFilePath)
+  .pipe(csv())
+  .on('data', (row: CsvData) => {
+    console.log('CSV Row:', row); // Debugging statement
+    if (row['Project Milestone'] && row['Project Milestone'].trim() !== '') {
+      nodesData.push({
+        id: row.ID,
+        title: row.Title,
+        description: row.Description,
+        status: row.Status,
+        project: row.Project,
+        target: row['Project Milestone'],
+      });
+    }
+  })
+  .on('end', () => {
+    console.log('Parsed Nodes Data:', nodesData); // Debugging statement
+    const nodesJson = JSON.parse(fs.readFileSync(nodesFilePath, 'utf-8'));
+    const projectNodes = generateProjectNodes(nodesData);
+    const edgeNodes = generateEdgeNodes(nodesData);
+    nodesJson.nodesData = projectNodes.concat(nodesJson.nodesData, nodesData);
+    nodesJson.edgesData = nodesJson.edgesData.concat(edgeNodes);
+    fs.writeFileSync(nodesFilePath, JSON.stringify(nodesJson, null, 2));
+    console.log('CSV data has been migrated to nodes.json');
+  });
 
 function generateProjectNodes(nodes: NodeData[]): NodeData[] {
   const projects = new Set<string>();
@@ -44,24 +74,11 @@ function generateProjectNodes(nodes: NodeData[]): NodeData[] {
   }));
 }
 
-fs.createReadStream(csvFilePath)
-  .pipe(csv())
-  .on('data', (row: CsvData) => {
-    console.log('CSV Row:', row); // Debugging statement
-    nodesData.push({
-      id: row.ID,
-      title: row.Title,
-      description: row.Description,
-      status: row.Status,
-      project: row.Project,
-      target: row['Project Milestone'],
-    });
-  })
-  .on('end', () => {
-    console.log('Parsed Nodes Data:', nodesData); // Debugging statement
-    const nodesJson = JSON.parse(fs.readFileSync(nodesFilePath, 'utf-8'));
-    const projectNodes = generateProjectNodes(nodesData);
-    nodesJson.nodesData = projectNodes.concat(nodesJson.nodesData, nodesData);
-    fs.writeFileSync(nodesFilePath, JSON.stringify(nodesJson, null, 2));
-    console.log('CSV data has been migrated to nodes.json');
-  });
+function generateEdgeNodes(nodes: NodeData[]): EdgeData[] {
+  return nodes
+    .filter(node => node.project)
+    .map(node => ({
+      source: node.project.toLowerCase().replace(/\s+/g, '-'),
+      target: node.id
+    }));
+}

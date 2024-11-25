@@ -3,17 +3,17 @@ frontend:
   phases:
     preBuild:
       commands:
-        - nvm install 22  # Specify Node.js version 18
-        - nvm use 22
+        - n 22  # Use 'n' instead of 'nvm' in AWS CodeBuild
         - npm install -g pnpm
         - pnpm install
     build:
       commands:
         - pnpm run build
   artifacts:
-    baseDirectory: dist  # or 'build', depending on your setup
+    baseDirectory: dist
     files:
       - '**/*'
   cache:
     paths:
       - node_modules/**/*
+      - .pnpm-store/**/*  # Adding pnpm store to cache

@@ -20,11 +20,11 @@
       "status": "Project",
       "project": "Data Integration",
       "target": "",
-      "level": 1,
       "position": {
         "x": 300,
         "y": 0
-      }
+      },
+      "level": 1
     },
     {
       "id": "data-enrichment",
@@ -33,11 +33,11 @@
       "status": "Project",
       "project": "Data Enrichment",
       "target": "",
-      "level": 1,
       "position": {
         "x": 1.8369701987210297e-14,
         "y": 300
-      }
+      },
+      "level": 1
     },
     {
       "id": "reporting-and-insights",
@@ -46,11 +46,11 @@
       "status": "Project",
       "project": "Reporting and Insights",
       "target": "",
-      "level": 1,
       "position": {
         "x": -300,
         "y": 3.6739403974420595e-14
-      }
+      },
+      "level": 1
     },
     {
       "id": "packaging-library",
@@ -59,11 +59,11 @@
       "status": "Project",
       "project": "Packaging Library",
       "target": "",
-      "level": 1,
       "position": {
         "x": -5.510910596163089e-14,
         "y": -300
-      }
+      },
+      "level": 1
     },
     {
       "id": "PHANTM-46",
@@ -72,11 +72,11 @@
       "status": "Todo",
       "project": "Data Integration",
       "target": "Customer Pilot",
-      "level": 3,
       "position": {
         "x": 866.0254037844386,
         "y": -500
-      }
+      },
+      "level": 1
     },
     {
       "id": "PHANTM-28",
@@ -85,11 +85,11 @@
       "status": "Todo",
       "project": "Data Enrichment",
       "target": "Friends and Family",
-      "level": 2,
       "position": {
         "x": 410.91396458088644,
         "y": 535.5135046965837
-      }
+      },
+      "level": 1
     },
     {
       "id": "PHANTM-29",
@@ -98,11 +98,11 @@
       "status": "Todo",
       "project": "Data Enrichment",
       "target": "Customer Pilot",
-      "level": 3,
       "position": {
         "x": 382.68343236508986,
         "y": 923.8795325112867
-      }
+      },
+      "level": 1
     },
     {
       "id": "PHANTM-61",
@@ -111,11 +111,11 @@
       "status": "Todo",
       "project": "Reporting and Insights",
       "target": "Customer Pilot ",
-      "level": 3,
       "position": {
         "x": -623.6186844451186,
         "y": 258.31131684643566
-      }
+      },
+      "level": 1
     },
     {
       "id": "PHANTM-24",
@@ -124,11 +124,11 @@
       "status": "Todo",
       "project": "Packaging Library",
       "target": "Friends and Family",
-      "level": 2,
       "position": {
         "x": -258.311316846436,
         "y": -623.6186844451184
-      }
+      },
+      "level": 1
     },
     {
       "id": "PHANTM-27",
@@ -137,11 +137,11 @@
       "status": "Todo",
       "project": "Data Enrichment",
       "target": "Customer Pilot",
-      "level": 3,
       "position": {
         "x": 130.5261922200517,
         "y": 991.4448613738103
-      }
+      },
+      "level": 1
     },
     {
       "id": "PHANTM-26",
@@ -150,11 +150,11 @@
       "status": "Todo",
       "project": "Data Enrichment",
       "target": "Friends and Family",
-      "level": 2,
       "position": {
         "x": -88.10517974853468,
         "y": 669.2252814273221
-      }
+      },
+      "level": 1
     },
     {
       "id": "PHANTM-31",
@@ -163,11 +163,11 @@
       "status": "Todo",
       "project": "Data Enrichment",
       "target": "Friends and Family",
-      "level": 2,
       "position": {
         "x": -258.31131684643555,
         "y": 623.6186844451186
-      }
+      },
+      "level": 1
     },
     {
       "id": "PHANTM-47",
@@ -176,11 +176,11 @@
       "status": "Todo",
       "project": "Data Enrichment",
       "target": "Customer Pilot",
-      "level": 2,
       "position": {
         "x": -608.7614290087207,
         "y": 793.3533402912352
-      }
+      },
+      "level": 1
     },
     {
       "id": "PHANTM-67",
@@ -189,11 +189,11 @@
       "status": "In Progress",
       "project": "Reporting and Insights",
       "target": "Customer Pilot ",
-      "level": 2,
       "position": {
         "x": -623.6186844451187,
         "y": -258.3113168464355
-      }
+      },
+      "level": 1
     },
     {
       "id": "PHANTM-42",
@@ -202,11 +202,11 @@
       "status": "In Progress",
       "project": "Data Integration",
       "target": "Friends and Family",
-      "level": 2,
       "position": {
         "x": 675,
         "y": 0
-      }
+      },
+      "level": 1
     },
     {
       "id": "PHANTM-30",
@@ -215,11 +215,11 @@
       "status": "In Progress",
       "project": "Data Integration",
       "target": "Friends and Family",
-      "level": 2,
       "position": {
         "x": 584.5671475544962,
         "y": 337.4999999999999
-      }
+      },
+      "level": 1
     },
     {
       "id": "PHANTM-17",
@@ -228,30 +228,14 @@
       "status": "In Progress",
       "project": "Packaging Library",
       "target": "Friends and Family",
-      "level": 2,
       "position": {
         "x": 258.3113168464358,
         "y": -623.6186844451184
-      }
+      },
+      "level": 1
     }
   ],
   "edgesData": [
-    {
-      "source": "root",
-      "target": "data-integration"
-    },
-    {
-      "source": "root",
-      "target": "data-enrichment"
-    },
-    {
-      "source": "root",
-      "target": "reporting-and-insights"
-    },
-    {
-      "source": "root",
-      "target": "packaging-library"
-    },
     {
       "source": "data-integration",
       "target": "PHANTM-46"
@@ -303,6 +287,22 @@
     {
       "source": "packaging-library",
       "target": "PHANTM-17"
+    },
+    {
+      "source": "root",
+      "target": "data-integration"
+    },
+    {
+      "source": "root",
+      "target": "data-enrichment"
+    },
+    {
+      "source": "root",
+      "target": "reporting-and-insights"
+    },
+    {
+      "source": "root",
+      "target": "packaging-library"
     }
   ]
 }

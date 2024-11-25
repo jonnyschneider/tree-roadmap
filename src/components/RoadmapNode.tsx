@@ -71,7 +71,7 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
           position={Position.Top}
           className="!bg-transparent !w-8 !h-1 !border-0 !rounded-none"
         />
-        <img src="/img/Phantm_Primary_Logo_RGB_Forest.svg" alt="Phantm Logo" className="w-full h-full object-contain bg-emerald rounded-full" />
+        <img src="/img/Phantm_Primary_Logo_RGB_White.svg" alt="Phantm Logo" className="w-full h-full object-contain bg-pine rounded-full" />
         <Handle
           type="source"
           position={Position.Bottom}

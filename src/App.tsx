@@ -101,7 +101,7 @@ export default function App() {
           showInteractive={false}
         />
         <MiniMap
-          className="bg-gray-900 border-gray-800"
+          className="hidden bg-gray-900 border-gray-800"
         />
       </ReactFlow>
     </div>

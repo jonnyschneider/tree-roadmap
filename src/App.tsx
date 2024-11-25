@@ -22,19 +22,19 @@ export default function App() {
   useEffect(() => {
     console.log('Raw nodes data:', data.nodesData);
 
-    const flowNodes = data.nodesData.map((node: { id: string; title: string; description: string; status: string; target: string; project: string }) => ({
+    const flowNodes = data.nodesData.map((node: { id: string; title: string; description: string; status: string; target: string; project: string; position: { x: number; y: number } }) => ({
       id: node.id,
       type: 'roadmapNode',
-      position: { x: 0, y: 0 }, // Add the position property
+      position: node.position, // Read the position from nodes.json data
       style: {
-        opacity: 1,
+      opacity: 1,
       },
       data: {
-        title: node.title,
-        description: node.description,
-        status: node.status,
-        target: node.target, // Include target in data
-        project: node.project, // Add project to data
+      title: node.title,
+      description: node.description,
+      status: node.status,
+      target: node.target, // Include target in data
+      project: node.project, // Add project to data
       },
     }));
 

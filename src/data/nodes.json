@@ -1,12 +1,30 @@
 {
   "nodesData": [
     {
+      "id": "root",
+      "title": "root",
+      "description": "root",
+      "status": "Project",
+      "project": "root",
+      "target": "",
+      "level": 0,
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
       "id": "data-integration",
       "title": "Data Integration",
       "description": "Project node for Data Integration",
       "status": "Project",
       "project": "Data Integration",
-      "target": ""
+      "target": "",
+      "level": 1,
+      "position": {
+        "x": 250,
+        "y": 0
+      }
     },
     {
       "id": "data-enrichment",
@@ -14,7 +32,12 @@
       "description": "Project node for Data Enrichment",
       "status": "Project",
       "project": "Data Enrichment",
-      "target": ""
+      "target": "",
+      "level": 1,
+      "position": {
+        "x": 1.5308084989341916e-14,
+        "y": 250
+      }
     },
     {
       "id": "reporting-and-insights",
@@ -22,7 +45,12 @@
       "description": "Project node for Reporting and Insights",
       "status": "Project",
       "project": "Reporting and Insights",
-      "target": ""
+      "target": "",
+      "level": 1,
+      "position": {
+        "x": -250,
+        "y": 3.061616997868383e-14
+      }
     },
     {
       "id": "packaging-library",
@@ -30,7 +58,12 @@
       "description": "Project node for Packaging Library",
       "status": "Project",
       "project": "Packaging Library",
-      "target": ""
+      "target": "",
+      "level": 1,
+      "position": {
+        "x": -4.5924254968025744e-14,
+        "y": -250
+      }
     },
     {
       "id": "PHANTM-46",
@@ -38,7 +71,12 @@
       "description": "Tools and utilities for processing raw data as part of customer migration. Some are bespoke, others are reusable. \n\n* Advanced mapping scripts\n* Bulk processing scripts\n* Validation rules and test automation\n* Custom transformations",
       "status": "Todo",
       "project": "Data Integration",
-      "target": "Customer Pilot"
+      "target": "Customer Pilot",
+      "level": 3,
+      "position": {
+        "x": 606.217782649107,
+        "y": -350
+      }
     },
     {
       "id": "PHANTM-28",
@@ -46,7 +84,12 @@
       "description": "Make it clear when data is 'estimated' and to what degree it can be relied upon",
       "status": "Todo",
       "project": "Data Enrichment",
-      "target": "Friends and Family"
+      "target": "Friends and Family",
+      "level": 2,
+      "position": {
+        "x": 304.38071450436036,
+        "y": 396.6766701456176
+      }
     },
     {
       "id": "PHANTM-29",
@@ -54,7 +97,12 @@
       "description": "Run tests to measure accuracy of estimates against known data.\nCreate a mechanism to do this systematically on going (e.g. as we get real data, use it to check quality of previous estimations)",
       "status": "Todo",
       "project": "Data Enrichment",
-      "target": "Customer Pilot"
+      "target": "Customer Pilot",
+      "level": 3,
+      "position": {
+        "x": 267.87840265556287,
+        "y": 646.7156727579007
+      }
     },
     {
       "id": "PHANTM-61",
@@ -62,7 +110,12 @@
       "description": "Continuous analysis and actionable recommendations based on AI-powered packaging portfolio patterns.\n\n## General Approach\n\n*Create an intelligent system that identifies opportunities and risks, providing actionable insights through pattern recognition and rules-based analysis.*\n\n* Pattern detection\n* Recommendation engine\n* Measuring improvement from action\n* Continuous improvement\n* Value prioritisation",
       "status": "Todo",
       "project": "Reporting and Insights",
-      "target": "Customer Pilot "
+      "target": "Customer Pilot ",
+      "level": 3,
+      "position": {
+        "x": -461.93976625564335,
+        "y": 191.34171618254496
+      }
     },
     {
       "id": "PHANTM-24",
@@ -70,7 +123,12 @@
       "description": "",
       "status": "Todo",
       "project": "Packaging Library",
-      "target": "Friends and Family"
+      "target": "Friends and Family",
+      "level": 2,
+      "position": {
+        "x": -191.34171618254516,
+        "y": -461.93976625564324
+      }
     },
     {
       "id": "PHANTM-27",
@@ -78,7 +136,12 @@
       "description": "What level of data quality is recommended for different use cases for the data\ne.g. Identifying an area for further investigation vs. APCO report vs. LCA",
       "status": "Todo",
       "project": "Data Enrichment",
-      "target": "Customer Pilot"
+      "target": "Customer Pilot",
+      "level": 3,
+      "position": {
+        "x": 91.3683345540362,
+        "y": 694.0114029616673
+      }
     },
     {
       "id": "PHANTM-26",
@@ -86,7 +149,12 @@
       "description": "What are the key factors for determining a score?\n\nWhat levels are there?\n\nWhat does it look like to get from Level 1 to Level 3?",
       "status": "Todo",
       "project": "Data Enrichment",
-      "target": "Friends and Family"
+      "target": "Friends and Family",
+      "level": 2,
+      "position": {
+        "x": -65.26309611002569,
+        "y": 495.7224306869052
+      }
     },
     {
       "id": "PHANTM-31",
@@ -94,7 +162,12 @@
       "description": "Solutions Team eyeball it, and normalise the results. \nAdjust prompts to 'train' the model. ",
       "status": "Todo",
       "project": "Data Enrichment",
-      "target": "Friends and Family"
+      "target": "Friends and Family",
+      "level": 2,
+      "position": {
+        "x": -191.34171618254487,
+        "y": 461.93976625564335
+      }
     },
     {
       "id": "PHANTM-47",
@@ -102,7 +175,12 @@
       "description": "Flexible menu of data improvement methods allowing teams to incrementally enhance their packaging data through a combination of automated tools, benchmarks, and collaborative options.\n\n## General Direction\n\n* Automated enhancement tools\n* Rule-based pattern detection\n* Micro-questions for continuous data enrichment\n* Targeted data interventions to maximise customer value\n* External reference data\n* Category matching algorithms\n* Reference data (e.g. customers like you…)\n* Validation frameworks\n* 'Human in the loop' mechanisms\n\n```markdown\nAdd Sub-tasks as they become clear\n```",
       "status": "Todo",
       "project": "Data Enrichment",
-      "target": "Customer Pilot"
+      "target": "Customer Pilot",
+      "level": 2,
+      "position": {
+        "x": -426.13300030610446,
+        "y": 555.3473382038646
+      }
     },
     {
       "id": "PHANTM-67",
@@ -110,7 +188,12 @@
       "description": "Instant access to professional-grade packaging analysis that typically requires expensive consulting, powered by customer's own data on-file.\n\n## General Direction\n\n*Focus on automated generation of comprehensive analysis, with clear communication of data confidence levels and insights validity.*\n\n* Simple Reports\n* Data confidence integration\n* Automated calculations",
       "status": "In Progress",
       "project": "Reporting and Insights",
-      "target": "Customer Pilot "
+      "target": "Customer Pilot ",
+      "level": 2,
+      "position": {
+        "x": -461.9397662556434,
+        "y": -191.34171618254481
+      }
     },
     {
       "id": "PHANTM-42",
@@ -118,7 +201,12 @@
       "description": "Customer provides their data in whatever format they have it, \nPhantm team transforms it to correct structure, and works alongside customer to migrate it to Captre",
       "status": "In Progress",
       "project": "Data Integration",
-      "target": "Friends and Family"
+      "target": "Friends and Family",
+      "level": 2,
+      "position": {
+        "x": 500,
+        "y": 0
+      }
     },
     {
       "id": "PHANTM-30",
@@ -126,7 +214,12 @@
       "description": "",
       "status": "In Progress",
       "project": "Data Integration",
-      "target": "Friends and Family"
+      "target": "Friends and Family",
+      "level": 2,
+      "position": {
+        "x": 433.01270189221935,
+        "y": 249.99999999999991
+      }
     },
     {
       "id": "PHANTM-17",
@@ -134,10 +227,31 @@
       "description": "### **Customer Value**\n\nCentral command centre for packaging materials data, enabling teams to explore, analyse, and manage their complete packaging portfolio through a single, intuitive interface.\n\n### **General Direction**\n\n*Focus on intuitive data exploration and management, emphasising critical data and clear visual indicators to help business users find the right information and understand it*\n\n* Simple add/edit (e.g. one item at a time)\n* Component-based material breakdown\n* Integrated supplier documentation\n* Search and filter optimisation\n* Data quality indicators\n* Bulk data management tools",
       "status": "In Progress",
       "project": "Packaging Library",
-      "target": "Friends and Family"
+      "target": "Friends and Family",
+      "level": 2,
+      "position": {
+        "x": 191.341716182545,
+        "y": -461.9397662556433
+      }
     }
   ],
   "edgesData": [
+    {
+      "source": "root",
+      "target": "data-integration"
+    },
+    {
+      "source": "root",
+      "target": "data-enrichment"
+    },
+    {
+      "source": "root",
+      "target": "reporting-and-insights"
+    },
+    {
+      "source": "root",
+      "target": "packaging-library"
+    },
     {
       "source": "data-integration",
       "target": "PHANTM-46"

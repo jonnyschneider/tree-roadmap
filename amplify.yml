@@ -4,15 +4,15 @@ applications:
       phases:
         preBuild:
           commands:
-            - echo "Node version: $(node -v)"
-            - npm install -g pnpm@latest
-            - echo "PNPM version: $(pnpm -v)"
-            - pnpm config set registry https://registry.npmjs.org/
-            - pnpm config set store-dir .pnpm-store
-            - pnpm install --force  
+            - 'echo "Node version: $(node -v)"'
+            - 'npm install -g pnpm@latest'
+            - 'echo "PNPM version: $(pnpm -v)"'
+            - 'pnpm config set registry https://registry.npmjs.org/'
+            - 'pnpm config set store-dir .pnpm-store'
+            - 'pnpm install --force'
         build:
           commands:
-            - pnpm run build
+            - 'pnpm run build'
       artifacts:
         baseDirectory: dist
         files:

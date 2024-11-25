@@ -23,8 +23,6 @@ export default function App() {
   const [selectedRelease, setSelectedRelease] = useState<string | null>(null);
 
   useEffect(() => {
-    console.log('Raw nodes data:', data.nodesData);
-
     const flowNodes = data.nodesData.map((node: { id: string; title: string; description: string; status: string; target: string; project: string; position: { x: number; y: number } }) => ({
       id: node.id,
       type: 'roadmapNode',
@@ -42,8 +40,6 @@ export default function App() {
       },
     }));
 
-    console.log('Transformed nodes:', flowNodes);
-
     const flowEdges = data.edgesData.map((edge: { source: string; target: string }) => ({
       id: `${edge.source}-${edge.target}`,
       source: edge.source,
@@ -52,7 +48,6 @@ export default function App() {
       style: { stroke: '#374151', strokeWidth: 1 },
     }));
 
-    console.log('Final nodes set to state:', flowNodes);
     setNodes(flowNodes);
     setEdges(flowEdges);
   }, []);

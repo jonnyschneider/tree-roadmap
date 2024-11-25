@@ -51,10 +51,7 @@ export default function RoadmapNode({ data }: NodeProps<RoadmapNodeData>) {
   if (data.id === 'root') {
     return (
       <div
-        onMouseEnter={() => {
-          console.log('Mouse enter:', data.status, 'description:', data.description);
-          setShowTooltip(true);
-        }}
+        onMouseEnter={() => setShowTooltip(true)}
         onMouseLeave={() => setShowTooltip(false)}
         className="relative cursor-pointer bg-salt w-[220px] h-[220px] flex items-center justify-center border-0 rounded-full"
       >
@@ -84,10 +81,7 @@ export default function RoadmapNode({ data }: NodeProps<RoadmapNodeData>) {
   if (data.status === 'Project') {
     return (
       <div
-        onMouseEnter={() => {
-          console.log('Mouse enter:', data.status, 'description:', data.description);
-          setShowTooltip(true);
-        }}
+        onMouseEnter={() => setShowTooltip(true)}
         onMouseLeave={() => setShowTooltip(false)}
         className="relative cursor-pointer bg-salt w-[250px]" // Set fixed width for Project nodes
       >
@@ -123,15 +117,7 @@ export default function RoadmapNode({ data }: NodeProps<RoadmapNodeData>) {
 
   return (
     <div
-      onMouseEnter={() => {
-        console.log(
-          'Mouse enter:',
-          data.status,
-          'description:',
-          data.description,
-        );
-        setShowTooltip(true);
-      }}
+      onMouseEnter={() => setShowTooltip(true)}
       onMouseLeave={() => setShowTooltip(false)}
       className="relative cursor-pointer bg-salt w-[250px]" // Set fixed width for other nodes
     >

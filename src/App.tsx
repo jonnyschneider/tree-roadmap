@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import ReactFlow, {
   Background,
   Controls,
@@ -101,7 +101,7 @@ export default function App() {
           showInteractive={false}
         />
         <MiniMap
-          className="hidden bg-gray-900 border-gray-800"
+          className="bg-gray-900 border-gray-800"
         />
       </ReactFlow>
     </div>

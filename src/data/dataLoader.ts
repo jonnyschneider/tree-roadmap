@@ -25,6 +25,7 @@ export function loadNodes(): Node<RoadmapNodeData>[] {
       type: 'roadmapNode',
       position: { x: node.position.x ?? 0, y: node.position.y ?? 0 },
       data: {
+        id: node.id,
         title: node.title,
         description: node.description,
         status: node.status as Status,

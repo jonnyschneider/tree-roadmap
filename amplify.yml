@@ -4,8 +4,12 @@ applications:
       phases:
         preBuild:
           commands:
-            - npm install -g pnpm
-            - pnpm install
+            - echo "Node version: $(node -v)"
+            - npm install -g pnpm@latest
+            - echo "PNPM version: $(pnpm -v)"
+            - pnpm config set registry https://registry.npmjs.org/
+            - pnpm config set store-dir .pnpm-store
+            - pnpm install --force  # Force flag to handle missing lockfile
         build:
           commands:
             - pnpm run build
@@ -18,8 +22,7 @@ applications:
           - node_modules/**/*
           - .pnpm-store/**/*
     appRoot: .
-    buildSpec: null
 frontend:
   phases:
     build:
-      runtime: nodejs22.x  # Specify Node.js version this way instead
+      runtime: nodejs22.x

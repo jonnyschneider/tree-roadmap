@@ -25,21 +25,21 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
       case 'todo':
         return (
           <div className="flex items-center space-x-2 px-2">
-            <span className="w-3 h-3 bg-stone-700 rounded-full"></span>
+            <span className="w-3 h-3 bg-gray-400 rounded-full"></span>
             <div>Planned</div>
           </div>
         );
       case 'in progress':
         return (
           <div className="flex items-center space-x-2 px-2">
-            <span className="w-3 h-3 bg-sky-500 rounded-full"></span>
+            <span className="w-3 h-3 bg-sky-600 rounded-full"></span>
             <span>In Progress</span>
           </div>
         );
       case 'done':
         return (
           <div className="flex items-center space-x-2 px-2">
-            <span className="w-3 h-3 bg-lime-500 rounded-full"></span>
+            <span className="w-3 h-3 bg-emerald rounded-full"></span>
             <span>Available</span>
           </div>
         );
@@ -56,7 +56,7 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
           setShowTooltip(true);
         }}
         onMouseLeave={() => setShowTooltip(false)}
-        className="relative cursor-pointer bg-salt w-[220px] h-[100px] flex items-center justify-center border-0"
+        className="relative cursor-pointer bg-salt w-[220px] h-[220px] flex items-center justify-center border-0 rounded-full"
       >
         {showTooltip && data.description && (
           <RoadmapTooltip
@@ -71,7 +71,7 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
           position={Position.Top}
           className="!bg-transparent !w-8 !h-1 !border-0 !rounded-none"
         />
-        <img src="/img/Phantm_Primary_Logo_RGB_Forest.svg" alt="Phantm Logo" className="w-full h-full object-contain bg-emerald" />
+        <img src="/img/Phantm_Primary_Logo_RGB_Forest.svg" alt="Phantm Logo" className="w-full h-full object-contain bg-emerald rounded-full" />
         <Handle
           type="source"
           position={Position.Bottom}
@@ -89,7 +89,7 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
           setShowTooltip(true);
         }}
         onMouseLeave={() => setShowTooltip(false)}
-        className="relative cursor-pointer bg-salt"
+        className="relative cursor-pointer bg-salt w-[250px]" // Set fixed width for Project nodes
       >
         {showTooltip && data.description && (
           <RoadmapTooltip
@@ -106,10 +106,10 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
         />
         
         <div  // Custom content for Project nodes
-          className="w-120 p-2  bg-emerald text-salt border-2 border-forest rounded-lg"
+          className="w-full p-2 bg-emerald text-salt border-2 border-forest rounded-lg"
         >
-          <div className="font-mono mb-2 p-2 font-bold text-m text-forest uppercase text-center">Area of Value</div>
-          <div className="font-sans mb-2 p-2 text-xl text-center">{data.project}</div>
+          <div className="font-mono mb-2 p-2 font-bold text-l text-forest uppercase text-center">Area of Value</div>
+          <div className="font-sans mb-2 p-2 font-bold text-xl text-white text-center">{data.project}</div>
           
         </div>
         <Handle
@@ -133,7 +133,7 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
         setShowTooltip(true);
       }}
       onMouseLeave={() => setShowTooltip(false)}
-      className="relative cursor-pointer bg-salt"
+      className="relative cursor-pointer bg-salt w-[250px]" // Set fixed width for other nodes
     >
       {showTooltip && data.description && (
         <RoadmapTooltip
@@ -150,9 +150,9 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
       />
       
       <div  //Node div with rounded corners and a border
-        className="w-42 p-0 pb-2 bg-salt text-pine border-2 border-pine rounded-lg"
+        className="w-full p-0 pb-2 bg-white text-pine border-2 border-pine rounded-lg"
       >
-        <div className="font-mono mb-2 p-2 text-xs bg-pine text-salt uppercase">{data.project}</div>
+        <div className="font-mono mb-2 p-2 text-xs bg-pine text-white uppercase">{data.project}</div>
         <div className="font-bold font-sans mb-2 p-2 text-xl ">{data.title}</div>
         <div className="space-y-2 p-2 text-sm mt-2 mr-2">
           {getStatusIndicator(data.status)}

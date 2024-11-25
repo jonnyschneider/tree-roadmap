@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactFlow, {
   Background,
   Controls,
@@ -15,9 +15,12 @@ const nodeTypes: NodeTypes = {
   roadmapNode: RoadmapNode,
 };
 
+const releases = ['Friends and Family', 'Customer Pilot', 'Public Beta'];
+
 export default function App() {
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
+  const [selectedRelease, setSelectedRelease] = useState<string | null>(null);
 
   useEffect(() => {
     console.log('Raw nodes data:', data.nodesData);
@@ -54,10 +57,35 @@ export default function App() {
     setEdges(flowEdges);
   }, []);
 
+  const filteredNodes = selectedRelease
+    ? nodes.filter((node) => node.data.target === selectedRelease || node.data.status === 'Project' || node.data.id === 'root')
+    : nodes;
+
   return (
-    <div style={{ height: 800 }} className="h-screen w-screen bg-gray-900">
+    <div style={{ height: '100%' }} className="h-screen w-screen bg-gray-900">
+      <div className="absolute top-4 left-4 z-10">
+        {releases.map((release) => (
+          <button
+            key={release}
+            onClick={() => setSelectedRelease(release)}
+            className={`px-2 py-1 m-1 rounded text-xs ${
+              selectedRelease === release ? 'bg-emerald text-salt' : 'bg-gray-700 text-white'
+            }`}
+          >
+            {release}
+          </button>
+        ))}
+        <button
+          onClick={() => setSelectedRelease(null)}
+          className={`px-2 py-1 m-1 rounded text-xs ${
+            selectedRelease === null ? 'bg-emerald text-salt' : 'bg-gray-700 text-white'
+          }`}
+        >
+          Show All
+        </button>
+      </div>
       <ReactFlow
-        nodes={nodes}
+        nodes={filteredNodes}
         edges={edges}
         nodeTypes={nodeTypes}
         onNodesChange={onNodesChange}
@@ -74,11 +102,11 @@ export default function App() {
           style={{ backgroundColor: '#fff8ef' }} //salt
         />
         <Controls
-          className="react-flow__controls-dark"
+          className="react-flow__controls-light"
           showInteractive={false}
         />
         <MiniMap
-          className="bg-gray-900 border-gray-800"
+          className="hidden bg-gray-900 border-gray-800"
         />
       </ReactFlow>
     </div>

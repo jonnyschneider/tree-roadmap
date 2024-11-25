@@ -9,7 +9,7 @@ applications:
             - echo "PNPM version: $(pnpm -v)"
             - pnpm config set registry https://registry.npmjs.org/
             - pnpm config set store-dir .pnpm-store
-            - pnpm install --force  # Force flag to handle missing lockfile
+            - pnpm install --force  
         build:
           commands:
             - pnpm run build

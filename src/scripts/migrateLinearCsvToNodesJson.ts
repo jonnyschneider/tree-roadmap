@@ -69,7 +69,7 @@ fs.createReadStream(csvFilePath)
     
     // Run the radial layout utility script using ts-node
     const { exec } = require('child_process');
-    exec('npx ts-node src/scripts/radialLayout.ts', (error: { message: any; }, stdout: any, stderr: any) => {
+    exec('npx ts-node src/scripts/radialLayout.ts', (error: { message: any; }, _stdout: any, stderr: any) => {
       if (error) {
         return;
       }

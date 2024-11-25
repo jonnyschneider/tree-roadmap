@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Handle, Position, NodeProps } from 'reactflow';
 import { TbDelta } from 'react-icons/tb';
 import RoadmapTooltip from './RoadmapTooltip';
@@ -17,7 +17,7 @@ export type RoadmapNodeData = {
   position?: { x: number; y: number };
 };
 
-export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
+export default function RoadmapNode({ data }: NodeProps<RoadmapNodeData>) {
   const [showTooltip, setShowTooltip] = useState(false);
 
   const getStatusIndicator = (status: string) => {

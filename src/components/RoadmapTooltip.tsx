@@ -12,7 +12,6 @@ const md = new Remarkable();
 export default function RoadmapTooltip({
   title,
   description,
-  target,
   moreInfo,
 }: RoadmapTooltipProps) {
   const renderedDescription = md.render(description);

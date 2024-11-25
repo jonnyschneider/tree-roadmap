@@ -27,14 +27,15 @@ export default function App() {
       type: 'roadmapNode',
       position: node.position, // Read the position from nodes.json data
       style: {
-      opacity: 1,
+        opacity: 1,
       },
       data: {
-      title: node.title,
-      description: node.description,
-      status: node.status,
-      target: node.target, // Include target in data
-      project: node.project, // Add project to data
+        id: node.id, // Ensure id is included in data
+        title: node.title,
+        description: node.description,
+        status: node.status,
+        target: node.target, // Include target in data
+        project: node.project, // Add project to data
       },
     }));
 

@@ -29,7 +29,6 @@ body,
 .react-flow-dark .react-flow__node {
   background-color: #1f2937;
   color: #ffffff;
-  border: 1px solid #374151;
 }
 
 .react-flow__controls-dark button {

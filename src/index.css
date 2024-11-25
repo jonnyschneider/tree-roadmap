@@ -49,3 +49,19 @@ body,
 .react-flow__edge-path {
   stroke-dasharray: none !important;
 }
+
+.markdown-content {
+  /* Add any additional styles for the Markdown content here */
+  ul {
+    list-style-type: disc;
+    padding-left: 1.25rem; /* Tailwind's pl-5 */
+  }
+  p {
+    margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+  }
+  h2, h1 {
+    font-weight: bold;
+    margin: 1rem 0 0.5rem; /* Tailwind's mt-4 */
+   
+  }
+}

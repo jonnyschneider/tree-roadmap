@@ -55,7 +55,6 @@ export default function App() {
 
   return (
     <div style={{ height: 800 }} className="h-screen w-screen bg-gray-900">
-      <div className="text-center text-white bg-blue-500 p-4">Tailwind CSS Test</div>
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -71,15 +70,13 @@ export default function App() {
           color="#2D3748"
           gap={20}
           size={0.5}
-          style={{ backgroundColor: '#1a202c' }}
+          style={{ backgroundColor: '#fff8ef' }} //salt
         />
         <Controls
           className="react-flow__controls-dark"
           showInteractive={false}
         />
         <MiniMap
-          nodeColor="#2D3748"
-          maskColor="#1a202c99"
           className="bg-gray-900 border-gray-800"
         />
       </ReactFlow>

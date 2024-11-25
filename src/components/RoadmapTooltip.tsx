@@ -1,4 +1,4 @@
-//import { Target } from "lucide-react";
+import { Remarkable } from 'remarkable';
 
 interface RoadmapTooltipProps {
   title?: string;
@@ -7,26 +7,27 @@ interface RoadmapTooltipProps {
   target?: string;
 }
 
+const md = new Remarkable();
+
 export default function RoadmapTooltip({
   title,
+  description,
   target,
   moreInfo,
 }: RoadmapTooltipProps) {
+  const renderedDescription = md.render(description);
+
   return (
     <div className="absolute z-[10000] -translate-y-[calc(100%+8px)] -translate-x-1/2 left-1/2 top-0 pointer-events-none">
       <div
-        className="bg-gray-900/95 text-gray-200 px-4 py-2 rounded-md text-sm shadow-lg"
-        style={{
-          width: '250',
-          whiteSpace: 'normal',
-          fontFamily: 'mono',
-          lineHeight: '1.5',
-          border: '1px solid white',
-
-        }}
+        className="bg-forest font-sans text-salt text-xs p-4 rounded-md text-sm shadow-lg"
+        style={{ width: '500px' }} // Set the width directly
       >
-        <p className="mb-2">{title}</p>
-        <ul className="list-disc pl-5 space-y-1">{target}</ul>
+        <p className="mb-2 font-bold">{title}</p>
+        <div
+          className="markdown-content"
+          dangerouslySetInnerHTML={{ __html: renderedDescription }}
+        />
         {moreInfo && (
           <a
             href={moreInfo}

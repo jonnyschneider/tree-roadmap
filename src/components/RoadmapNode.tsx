@@ -40,13 +40,14 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
         setShowTooltip(true);
       }}
       onMouseLeave={() => setShowTooltip(false)}
-      className="relative cursor-pointer"
+      className="relative cursor-pointer bg-pine"
     >
       {showTooltip && data.description && (
         <RoadmapTooltip
           title={data.title}
           description={data.description}
           moreInfo={data.moreInfo}
+          target={data.target}
         />
       )}
       <Handle
@@ -54,18 +55,13 @@ export default function RoadmapNode({ data, id }: NodeProps<RoadmapNodeData>) {
         position={Position.Top}
         className="!bg-transparent !w-8 !h-1 !border-0 !rounded-none"
       />
-      <div
-        className="rounded-[5px] w-48 p-2"
-        style={{
-          border: data.borderColor
-            ? `1px solid ${data.borderColor}`
-            : undefined,
-          backgroundColor: data.backgroundColor,
-        }}
+      
+      <div  //Node div with rounded corners and a border
+        className="rounded-[5px] w-42 p-0 bg-salt text-pine"
       >
-        <div className="font-sans mb-2 text-sm bg-gray-100 text-gray-900">{data.project}</div>
-        <div className="font-bold font-sans mb-2 text-sm ">{data.title}</div>
-        <div className="flex justify-between text-sm mt-2">
+        <div className="font-mono mb-2 p-2 text-xs bg-pine text-salt uppercase">{data.project}</div>
+        <div className="font-bold font-sans mb-2 p-2 text-xl ">{data.title}</div>
+        <div className="flex justify-between bg-white text-sm mt-2">
           <span>{data.status}</span>
           <span>{data.target}</span>
         </div>

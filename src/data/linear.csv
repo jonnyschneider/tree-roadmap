@@ -1,63 +1,65 @@
-ID,Title,Description,Status,Project,Project Milestone
-PHANTM-85,Thankyou Group,[https://drive.google.com/drive/folders/1W7XWmc4Lf6lj2etFYibEZcxd_y34cqX6?usp=drive_link](https://drive.google.com/drive/folders/1W7XWmc4Lf6lj2etFYibEZcxd_y34cqX6?usp=drive_link),Backlog,Customer Onboarding,
-PHANTM-83,Reece - Data,[https://drive.google.com/drive/folders/1gtyetPu_glOSghuW_bffCcVO1zSGvdkj?usp=drive_link](https://drive.google.com/drive/folders/1gtyetPu_glOSghuW_bffCcVO1zSGvdkj?usp=drive_link),Backlog,Customer Onboarding,
-PHANTM-82,Qantas - Data,[https://drive.google.com/drive/folders/10rgw33tYgypu7pozqs2eh3sxaCWZcmbT?usp=drive_link](https://drive.google.com/drive/folders/10rgw33tYgypu7pozqs2eh3sxaCWZcmbT?usp=drive_link),Backlog,Customer Onboarding,
-PHANTM-81,PAC Trading,[https://drive.google.com/drive/folders/11JbpK71EvxA-H_qXulB4qj5zJhEYksxx?usp=drive_link](https://drive.google.com/drive/folders/11JbpK71EvxA-H_qXulB4qj5zJhEYksxx?usp=drive_link),Backlog,Customer Onboarding,
-PHANTM-80,Mountain Blue - Data,[https://drive.google.com/drive/folders/1oM_WTMYNVqXQ62895ybeT0rM_ULwD3sR?usp=drive_link](https://drive.google.com/drive/folders/1oM_WTMYNVqXQ62895ybeT0rM_ULwD3sR?usp=drive_link),Backlog,Customer Onboarding,
-PHANTM-79,Moose Toys - Data,[https://drive.google.com/drive/folders/1mf4KU7NWsNwax15oP7v5y6qTifKydPtd?usp=drive_link](https://drive.google.com/drive/folders/1mf4KU7NWsNwax15oP7v5y6qTifKydPtd?usp=drive_link),Backlog,Customer Onboarding,
-PHANTM-78,Mecca - Data,[https://drive.google.com/drive/folders/1Z3CNg7173CAO_d4eXKWqytyU9OADqCzC?usp=drive_link](https://drive.google.com/drive/folders/1Z3CNg7173CAO_d4eXKWqytyU9OADqCzC?usp=drive_link),Backlog,Customer Onboarding,
-PHANTM-77,Market Lane - Data,[https://drive.google.com/drive/folders/1ZsFUGDrESkDz4QBPB2ZDK1TUktSNgidE?usp=drive_link](https://drive.google.com/drive/folders/1ZsFUGDrESkDz4QBPB2ZDK1TUktSNgidE?usp=drive_link),Backlog,Customer Onboarding,
-PHANTM-75,Glen Dimplex - Supplier Emails,"[Technical PoC (August)](https://phantm.notion.site/Artefacts-from-Captr-Proof-of-Concept-0f341d4ecda047cebedbc6c9fb7c3467?pvs=4) captured emails going back and forth between Phantm and Glen Dimplex when requesting packaging information. 
+"ID","Team","Title","Description","Status","Estimate","Priority","Project ID","Project","Creator","Assignee","Labels","Cycle Number","Cycle Name","Cycle Start","Cycle End","Created","Updated","Started","Triaged","Completed","Canceled","Archived","Due Date","Parent issue","Initiatives","Project Milestone ID","Project Milestone","SLA Status","Roadmaps"
+"PHANTM-10","Phantm","Buildpack setup","What are we going to use to package up the frontend?
 
-Let's plug these into the Captr Supplier Dashboard. It will help us see what we're really dealing with, and it *might* be helpful for sales efforts on Glen Dimplex. ",Backlog,Customer Onboarding,
-PHANTM-73,Scenario Planning,'What if' Analysis,Backlog,Reporting and Insights,
-PHANTM-72,Report: Industry Benchmarks,Compare performance with industry peers,Backlog,Reporting and Insights,
-PHANTM-50,Structured Data Requests,"Excel templates provided to Suppliers
+Vite, Webpack, etc","Done",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","andrew@phantm.com",,"",,,,,"Wed Oct 30 2024 02:40:24 GMT+0000 (GMT)","Tue Nov 19 2024 08:49:55 GMT+0000 (GMT)",,,"Wed Nov 06 2024 04:29:10 GMT+0000 (GMT)",,,,,"",,,
+"PHANTM-11","Phantm","Agree on frontend framework","What are we going to write the frontend using?
 
-Data automatically extracted when received by Phantm",Backlog,Supplier Management,
-PHANTM-48,Email integration and file upload for supplier specifications,"*Frictionless specification capture through familiar business tools, making it easy for suppliers to provide packaging information through email or simple file uploads.*
+React, Vue, etc","Done",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","andrew@phantm.com","andrew@phantm.com","",,,,,"Wed Oct 30 2024 02:41:00 GMT+0000 (GMT)","Tue Nov 19 2024 08:50:05 GMT+0000 (GMT)",,,"Wed Nov 06 2024 04:29:01 GMT+0000 (GMT)",,,,,"",,,
+"PHANTM-12","Phantm","Deployment configuration","How are we going to deploy the frontend to different environments? Setup Github workflows to push main to production. ","Done",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","andrew@phantm.com","asitha@asiapacific.tech","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Wed Oct 30 2024 02:41:59 GMT+0000 (GMT)","Mon Nov 25 2024 23:56:12 GMT+0000 (GMT)","Tue Nov 19 2024 08:56:42 GMT+0000 (GMT)",,"Mon Nov 25 2024 23:56:12 GMT+0000 (GMT)",,,,,"",,,
+"PHANTM-13","Phantm","CI/CD Configuration",,"Todo",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","andrew@phantm.com","jerome@phantm.com","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Wed Oct 30 2024 02:42:19 GMT+0000 (GMT)","Tue Dec 03 2024 04:49:29 GMT+0000 (GMT)",,,,,,,,"",,,
+"PHANTM-14","Phantm","Analytics configuration","What are we going to track customer interactions with the frontend?
 
-* Unique supplier email addresses
-* Store communications and attached files
-* File upload interface
-* Inbox / Activity Log
-* Document storage
-* Basic document management (view, delete, assign to SKU)
+Google Analytics, Posthog, etc","In Progress",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","andrew@phantm.com","andrew@phantm.com","",,,,,"Wed Oct 30 2024 02:43:10 GMT+0000 (GMT)","Tue Dec 03 2024 04:57:40 GMT+0000 (GMT)","Tue Dec 03 2024 00:05:20 GMT+0000 (GMT)",,,,,,,"",,,
+"PHANTM-15","Phantm","Monitoring configuration","How are we going to monitor issues in the frontend?
 
-*Enable seamless capture of supplier communications and documents through multiple channels while maintaining organisation and traceability.*
+Sentry, Datadog, Graphana, etc.","Todo",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","andrew@phantm.com","jerome@phantm.com","",,,,,"Wed Oct 30 2024 02:43:56 GMT+0000 (GMT)","Tue Nov 19 2024 08:56:50 GMT+0000 (GMT)",,,,,,,,"",,,
+"PHANTM-16","Phantm","User Authentication with username and password",,"Dev Testing",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","andrew@phantm.com","jerome@phantm.com","",,,,,"Wed Oct 30 2024 04:34:56 GMT+0000 (GMT)","Tue Dec 03 2024 04:58:17 GMT+0000 (GMT)","Tue Nov 19 2024 08:36:12 GMT+0000 (GMT)",,,,,,,"",,,
+"PHANTM-17","Phantm","Material Library","Meet your new packaging command centre. Material Library brings all your packaging data into one place - no more scattered spreadsheets or annual data hunts.
 
-* Unique supplier project address
-* Email parsing and routing
-* Document storage
-* Basic metadata
-* Version control",Backlog,Supplier Management,
-PHANTM-49,Bulk Upload Tools for Suppliers,Mass document processing,Backlog,Supplier Management,
-PHANTM-45,Advanced Data Integrations,"* Datalake extraction tools
-* iPaaS connectors (Zapier etc)
-* Custom integration patterns, e.g. integrating directly with customer's bespoke setup",Backlog,Data Integration,
-PHANTM-44,API Development,"* end-point for Inbound data (e.g. to support customers who collect data at Purchase Order)
-* Two-way API, for selected scenarios
-* Authentication/security",Backlog,Data Integration,
-PHANTM-43,ERP Integrations,"* Batch synchronisation engine
-* Direct integration to selected ERP systems
-* Handling data changes",Backlog,Data Integration,
-PHANTM-41,Import data with CSV Template,"* Template for product, sales, packaging data (individually or all together)
-* Import data to customer database by file upload
-* Basic validation ",Backlog,Data Integration,
-PHANTM-40,Customer Moderation of Best Guess Data,"Enable customer to adjust generated data. 
-Part of a data reconciliation and quality control workflow. ",Backlog,Data Enrichment,
-PHANTM-32,Custom Data Schema Support,"*Enterprise-ready data flexibility allowing customers to extend Captr's core data model with their own fields and tags, while maintaining platform integrity and scalability.*
+Build a lasting data foundation that grows with your business, making it simple to track changes, manage compliance, and respond to new regulations. Finally, a single source of truth for your packaging that's always ready when you need it.","In Progress",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com",,"On Treemap",,,,,"Tue Nov 19 2024 04:03:58 GMT+0000 (GMT)","Fri Dec 06 2024 06:10:10 GMT+0000 (GMT)","Tue Nov 19 2024 08:57:12 GMT+0000 (GMT)",,,,,,,"Captr","755610a2-4ebe-44a7-aeb7-be88f61b1ff7","Friends and Family",
+"PHANTM-18","Phantm","View and Edit Packaging Data","**Sales**
 
-### **General Direction**
+SKU
 
-*Balance customer flexibility with platform scalability through controlled customisation capabilities, leveraging our medallion architecture and flexible schema approach.*
+Units Sold
 
-* Schema extension mechanisms
-* Custom field validation rules
-* Field visibility controls
-* Data migration tooling
-* Performance monitoring",Backlog,Data Integration,
-PHANTM-25,Multipart Data Import and Reconciliation,"Case 1:
+**Product**
+
+Product Name
+
+Description
+
+**Packaging**
+
+Primary Packaging Components
+
+Component Composition (material by weight)
+
+Amount of Recycled Content
+
+Recyclable?
+
+Reusable?","Done",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com","andrew@phantm.com","Needs Backend Integration",1,"Iteration 0","Sun Nov 10 2024 13:00:00 GMT+0000 (GMT)","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 19 2024 04:12:48 GMT+0000 (GMT)","Tue Dec 03 2024 06:21:40 GMT+0000 (GMT)",,,"Tue Nov 26 2024 00:38:02 GMT+0000 (GMT)",,,,"PHANTM-17","Captr","755610a2-4ebe-44a7-aeb7-be88f61b1ff7","Friends and Family",
+"PHANTM-19","Phantm","Add Product to Library",,"Todo",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com",,"Needs Interaction Design",3,"Cycle 2","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Fri Dec 20 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 19 2024 04:13:20 GMT+0000 (GMT)","Tue Dec 03 2024 06:22:01 GMT+0000 (GMT)",,,,,,,"PHANTM-164","Captr","755610a2-4ebe-44a7-aeb7-be88f61b1ff7","Friends and Family",
+"PHANTM-20","Phantm","Add Packaging Component to Product",,"Todo",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com",,"Needs Interaction Design",3,"Cycle 2","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Fri Dec 20 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 19 2024 04:13:59 GMT+0000 (GMT)","Tue Dec 03 2024 06:22:01 GMT+0000 (GMT)",,,,,,,"PHANTM-164","Captr","755610a2-4ebe-44a7-aeb7-be88f61b1ff7","Friends and Family",
+"PHANTM-21","Phantm","Find Product/Packaging Info","Browse
+
+Search
+
+Filters","Done",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com","andrew@phantm.com","Needs Backend Integration",1,"Iteration 0","Sun Nov 10 2024 13:00:00 GMT+0000 (GMT)","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 19 2024 04:18:45 GMT+0000 (GMT)","Tue Dec 03 2024 06:21:40 GMT+0000 (GMT)",,,"Tue Nov 26 2024 00:38:02 GMT+0000 (GMT)",,,,"PHANTM-17","Captr","755610a2-4ebe-44a7-aeb7-be88f61b1ff7","Friends and Family",
+"PHANTM-22","Phantm","Correlation of sales, product, and packaging data in a single view","\-> **Sales** (SKU Code x Units Sold) 
+
+\-> **Product** (SKU, Name, Description, Type, Tags, Meta Data) 
+
+\-> **Packaging** (Type, BoM, Materials, etc.)
+
+Refer to Entity Diagram
+[https://www.notion.so/phantm/Entity-Diagram-for-discussion-135aa5c2d8e880f7b0abec9f34f774b0?pvs=4](https://www.notion.so/phantm/Entity-Diagram-for-discussion-135aa5c2d8e880f7b0abec9f34f774b0?pvs=4)","Done",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com","andrew@phantm.com","Needs Backend Integration",1,"Iteration 0","Sun Nov 10 2024 13:00:00 GMT+0000 (GMT)","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 19 2024 04:27:42 GMT+0000 (GMT)","Tue Dec 03 2024 06:21:39 GMT+0000 (GMT)",,,"Tue Nov 26 2024 00:38:02 GMT+0000 (GMT)",,,,"PHANTM-17","Captr","755610a2-4ebe-44a7-aeb7-be88f61b1ff7","Friends and Family",
+"PHANTM-23","Phantm","Basic Data Visualisation at Product/SKU Level","Material Composition chart
+
+Percentage of Recycled Content indicator","Done",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com","andrew@phantm.com","Needs Backend Integration",1,"Iteration 0","Sun Nov 10 2024 13:00:00 GMT+0000 (GMT)","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 19 2024 04:29:31 GMT+0000 (GMT)","Tue Dec 03 2024 06:21:39 GMT+0000 (GMT)",,,"Tue Nov 26 2024 00:38:02 GMT+0000 (GMT)",,,,"PHANTM-17","Captr","755610a2-4ebe-44a7-aeb7-be88f61b1ff7","Friends and Family",
+"PHANTM-24","Phantm","Data quality info and related messaging",,"Duplicate",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 04:30:55 GMT+0000 (GMT)","Mon Dec 02 2024 23:41:53 GMT+0000 (GMT)",,,,"Mon Dec 02 2024 23:41:53 GMT+0000 (GMT)",,,,"Captr","755610a2-4ebe-44a7-aeb7-be88f61b1ff7","Friends and Family",
+"PHANTM-25","Phantm","Multipart Data Import and Reconciliation","Case 1:
 
 Import Sales Data Only 
 **THEN** Import Product Data Only 
@@ -67,137 +69,291 @@ Case 2:
 
 Import Sales Data Only **OR** Product Data Only
 **THEN** Import Packaging Data
-**REQUIRES** Data Reconciliation to join Packaging Data Together",Backlog,Data Enrichment,
-PHANTM-39,Data quality improvement tracking,Visualise improvement over time. Gamify.,Backlog,Packaging Library,
-PHANTM-38,Extract Data from Specification Docs,"Programatically Interpret Spec Documents provided by suppliers
-
-Pre-populate data model and correlate with products (where possible)
-
-First step before approval/reconciliation process to manage quality and fill in the gaps",Backlog,Data Enrichment,
-PHANTM-37,Supplier Task Management (productivity),"Document Comments, Task Creation, Assign Tasks.
-Enable team to coordinate data acquisition with sources and suppliers in an organised way. ",Backlog,Supplier Management,
-PHANTM-36,Supplier Catalog Digitisation,"Codify a suppliers entire range of packaging products.
-Make this information available to brands who consume those products. 
-
-e.g. Norwood -> Bunnings",Backlog,Supplier Management,
-PHANTM-35,Supplier Performance Dashboard,Analysis and scoring of packaging materials associated with that supplier,Backlog,Supplier Management,
-PHANTM-34,Supplier Portal: Self-service specification management,,Backlog,Supplier Management,
-PHANTM-68,Managed Reports,"* [PHANTM-68](https://linear.app/phantm/issue/PHANTM-undefined/report-apco)
-* [PHANTM-68](https://linear.app/phantm/issue/PHANTM-undefined/report-material-audit)
-* [PHANTM-68](https://linear.app/phantm/issue/PHANTM-undefined/policy-interpretation-create-reports-based-on-new-regulations)",Backlog,Reporting and Insights,
-PHANTM-51,Material Library - Advanced Functionality,"* [PHANTM-26](https://linear.app/phantm/issue/PHANTM-undefined/variants-and-versioning-track-material-changes-over-time)
-* [PHANTM-26](https://linear.app/phantm/issue/PHANTM-undefined/traceability-data-origin-and-modification-history)
-* [PHANTM-51](https://linear.app/phantm/issue/PHANTM-undefined/data-reconciliation-automated-sku-to-spec-matching)
-* [PHANTM-51](https://linear.app/phantm/issue/PHANTM-undefined/secondary-packaging-box-carton-pallet-materials)
-* [PHANTM-51](https://linear.app/phantm/issue/PHANTM-undefined/tertiary-packaging-transport-and-logistics-data)
-* [PHANTM-51](https://linear.app/phantm/issue/PHANTM-undefined/bulk-records-operations-mass-updates-and-changes)
-* [PHANTM-51](https://linear.app/phantm/issue/PHANTM-undefined/custom-views-role-based-interface-configurations)
-* [PHANTM-26](https://linear.app/phantm/issue/PHANTM-undefined/exportreport-builder-custom-data-extracts)
-* [PHANTM-26](https://linear.app/phantm/issue/PHANTM-undefined/alerts-and-notifications-changes-and-updates)",Backlog,Packaging Library,
-PHANTM-76,Glen Dimplex - Data,"Currently collecting data from Glen Dimplex. 
-Can we get it into Material Library? Is that helpful for sales?
-
-[https://drive.google.com/drive/folders/1Q8g5qR7D9uGAyXxH5qOUp4F4fzcKhZf2?usp=drive_link](https://drive.google.com/drive/folders/1Q8g5qR7D9uGAyXxH5qOUp4F4fzcKhZf2?usp=drive_link)",Todo,Customer Onboarding,
-PHANTM-46,Data Transformation and Migration Utilities,"Tools and utilities for processing raw data as part of customer migration. Some are bespoke, others are reusable. 
-
-* Advanced mapping scripts
-* Bulk processing scripts
-* Validation rules and test automation
-* Custom transformations",Todo,Data Integration,Customer Pilot
-PHANTM-86,Norwood - Data,"Not sure what we can do with Norwood yet. 
-We have logins to some of their internal tools, and there's a fortnightly sync with Adam that should be set up soon.",Todo,Customer Onboarding,
-PHANTM-28,Visual Indicators of data quality,Make it clear when data is 'estimated' and to what degree it can be relied upon,Todo,Data Enrichment,Friends and Family
-PHANTM-14,Analytics configuration,"What are we going to track customer interactions with the frontend?
-
-Google Analytics, Posthog, etc",Todo,Technical Foundation,
-PHANTM-15,Monitoring configuration,"How are we going to monitor issues in the frontend?
-
-Sentry, Datadog, Graphana, etc.",Todo,Technical Foundation,
-PHANTM-29,Compare and improve (tuning),"Run tests to measure accuracy of estimates against known data.
-Create a mechanism to do this systematically on going (e.g. as we get real data, use it to check quality of previous estimations)",Todo,Data Enrichment,Customer Pilot
-PHANTM-61,Data Intelligence Co-pilot,"Continuous analysis and actionable recommendations based on AI-powered packaging portfolio patterns.
-
-## General Approach
-
-*Create an intelligent system that identifies opportunities and risks, providing actionable insights through pattern recognition and rules-based analysis.*
-
-* Pattern detection
-* Recommendation engine
-* Measuring improvement from action
-* Continuous improvement
-* Value prioritisation",Todo,Reporting and Insights,Customer Pilot 
-PHANTM-84,Stackpack - Data,[https://drive.google.com/drive/folders/1bV3aKrhzCGeUeFTeAeNRP-iddkNbBUuC?usp=drive_link](https://drive.google.com/drive/folders/1bV3aKrhzCGeUeFTeAeNRP-iddkNbBUuC?usp=drive_link),Todo,Customer Onboarding,
-PHANTM-24,Data quality info and related messaging,,Todo,Packaging Library,Friends and Family
-PHANTM-27,Use Case Mapping,"What level of data quality is recommended for different use cases for the data
-e.g. Identifying an area for further investigation vs. APCO report vs. LCA",Todo,Data Enrichment,Customer Pilot
-PHANTM-26,Data Scoring Rubric,"What are the key factors for determining a score?
+**REQUIRES** Data Reconciliation to join Packaging Data Together","Backlog",,"No priority","f9caf9ea-c8c9-473c-a7b7-37f6acf283a8","Data Enrichment","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 04:37:39 GMT+0000 (GMT)","Tue Dec 03 2024 00:15:18 GMT+0000 (GMT)",,,,,,,"PHANTM-46","Captr",,,
+"PHANTM-26","Phantm","Data Quality Scoring","What are the key factors for determining a score?
 
 What levels are there?
 
-What does it look like to get from Level 1 to Level 3?",Todo,Data Enrichment,Friends and Family
-PHANTM-31,Expert moderation of Best Guess results,"Solutions Team eyeball it, and normalise the results. 
-Adjust prompts to 'train' the model. ",Todo,Data Enrichment,Friends and Family
-PHANTM-47,Progressive Data Enhancement,"Flexible menu of data improvement methods allowing teams to incrementally enhance their packaging data through a combination of automated tools, benchmarks, and collaborative options.
+What does it look like to get from Level 1 to Level 3?","Todo",,"No priority","f9caf9ea-c8c9-473c-a7b7-37f6acf283a8","Data Enrichment","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 06:06:20 GMT+0000 (GMT)","Mon Dec 02 2024 23:55:07 GMT+0000 (GMT)",,,,,,,,"Captr","9a1d8fb8-567b-4774-9c00-90333beccbc7","Friends and Family",
+"PHANTM-27","Phantm","Map Data Quality with Jobs to Do","What level of data quality is recommended for different use cases for the data
+e.g. Identifying an area for further investigation vs. APCO report vs. LCA","Todo",,"No priority","f9caf9ea-c8c9-473c-a7b7-37f6acf283a8","Data Enrichment","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 06:08:23 GMT+0000 (GMT)","Tue Nov 26 2024 00:18:31 GMT+0000 (GMT)",,,,,,,"PHANTM-26","Captr","d8b9376a-3a1d-491c-b30c-cff5e3a70d43","Customer Pilot",
+"PHANTM-28","Phantm","Visual Indicators of data quality","Make it clear when data is 'estimated' and to what degree it can be relied upon","Todo",,"No priority","f9caf9ea-c8c9-473c-a7b7-37f6acf283a8","Data Enrichment","jonny@phantm.com","andrew@phantm.com","",,,,,"Tue Nov 19 2024 06:11:59 GMT+0000 (GMT)","Mon Dec 02 2024 23:55:07 GMT+0000 (GMT)",,,,,,,"PHANTM-26","Captr","9a1d8fb8-567b-4774-9c00-90333beccbc7","Friends and Family",
+"PHANTM-29","Phantm","Back-test the results to fine tune","Run tests to measure accuracy of estimates against known data.
+Create a mechanism to do this systematically on going (e.g. as we get real data, use it to check quality of previous estimations)","Todo",,"No priority","f9caf9ea-c8c9-473c-a7b7-37f6acf283a8","Data Enrichment","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 06:16:06 GMT+0000 (GMT)","Tue Nov 26 2024 00:19:41 GMT+0000 (GMT)",,,,,,,"PHANTM-31","Captr","d8b9376a-3a1d-491c-b30c-cff5e3a70d43","Customer Pilot",
+"PHANTM-30","Phantm","Best Guess powered by AI","Jump-start your packaging insights and compliance reporting with AI-powered estimates. Best Guess analyses your existing product data to generate useful baseline packaging information in seconds - not months.
 
-## General Direction
-
-* Automated enhancement tools
-* Rule-based pattern detection
-* Micro-questions for continuous data enrichment
-* Targeted data interventions to maximise customer value
-* External reference data
-* Category matching algorithms
-* Reference data (e.g. customers like you…)
-* Validation frameworks
-* 'Human in the loop' mechanisms
-
-```markdown
-Add Sub-tasks as they become clear
-```",Todo,Data Enrichment,Customer Pilot
-PHANTM-74,Emma Lewisham,"Data includes Product and Packing Specs.
-Manually transform to target data model and migrate to Captr.",In Progress,Customer Onboarding,
-PHANTM-67,Phantm Portfolio Report,"Instant access to professional-grade packaging analysis that typically requires expensive consulting, powered by customer's own data on-file.
-
-## General Direction
-
-*Focus on automated generation of comprehensive analysis, with clear communication of data confidence levels and insights validity.*
-
-* Simple Reports
-* Data confidence integration
-* Automated calculations",In Progress,Reporting and Insights,Customer Pilot 
-PHANTM-33,Supplier Relationship Manager (Lite),"*Central hub for supplier communications and specification management, making packaging information accessible to all team members without complex process changes.*
-
-### **Overall Considerations and General Direction**
-
-*Focus on simplifying information capture and access, with minimal disruption to established workflows of supplier and retailer.*
-
-* Contact information management
-* Document organisation and search
-* Activity tracking/Inbox
-* Assign supplier documents to products (without automated processing of data)",In Progress,Supplier Management,
-PHANTM-16,User Authentication with username and password,,In Progress,Technical Foundation,
-PHANTM-42,'White glove' data migration services,"Customer provides their data in whatever format they have it, 
-Phantm team transforms it to correct structure, and works alongside customer to migrate it to Captre",In Progress,Data Integration,Friends and Family
-PHANTM-13,CI/CD Configuration,,In Progress,Technical Foundation,
-PHANTM-30,Generate packaging data with Public LLMs using real Sales/Product Data,,In Progress,Data Integration,Friends and Family
-PHANTM-12,Deployment configuration,How are we going to deploy the frontend to different environments? Setup Github workflows to push main to production. ,In Progress,Technical Foundation,
-PHANTM-17,Material Library - Basic,"### **Customer Value**
-
-Central command centre for packaging materials data, enabling teams to explore, analyse, and manage their complete packaging portfolio through a single, intuitive interface.
+Even regulators understand perfect data isn't always possible. Start meeting compliance needs today with intelligent estimates that combine your available data with expert packaging knowledge to fill the gaps. Then improve accuracy over time as better information becomes available.","In Progress",,"No priority","f9caf9ea-c8c9-473c-a7b7-37f6acf283a8","Data Enrichment","jonny@phantm.com","lloyd@phantm.com","On Treemap",,,,,"Tue Nov 19 2024 06:27:00 GMT+0000 (GMT)","Fri Dec 06 2024 06:06:45 GMT+0000 (GMT)","Tue Nov 19 2024 08:57:40 GMT+0000 (GMT)",,,,,,,"Captr",,,
+"PHANTM-31","Phantm","Expert moderation of Best Guess results","Solutions Team eyeball it, and normalise the results. 
+Adjust prompts to 'train' the model. ","Todo",,"No priority","f9caf9ea-c8c9-473c-a7b7-37f6acf283a8","Data Enrichment","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 06:27:57 GMT+0000 (GMT)","Tue Dec 03 2024 00:13:24 GMT+0000 (GMT)",,,,,,,,"Captr","9a1d8fb8-567b-4774-9c00-90333beccbc7","Friends and Family",
+"PHANTM-32","Phantm","Custom Data Schema Support","*Enterprise-ready data flexibility allowing customers to extend Captr's core data model with their own fields and tags, while maintaining platform integrity and scalability.*
 
 ### **General Direction**
 
-*Focus on intuitive data exploration and management, emphasising critical data and clear visual indicators to help business users find the right information and understand it*
+*Balance customer flexibility with platform scalability through controlled customisation capabilities, leveraging our medallion architecture and flexible schema approach.*
 
-* Simple add/edit (e.g. one item at a time)
-* Component-based material breakdown
-* Integrated supplier documentation
-* Search and filter optimisation
-* Data quality indicators
-* Bulk data management tools",In Progress,Packaging Library,Friends and Family
-PHANTM-11,Agree on frontend framework,"What are we going to write the frontend using?
+* Schema extension mechanisms
+* Custom field validation rules
+* Field visibility controls
+* Data migration tooling
+* Performance monitoring","Backlog",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 06:49:23 GMT+0000 (GMT)","Tue Nov 19 2024 07:16:12 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-33","Phantm","Supplier Hub","Transform chaotic supplier communications into organised, accessible information. Our central hub helps your team collect and manage packaging specifications, supplier documents, and contact details - all in one place.
 
-React, Vue, etc",Done,Technical Foundation,
-PHANTM-10,Buildpack setup,"What are we going to use to package up the frontend?
+Stop losing vital data when people change roles. Simple tools for requests, reminders, and document management mean your whole team can collaborate effectively, building a lasting information asset over time.","In Progress",,"No priority","0557f453-f120-48fb-92dd-958370df181a","Supplier Management","jonny@phantm.com",,"Needs Interaction Design, On Treemap",,,,,"Tue Nov 19 2024 06:53:49 GMT+0000 (GMT)","Fri Dec 06 2024 06:21:32 GMT+0000 (GMT)","Tue Nov 19 2024 08:56:25 GMT+0000 (GMT)",,,,,,,"Captr","b2926deb-460a-4f78-985a-bdc222f27b50","Public Beta",
+"PHANTM-34","Phantm","Supplier Portal","Enable suppliers to directly upload and manage packaging information via a web portal at retailer's request.","Duplicate",,"No priority","0557f453-f120-48fb-92dd-958370df181a","Supplier Management","jonny@phantm.com",,"Needs Conceptual Design",,,,,"Tue Nov 19 2024 06:54:13 GMT+0000 (GMT)","Fri Dec 06 2024 06:19:30 GMT+0000 (GMT)",,,,"Fri Dec 06 2024 06:08:35 GMT+0000 (GMT)",,,,"Captr","330d10b3-18de-4871-ba43-99acadf61aa3","Future",
+"PHANTM-35","Phantm","Supplier Performance Dashboard","Analysis and scoring of packaging materials associated with that supplier. 
+High Level. ","Backlog",,"No priority","0557f453-f120-48fb-92dd-958370df181a","Supplier Management","jonny@phantm.com",,"Needs Interaction Design",,,,,"Tue Nov 19 2024 06:55:13 GMT+0000 (GMT)","Fri Dec 06 2024 06:21:33 GMT+0000 (GMT)",,,,,,,"PHANTM-33","Captr","b2926deb-460a-4f78-985a-bdc222f27b50","Public Beta",
+"PHANTM-36","Phantm","Supplier Catalog Digitisation","Codify a suppliers entire range of packaging products.
+Make this information available to brands who consume those products. 
 
-Vite, Webpack, etc",Done,Technical Foundation,
+e.g. Norwood -> Bunnings","Backlog",,"No priority","0557f453-f120-48fb-92dd-958370df181a","Supplier Management","jonny@phantm.com",,"Needs Conceptual Design, Norwood",,,,,"Tue Nov 19 2024 06:56:59 GMT+0000 (GMT)","Tue Dec 03 2024 06:28:39 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-37","Phantm","Supplier Task Management (productivity)","Document Comments, Task Creation, Assign Tasks.
+Enable team to coordinate data acquisition with sources and suppliers in an organised way. ","Backlog",,"No priority","0557f453-f120-48fb-92dd-958370df181a","Supplier Management","jonny@phantm.com",,"Needs Conceptual Design",,,,,"Tue Nov 19 2024 06:59:38 GMT+0000 (GMT)","Fri Dec 06 2024 02:01:51 GMT+0000 (GMT)",,,,,,,"PHANTM-165","Captr","330d10b3-18de-4871-ba43-99acadf61aa3","Future",
+"PHANTM-38","Phantm","Extract Data from Specification Docs","Programatically Interpret Spec Documents provided by suppliers
+
+Pre-populate data model and correlate with products (where possible)
+
+First step before approval/reconciliation process to manage quality and fill in the gaps","Backlog",,"No priority","f9caf9ea-c8c9-473c-a7b7-37f6acf283a8","Data Enrichment","jonny@phantm.com",,"Needs Feasibility Assessment",,,,,"Tue Nov 19 2024 07:06:02 GMT+0000 (GMT)","Fri Dec 06 2024 02:16:30 GMT+0000 (GMT)",,,,,,,"PHANTM-47","Captr","97f3885b-0887-4a76-97ad-ff91a9a27953","Public Beta",
+"PHANTM-39","Phantm","Data quality improvement tracking","Visualise improvement over time. Gamify.","Backlog",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com",,"Needs Conceptual Design",,,,,"Tue Nov 19 2024 07:23:09 GMT+0000 (GMT)","Tue Dec 03 2024 06:38:08 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-40","Phantm","Customer Moderation of Best Guess Data","Enable customer to adjust generated data. 
+Part of a data reconciliation and quality control workflow. ","Backlog",,"No priority","f9caf9ea-c8c9-473c-a7b7-37f6acf283a8","Data Enrichment","jonny@phantm.com",,"Needs Conceptual Design",,,,,"Tue Nov 19 2024 07:25:46 GMT+0000 (GMT)","Fri Dec 06 2024 02:16:30 GMT+0000 (GMT)",,,,,,,"PHANTM-47","Captr","97f3885b-0887-4a76-97ad-ff91a9a27953","Public Beta",
+"PHANTM-41","Phantm","Import data with CSV Template","* Template for product, sales, packaging data (individually or all together)
+* Import data to customer database by file upload
+* Basic validation ","Backlog",,"Low","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 07:30:51 GMT+0000 (GMT)","Fri Dec 06 2024 06:24:45 GMT+0000 (GMT)",,,,,,,"PHANTM-46","Captr","d5c4b2b3-a2db-47e0-a21b-afff8a580368","Public Beta",
+"PHANTM-42","Phantm","Full Service Data Migration","Take the headache out of data migration. Our expert team handles the heavy lifting - working with your data in whatever format it exists, while our packaging specialists ensure everything is captured correctly.
+
+From simple data uploads to complex enterprise migrations requiring on-site expertise, we scale our approach to fit your needs. Our unique blend of packaging knowledge, technical tools and hands-on support ensures a smooth transition to Captr.","In Progress",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com",,"On Treemap",,,,,"Tue Nov 19 2024 07:35:30 GMT+0000 (GMT)","Fri Dec 06 2024 06:03:21 GMT+0000 (GMT)","Tue Nov 19 2024 08:57:21 GMT+0000 (GMT)",,,,,,,"Captr","b6896697-7053-49c8-a44b-fe99ae4f8550","Friends and Family",
+"PHANTM-43","Phantm","ERP Integrations","* Batch synchronisation engine
+* Direct integration to selected ERP systems
+* Handling data changes","Duplicate",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 07:38:28 GMT+0000 (GMT)","Fri Dec 06 2024 06:19:30 GMT+0000 (GMT)",,,,"Fri Dec 06 2024 06:05:01 GMT+0000 (GMT)",,,,"Captr","2a0ed9ce-a9a5-463c-942b-8b2a3f08b383","Future",
+"PHANTM-44","Phantm","API Development","* end-point for Inbound data (e.g. to support customers who collect data at Purchase Order)
+* Two-way API, for selected scenarios
+* Authentication/security","Backlog",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com","jerome@phantm.com","",,,,,"Tue Nov 19 2024 07:40:01 GMT+0000 (GMT)","Fri Dec 06 2024 06:04:31 GMT+0000 (GMT)",,,,,,,,"Captr","2a0ed9ce-a9a5-463c-942b-8b2a3f08b383","Future",
+"PHANTM-45","Phantm","Advanced Data Integration","Seamless data connections that fit your business. Whether you need automated data feeds from suppliers, integration with your existing systems, or custom connections to specialised tools - we'll find the right approach without disrupting your operations.
+
+We grow our integration options based on customer needs, prioritising solutions that deliver the most value. Until then, our expert migration service ensures you're up and running quickly.","Backlog",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com",,"On Treemap",,,,,"Tue Nov 19 2024 07:41:49 GMT+0000 (GMT)","Fri Dec 06 2024 06:25:23 GMT+0000 (GMT)",,,,,,,,"Captr","4de92f23-07b1-4419-9ab7-146b8d5d30a2","Customer Pilot",
+"PHANTM-46","Phantm","Data Migration Toolkit (Self Service)","Simple self-service tools to help your team prepare and import packaging data. From basic templates to advanced import utilities, choose the tools that match your team's capabilities and preferences.","Todo",,"Low","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com",,"On Treemap",,,,,"Tue Nov 19 2024 07:43:44 GMT+0000 (GMT)","Fri Dec 06 2024 06:24:45 GMT+0000 (GMT)",,,,,,,,"Captr","d5c4b2b3-a2db-47e0-a21b-afff8a580368","Public Beta",
+"PHANTM-47","Phantm","Progressive Data Enhancement","Turn overwhelming packaging data challenges into manageable steps. Our Progressive Data Enhancement approach spots patterns and makes targeted suggestions to help your team improve data quality steadily over time.
+
+We'll guide you to the most impactful quick wins, using intelligent analysis to highlight gaps and validate information as you work. No magic wands - just practical support that makes continuous improvement achievable.","Todo",8,"No priority","f9caf9ea-c8c9-473c-a7b7-37f6acf283a8","Data Enrichment","jonny@phantm.com",,"On Treemap, Needs Feasibility Assessment",,,,,"Tue Nov 19 2024 07:49:06 GMT+0000 (GMT)","Fri Dec 06 2024 06:07:02 GMT+0000 (GMT)",,,,,,,,"Captr","97f3885b-0887-4a76-97ad-ff91a9a27953","Public Beta",
+"PHANTM-48","Phantm","Email Automation and file upload by Supplier","*Frictionless specification capture through familiar business tools, making it easy for suppliers to provide packaging information through email or simple file uploads.*
+
+* Unique supplier email addresses
+* Emails and attachments stored in SRM Inbox
+* Support Direct File Upload by Suppliers","Backlog",,"No priority","0557f453-f120-48fb-92dd-958370df181a","Supplier Management","jonny@phantm.com",,"Needs Interaction Design, Bunnings",,,,,"Tue Nov 19 2024 07:54:57 GMT+0000 (GMT)","Fri Dec 06 2024 02:01:51 GMT+0000 (GMT)",,,,,,,"PHANTM-165","Captr","330d10b3-18de-4871-ba43-99acadf61aa3","Future",
+"PHANTM-50","Phantm","Structured Data Requests","Excel templates provided to Suppliers
+
+Data automatically extracted when received by Phantm","Backlog",,"No priority","0557f453-f120-48fb-92dd-958370df181a","Supplier Management","jonny@phantm.com",,"Needs Interaction Design",,,,,"Tue Nov 19 2024 07:59:38 GMT+0000 (GMT)","Fri Dec 06 2024 02:01:50 GMT+0000 (GMT)",,,,,,,"PHANTM-165","Captr","330d10b3-18de-4871-ba43-99acadf61aa3","Future",
+"PHANTM-51","Phantm","Material Library Plus","Unlock advanced packaging data capabilities as your needs grow. From complex packaging hierarchies to automated data reconciliation, our evolving feature set helps mature businesses manage increasingly sophisticated packaging operations.","Backlog",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com",,"Needs Conceptual Design, On Treemap",,,,,"Tue Nov 19 2024 08:04:33 GMT+0000 (GMT)","Fri Dec 06 2024 06:10:38 GMT+0000 (GMT)",,,,,,,,"Captr","8379b9e0-5467-47e3-b175-4976e71e2d87","Future",
+"PHANTM-52","Phantm","Data Reconciliation: Automated SKU-to-spec matching",,"Todo",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 08:04:33 GMT+0000 (GMT)","Fri Dec 06 2024 01:59:08 GMT+0000 (GMT)",,,,,,,"PHANTM-51","Captr","8379b9e0-5467-47e3-b175-4976e71e2d87","Future",
+"PHANTM-53","Phantm","Secondary Packaging: Box->Carton->Pallet Materials",,"Todo",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 08:04:33 GMT+0000 (GMT)","Fri Dec 06 2024 01:59:08 GMT+0000 (GMT)",,,,,,,"PHANTM-51","Captr","8379b9e0-5467-47e3-b175-4976e71e2d87","Future",
+"PHANTM-54","Phantm","Tertiary Packaging: Transport and Logistics Data",,"Todo",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 08:04:33 GMT+0000 (GMT)","Fri Dec 06 2024 01:59:08 GMT+0000 (GMT)",,,,,,,"PHANTM-51","Captr","8379b9e0-5467-47e3-b175-4976e71e2d87","Future",
+"PHANTM-55","Phantm","Bulk Records Operations: Mass updates and changes",,"Todo",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 08:04:33 GMT+0000 (GMT)","Fri Dec 06 2024 01:59:08 GMT+0000 (GMT)",,,,,,,"PHANTM-51","Captr","8379b9e0-5467-47e3-b175-4976e71e2d87","Future",
+"PHANTM-56","Phantm","Custom Views: Role-based interface configurations",,"Todo",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 08:04:33 GMT+0000 (GMT)","Fri Dec 06 2024 01:59:08 GMT+0000 (GMT)",,,,,,,"PHANTM-51","Captr","8379b9e0-5467-47e3-b175-4976e71e2d87","Future",
+"PHANTM-57","Phantm","Packaging Variants","Managing a single 'master' packaging specification, applied to multiple SKU 'variants' ","Todo",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 08:04:33 GMT+0000 (GMT)","Fri Dec 06 2024 01:59:08 GMT+0000 (GMT)",,,,,,,"PHANTM-51","Captr","8379b9e0-5467-47e3-b175-4976e71e2d87","Future",
+"PHANTM-58","Phantm","Export/Report Builder: Custom data extracts",,"Todo",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 08:04:33 GMT+0000 (GMT)","Fri Dec 06 2024 01:59:08 GMT+0000 (GMT)",,,,,,,"PHANTM-51","Captr","8379b9e0-5467-47e3-b175-4976e71e2d87","Future",
+"PHANTM-59","Phantm","Traceability: Data origin and modification history",,"Todo",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 08:04:33 GMT+0000 (GMT)","Fri Dec 06 2024 01:59:08 GMT+0000 (GMT)",,,,,,,"PHANTM-51","Captr","8379b9e0-5467-47e3-b175-4976e71e2d87","Future",
+"PHANTM-60","Phantm","Alerts and Notifications: Changes and updates",,"Todo",,"No priority","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 08:04:33 GMT+0000 (GMT)","Fri Dec 06 2024 01:59:08 GMT+0000 (GMT)",,,,,,,"PHANTM-51","Captr","8379b9e0-5467-47e3-b175-4976e71e2d87","Future",
+"PHANTM-61","Phantm","Data Intelligence Co-Pilot","Make smarter packaging decisions with AI-powered guidance at your fingertips. Co-Pilot continuously analyses your data, suggesting small, achievable improvements you can action today.
+
+You're always in control - easily accept or dismiss recommendations that fit your priorities. No more overwhelming annual reviews; just steady progress towards your sustainability goals.","Todo",,"No priority","72aa711d-12a2-476c-8abf-b94d3d91ee51","Reporting and Insights","jonny@phantm.com",,"Needs Conceptual Design, On Treemap",,,,,"Tue Nov 19 2024 08:13:36 GMT+0000 (GMT)","Fri Dec 06 2024 06:11:35 GMT+0000 (GMT)",,,,,,,,"Captr","58a2afd7-bfaf-4c45-8ed3-56e127461783","Public Beta",
+"PHANTM-62","Phantm","Basic recommendations",,"Backlog",,"No priority","72aa711d-12a2-476c-8abf-b94d3d91ee51","Reporting and Insights","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 08:15:04 GMT+0000 (GMT)","Fri Dec 06 2024 02:18:21 GMT+0000 (GMT)",,,,,,,"PHANTM-61","Captr","58a2afd7-bfaf-4c45-8ed3-56e127461783","Public Beta",
+"PHANTM-63","Phantm","Notifications",,"Backlog",,"No priority","72aa711d-12a2-476c-8abf-b94d3d91ee51","Reporting and Insights","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 08:15:15 GMT+0000 (GMT)","Fri Dec 06 2024 02:18:21 GMT+0000 (GMT)",,,,,,,"PHANTM-61","Captr","58a2afd7-bfaf-4c45-8ed3-56e127461783","Public Beta",
+"PHANTM-64","Phantm","Insights engine",,"Backlog",,"No priority","72aa711d-12a2-476c-8abf-b94d3d91ee51","Reporting and Insights","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 08:15:31 GMT+0000 (GMT)","Fri Dec 06 2024 02:18:21 GMT+0000 (GMT)",,,,,,,"PHANTM-61","Captr","58a2afd7-bfaf-4c45-8ed3-56e127461783","Public Beta",
+"PHANTM-65","Phantm","Engagement tracking and success metric",,"Backlog",,"No priority","72aa711d-12a2-476c-8abf-b94d3d91ee51","Reporting and Insights","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 08:15:59 GMT+0000 (GMT)","Fri Dec 06 2024 02:18:21 GMT+0000 (GMT)",,,,,,,"PHANTM-61","Captr","58a2afd7-bfaf-4c45-8ed3-56e127461783","Public Beta",
+"PHANTM-66","Phantm","Customer feedback and analytics",,"Backlog",,"No priority","72aa711d-12a2-476c-8abf-b94d3d91ee51","Reporting and Insights","jonny@phantm.com",,"",,,,,"Tue Nov 19 2024 08:16:33 GMT+0000 (GMT)","Fri Dec 06 2024 02:18:21 GMT+0000 (GMT)",,,,,,,"PHANTM-61","Captr","58a2afd7-bfaf-4c45-8ed3-56e127461783","Public Beta",
+"PHANTM-67","Phantm","Phantm Portfolio Report","Transform weeks of expert analysis into instant insights. Get a professional-grade assessment of your packaging portfolio's impact the moment your data lands in Captr.
+
+Paired with our Packaging Solutions Consulting, these automated reports help our experts deliver high-value recommendations faster, accelerating your journey to improved sustainability.","Todo",,"No priority","72aa711d-12a2-476c-8abf-b94d3d91ee51","Reporting and Insights","jonny@phantm.com","andrew@phantm.com","On Treemap, Needs Backend Integration",,,,,"Tue Nov 19 2024 08:20:04 GMT+0000 (GMT)","Fri Dec 06 2024 06:12:36 GMT+0000 (GMT)",,,,,,,"PHANTM-68","Captr","c83f4b46-73ab-402b-94a2-39f9e55c5c71","Friends and Family",
+"PHANTM-68","Phantm","Compliance Ready Reports","Meet compliance requirements with confidence. Our managed reports - starting with APCO submissions - turn months of manual work into automated reporting ready in minutes.
+
+As new regulations emerge, we analyse requirements and create proven reporting solutions, ensuring you're always ahead of compliance needs.","Backlog",,"No priority","72aa711d-12a2-476c-8abf-b94d3d91ee51","Reporting and Insights","jonny@phantm.com",,"On Treemap",,,,,"Tue Nov 19 2024 08:22:23 GMT+0000 (GMT)","Fri Dec 06 2024 05:58:27 GMT+0000 (GMT)",,,,,,,,"Captr","430a59fd-ad0e-487a-8442-abedc95bbf9e","Future",
+"PHANTM-69","Phantm","APCO Report Automation",,"Backlog",,"No priority","72aa711d-12a2-476c-8abf-b94d3d91ee51","Reporting and Insights","jonny@phantm.com",,"Needs Interaction Design, On Treemap, All",,,,,"Tue Nov 19 2024 08:22:23 GMT+0000 (GMT)","Fri Dec 06 2024 06:26:53 GMT+0000 (GMT)",,,,,,,"PHANTM-68","Captr","430a59fd-ad0e-487a-8442-abedc95bbf9e","Future",
+"PHANTM-70","Phantm","Report: Material Audit",,"Backlog",,"No priority","72aa711d-12a2-476c-8abf-b94d3d91ee51","Reporting and Insights","jonny@phantm.com",,"Needs Conceptual Design",,,,,"Tue Nov 19 2024 08:22:23 GMT+0000 (GMT)","Fri Dec 06 2024 02:14:29 GMT+0000 (GMT)",,,,,,,"PHANTM-68","Captr","430a59fd-ad0e-487a-8442-abedc95bbf9e","Future",
+"PHANTM-71","Phantm","Policy Interpretation: Create Reports based on new regulations",,"Backlog",,"No priority","72aa711d-12a2-476c-8abf-b94d3d91ee51","Reporting and Insights","jonny@phantm.com",,"Needs Conceptual Design, Needs Feasibility Assessment",,,,,"Tue Nov 19 2024 08:22:23 GMT+0000 (GMT)","Fri Dec 06 2024 02:14:29 GMT+0000 (GMT)",,,,,,,"PHANTM-68","Captr","430a59fd-ad0e-487a-8442-abedc95bbf9e","Future",
+"PHANTM-72","Phantm","Report: Industry Benchmarks","Compare performance with industry peers","Backlog",,"No priority","72aa711d-12a2-476c-8abf-b94d3d91ee51","Reporting and Insights","jonny@phantm.com",,"Needs Feasibility Assessment",,,,,"Tue Nov 19 2024 08:23:45 GMT+0000 (GMT)","Fri Dec 06 2024 02:14:55 GMT+0000 (GMT)",,,,,,,"PHANTM-166","Captr","430a59fd-ad0e-487a-8442-abedc95bbf9e","Future",
+"PHANTM-73","Phantm","Scenario Planning","'What if' Analysis","Backlog",,"No priority","72aa711d-12a2-476c-8abf-b94d3d91ee51","Reporting and Insights","jonny@phantm.com",,"Needs Conceptual Design",,,,,"Tue Nov 19 2024 08:24:32 GMT+0000 (GMT)","Fri Dec 06 2024 02:14:55 GMT+0000 (GMT)",,,,,,,"PHANTM-166","Captr","430a59fd-ad0e-487a-8442-abedc95bbf9e","Future",
+"PHANTM-74","Phantm","Emma Lewisham","Data includes Product and Packing Specs.
+Manually transform to target data model and migrate to Captr.","Done",,"No priority","4e085af9-9357-4ceb-81e2-e80dc08094d4","Customer Onboarding","jonny@phantm.com","lloyd@phantm.com","Data Migration",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 19 2024 22:44:21 GMT+0000 (GMT)","Tue Nov 26 2024 00:10:49 GMT+0000 (GMT)","Tue Nov 19 2024 22:55:41 GMT+0000 (GMT)",,"Tue Nov 26 2024 00:10:49 GMT+0000 (GMT)",,,,,"Captr",,,
+"PHANTM-75","Phantm","Glen Dimplex - Supplier Emails","[Technical PoC (August)](https://phantm.notion.site/Artefacts-from-Captr-Proof-of-Concept-0f341d4ecda047cebedbc6c9fb7c3467?pvs=4) captured emails going back and forth between Phantm and Glen Dimplex when requesting packaging information. 
+
+Let's plug these into the Captr Supplier Dashboard. It will help us see what we're really dealing with, and it *might* be helpful for sales efforts on Glen Dimplex. ","Backlog",,"No priority","4e085af9-9357-4ceb-81e2-e80dc08094d4","Customer Onboarding","jonny@phantm.com",,"Data Migration",,,,,"Tue Nov 19 2024 22:49:14 GMT+0000 (GMT)","Tue Nov 19 2024 22:49:14 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-76","Phantm","Glen Dimplex - First Pass Data","Currently collecting data from Glen Dimplex. 
+Can we get it into Material Library? Is that helpful for sales?
+
+[https://drive.google.com/drive/folders/1Q8g5qR7D9uGAyXxH5qOUp4F4fzcKhZf2?usp=drive_link](https://drive.google.com/drive/folders/1Q8g5qR7D9uGAyXxH5qOUp4F4fzcKhZf2?usp=drive_link)","Todo",,"High","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com","lloyd@phantm.com","Data Migration",3,"Cycle 2","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Fri Dec 20 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 19 2024 22:50:50 GMT+0000 (GMT)","Tue Dec 03 2024 05:23:47 GMT+0000 (GMT)",,,,,,,"PHANTM-42","Captr",,,
+"PHANTM-77","Phantm","Market Lane - Data","[https://drive.google.com/drive/folders/1ZsFUGDrESkDz4QBPB2ZDK1TUktSNgidE?usp=drive_link](https://drive.google.com/drive/folders/1ZsFUGDrESkDz4QBPB2ZDK1TUktSNgidE?usp=drive_link)","Backlog",,"No priority","4e085af9-9357-4ceb-81e2-e80dc08094d4","Customer Onboarding","jonny@phantm.com",,"Data Migration",,,,,"Tue Nov 19 2024 22:52:05 GMT+0000 (GMT)","Tue Nov 19 2024 22:52:05 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-78","Phantm","Mecca - Data","[https://drive.google.com/drive/folders/1Z3CNg7173CAO_d4eXKWqytyU9OADqCzC?usp=drive_link](https://drive.google.com/drive/folders/1Z3CNg7173CAO_d4eXKWqytyU9OADqCzC?usp=drive_link)","Backlog",,"No priority","4e085af9-9357-4ceb-81e2-e80dc08094d4","Customer Onboarding","jonny@phantm.com",,"Data Migration",,,,,"Tue Nov 19 2024 22:52:28 GMT+0000 (GMT)","Tue Nov 19 2024 22:52:28 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-79","Phantm","Moose Toys - Data","[https://drive.google.com/drive/folders/1mf4KU7NWsNwax15oP7v5y6qTifKydPtd?usp=drive_link](https://drive.google.com/drive/folders/1mf4KU7NWsNwax15oP7v5y6qTifKydPtd?usp=drive_link)","Backlog",,"No priority","4e085af9-9357-4ceb-81e2-e80dc08094d4","Customer Onboarding","jonny@phantm.com",,"Data Migration",,,,,"Tue Nov 19 2024 22:52:56 GMT+0000 (GMT)","Tue Nov 19 2024 22:52:56 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-80","Phantm","Mountain Blue - Data","[https://drive.google.com/drive/folders/1oM_WTMYNVqXQ62895ybeT0rM_ULwD3sR?usp=drive_link](https://drive.google.com/drive/folders/1oM_WTMYNVqXQ62895ybeT0rM_ULwD3sR?usp=drive_link)","Backlog",,"No priority","4e085af9-9357-4ceb-81e2-e80dc08094d4","Customer Onboarding","jonny@phantm.com",,"Data Migration",,,,,"Tue Nov 19 2024 22:53:16 GMT+0000 (GMT)","Tue Nov 19 2024 22:53:16 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-81","Phantm","PAC Trading","[https://drive.google.com/drive/folders/11JbpK71EvxA-H_qXulB4qj5zJhEYksxx?usp=drive_link](https://drive.google.com/drive/folders/11JbpK71EvxA-H_qXulB4qj5zJhEYksxx?usp=drive_link)","Backlog",,"No priority","4e085af9-9357-4ceb-81e2-e80dc08094d4","Customer Onboarding","jonny@phantm.com",,"Data Migration",,,,,"Tue Nov 19 2024 22:53:44 GMT+0000 (GMT)","Tue Nov 19 2024 22:53:44 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-82","Phantm","Qantas - Data","[https://drive.google.com/drive/folders/10rgw33tYgypu7pozqs2eh3sxaCWZcmbT?usp=drive_link](https://drive.google.com/drive/folders/10rgw33tYgypu7pozqs2eh3sxaCWZcmbT?usp=drive_link)","Backlog",,"No priority","4e085af9-9357-4ceb-81e2-e80dc08094d4","Customer Onboarding","jonny@phantm.com",,"Data Migration",,,,,"Tue Nov 19 2024 22:54:01 GMT+0000 (GMT)","Wed Nov 20 2024 01:32:53 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-83","Phantm","Reece - Data","[https://drive.google.com/drive/folders/1gtyetPu_glOSghuW_bffCcVO1zSGvdkj?usp=drive_link](https://drive.google.com/drive/folders/1gtyetPu_glOSghuW_bffCcVO1zSGvdkj?usp=drive_link)","Backlog",,"No priority","4e085af9-9357-4ceb-81e2-e80dc08094d4","Customer Onboarding","jonny@phantm.com",,"Data Migration",,,,,"Tue Nov 19 2024 22:54:21 GMT+0000 (GMT)","Tue Nov 19 2024 22:54:21 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-84","Phantm","Stackpack - First Pass Data","[https://drive.google.com/drive/folders/1bV3aKrhzCGeUeFTeAeNRP-iddkNbBUuC?usp=drive_link](https://drive.google.com/drive/folders/1bV3aKrhzCGeUeFTeAeNRP-iddkNbBUuC?usp=drive_link)","Todo",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com","lloyd@phantm.com","Data Migration",3,"Cycle 2","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Fri Dec 20 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 19 2024 22:54:41 GMT+0000 (GMT)","Tue Dec 03 2024 05:23:51 GMT+0000 (GMT)",,,,,,,"PHANTM-42","Captr",,,
+"PHANTM-85","Phantm","Thankyou Group - Scraping","[https://drive.google.com/drive/folders/1W7XWmc4Lf6lj2etFYibEZcxd_y34cqX6?usp=drive_link](https://drive.google.com/drive/folders/1W7XWmc4Lf6lj2etFYibEZcxd_y34cqX6?usp=drive_link)","Done",,"No priority","4e085af9-9357-4ceb-81e2-e80dc08094d4","Customer Onboarding","jonny@phantm.com",,"Data Migration",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 19 2024 22:55:34 GMT+0000 (GMT)","Tue Dec 03 2024 04:58:07 GMT+0000 (GMT)","Tue Nov 26 2024 00:16:10 GMT+0000 (GMT)",,"Tue Dec 03 2024 04:58:07 GMT+0000 (GMT)",,,,,"Captr",,,
+"PHANTM-86","Phantm","Norwood - Data","Not sure what we can do with Norwood yet. 
+We have logins to some of their internal tools, and there's a fortnightly sync with Adam that should be set up soon.","Todo",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com",,"Data Migration",,,,,"Tue Nov 19 2024 22:57:29 GMT+0000 (GMT)","Mon Dec 02 2024 22:26:46 GMT+0000 (GMT)",,,,,,,"PHANTM-42","Captr",,,
+"PHANTM-87","Phantm","Database setup","This involves creating database migrations to manage schema changes, setting up and configuring the database with APIs, and configuring it for production environments with DevOps. Additionally, a PostgreSQL database instance needs to be created, and data related to ""Emma Lewisham"" should be imported.
+
+**C.**","Backlog",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","sonali@asiapacific.tech",,"",,,,,"Thu Nov 21 2024 07:14:09 GMT+0000 (GMT)","Wed Nov 27 2024 05:01:47 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-88","Phantm","DB migration setup",,"Backlog",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","sonali@asiapacific.tech","asitha@asiapacific.tech","",,,,,"Thu Nov 21 2024 07:15:51 GMT+0000 (GMT)","Mon Nov 25 2024 07:20:45 GMT+0000 (GMT)",,,,,,,"PHANTM-87","Captr",,,
+"PHANTM-89","Phantm","Database configuration","1. Setup PostgreSQL database
+2. Setup database schemas for accounts
+3. Import Emma L data
+4. Import Sales data","Done",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","sonali@asiapacific.tech","asitha@asiapacific.tech","",1,"Iteration 0","Sun Nov 10 2024 13:00:00 GMT+0000 (GMT)","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Thu Nov 21 2024 07:16:44 GMT+0000 (GMT)","Tue Nov 26 2024 00:08:21 GMT+0000 (GMT)","Mon Nov 25 2024 07:23:13 GMT+0000 (GMT)",,"Tue Nov 26 2024 00:08:21 GMT+0000 (GMT)",,,,"PHANTM-87","Captr",,,
+"PHANTM-90","Phantm","Database access management for development",,"Backlog",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","sonali@asiapacific.tech","asitha@asiapacific.tech","",,,,,"Thu Nov 21 2024 07:17:55 GMT+0000 (GMT)","Mon Nov 25 2024 07:20:50 GMT+0000 (GMT)",,,,,,,"PHANTM-87","Captr",,,
+"PHANTM-91","Phantm","Production database configuration",,"Backlog",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","sonali@asiapacific.tech","asitha@asiapacific.tech","",,,,,"Thu Nov 21 2024 07:18:37 GMT+0000 (GMT)","Tue Nov 26 2024 02:24:02 GMT+0000 (GMT)",,,,,,,"PHANTM-87","Captr",,,
+"PHANTM-92","Phantm","Manual Data import into silver layer","We import sales data from CSV files, which can have different schemas for different accounts. We need to transform those data into the same schema before saving them in the database.","Backlog",,"High","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","sonali@asiapacific.tech",,"",,,,,"Thu Nov 21 2024 07:21:52 GMT+0000 (GMT)","Fri Dec 06 2024 06:24:45 GMT+0000 (GMT)",,,,,,,"PHANTM-46","Captr","d5c4b2b3-a2db-47e0-a21b-afff8a580368","Public Beta",
+"PHANTM-93","Phantm","Formatted product data import",,"Backlog",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","sonali@asiapacific.tech","asitha@asiapacific.tech","",,,,,"Thu Nov 21 2024 07:22:34 GMT+0000 (GMT)","Fri Dec 06 2024 06:24:45 GMT+0000 (GMT)",,,,,,,"PHANTM-92","Captr","d5c4b2b3-a2db-47e0-a21b-afff8a580368","Public Beta",
+"PHANTM-94","Phantm","Sales data import pipeline",,"Backlog",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","sonali@asiapacific.tech","asitha@asiapacific.tech","",,,,,"Thu Nov 21 2024 07:22:50 GMT+0000 (GMT)","Fri Dec 06 2024 06:24:45 GMT+0000 (GMT)",,,,,,,"PHANTM-92","Captr","d5c4b2b3-a2db-47e0-a21b-afff8a580368","Public Beta",
+"PHANTM-95","Phantm","Code repo setup",,"Backlog",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","sonali@asiapacific.tech","asitha@asiapacific.tech","",,,,,"Thu Nov 21 2024 07:23:05 GMT+0000 (GMT)","Fri Dec 06 2024 06:24:45 GMT+0000 (GMT)",,,,,,,"PHANTM-92","Captr","d5c4b2b3-a2db-47e0-a21b-afff8a580368","Public Beta",
+"PHANTM-96","Phantm","Configuration setup",,"Backlog",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","sonali@asiapacific.tech","asitha@asiapacific.tech","",,,,,"Thu Nov 21 2024 07:23:28 GMT+0000 (GMT)","Fri Dec 06 2024 06:24:45 GMT+0000 (GMT)",,,,,,,"PHANTM-92","Captr","d5c4b2b3-a2db-47e0-a21b-afff8a580368","Public Beta",
+"PHANTM-97","Phantm","Import procedure documentation",,"Backlog",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","sonali@asiapacific.tech","asitha@asiapacific.tech","",,,,,"Thu Nov 21 2024 07:23:45 GMT+0000 (GMT)","Fri Dec 06 2024 06:24:45 GMT+0000 (GMT)",,,,,,,"PHANTM-92","Captr","d5c4b2b3-a2db-47e0-a21b-afff8a580368","Public Beta",
+"PHANTM-98","Phantm","User authentication","Develop phantm captr web app authentication using AWS Cognito and permission verification services","Dev Testing",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","sonali@asiapacific.tech","sanduni@asiapacific.tech","",1,"Iteration 0","Sun Nov 10 2024 13:00:00 GMT+0000 (GMT)","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Thu Nov 21 2024 07:25:00 GMT+0000 (GMT)","Fri Dec 06 2024 04:50:13 GMT+0000 (GMT)","Mon Nov 25 2024 07:33:32 GMT+0000 (GMT)",,,,,,,"",,,
+"PHANTM-99","Phantm","API authorisation","1. Authenticate serverless API accessed via API gateway using verified permissions based on user login access tokens. 
+2. Check if correct customer database account is allowed based on the authentication token account ","Backlog",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","sonali@asiapacific.tech","sanduni@asiapacific.tech","",,,,,"Thu Nov 21 2024 07:26:12 GMT+0000 (GMT)","Mon Dec 02 2024 04:36:02 GMT+0000 (GMT)",,,,,,,"PHANTM-44","",,,
+"PHANTM-100","Phantm","Security design document",,"Backlog",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","sonali@asiapacific.tech","sanduni@asiapacific.tech","",,,,,"Thu Nov 21 2024 07:27:04 GMT+0000 (GMT)","Tue Nov 26 2024 00:20:47 GMT+0000 (GMT)",,,,,,,,"",,,
+"PHANTM-101","Phantm","Cloud watch",,"Backlog",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","sonali@asiapacific.tech","sanduni@asiapacific.tech","",,,,,"Thu Nov 21 2024 07:28:31 GMT+0000 (GMT)","Mon Dec 02 2024 04:59:25 GMT+0000 (GMT)",,,,,,,,"",,,
+"PHANTM-102","Phantm","Frontend logs?",,"Backlog",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","sonali@asiapacific.tech",,"",,,,,"Thu Nov 21 2024 07:28:46 GMT+0000 (GMT)","Tue Nov 26 2024 00:20:25 GMT+0000 (GMT)",,,,,,,,"",,,
+"PHANTM-103","Phantm","Open Telemetics?",,"Backlog",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","sonali@asiapacific.tech",,"",,,,,"Thu Nov 21 2024 07:31:07 GMT+0000 (GMT)","Tue Nov 26 2024 00:20:25 GMT+0000 (GMT)",,,,,,,,"",,,
+"PHANTM-105","Phantm","Deployment documentation","Document deployment process for each component of the project.
+
+* Infrastructure
+* Database
+* Web application
+
+The goal is someone else can follow this document to deploy these components.","Backlog",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","sonali@asiapacific.tech","asitha@asiapacific.tech","",,,,,"Thu Nov 21 2024 07:32:06 GMT+0000 (GMT)","Tue Nov 26 2024 00:42:58 GMT+0000 (GMT)",,,,,,,,"",,,
+"PHANTM-106","Phantm","Internal Data API",,"Backlog",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","sonali@asiapacific.tech","sanduni@asiapacific.tech","",,,,,"Thu Nov 21 2024 07:33:55 GMT+0000 (GMT)","Mon Dec 02 2024 04:37:29 GMT+0000 (GMT)",,,,,,,"PHANTM-44","",,,
+"PHANTM-107","Phantm","API authorisation","Authorise api using Amazon ***Verified Permissions*** ","Done",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","sonali@asiapacific.tech","sanduni@asiapacific.tech","",1,"Iteration 0","Sun Nov 10 2024 13:00:00 GMT+0000 (GMT)","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Thu Nov 21 2024 07:34:44 GMT+0000 (GMT)","Mon Dec 02 2024 04:43:22 GMT+0000 (GMT)",,,"Tue Nov 26 2024 00:41:13 GMT+0000 (GMT)",,,,"PHANTM-44","",,,
+"PHANTM-108","Phantm","Product API","Develop a product management api","Backlog",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","sonali@asiapacific.tech","sanduni@asiapacific.tech","",,,,,"Thu Nov 21 2024 07:34:58 GMT+0000 (GMT)","Thu Dec 05 2024 03:20:44 GMT+0000 (GMT)",,,,,,,"PHANTM-44","",,,
+"PHANTM-109","Phantm","Account API management","Develop and API to create and manage phantm captr accounts on behalf of joining customers. 
+
+At the completion of this API, we will have a way to create new customer accounts via and API endpoint.","In Progress",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","sonali@asiapacific.tech","sanduni@asiapacific.tech","",,,,,"Thu Nov 21 2024 07:35:43 GMT+0000 (GMT)","Tue Dec 03 2024 06:11:15 GMT+0000 (GMT)","Mon Nov 25 2024 07:24:07 GMT+0000 (GMT)",,,,,,"PHANTM-44","",,,
+"PHANTM-110","Phantm","User management API","Develop and API to manage phantm captr subscription users.
+
+At the completion of this API, phantm catpr super users will be able to create new users on behalf of subscribing customers (accounts). ","Backlog",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","sonali@asiapacific.tech","sanduni@asiapacific.tech","",,,,,"Thu Nov 21 2024 07:36:01 GMT+0000 (GMT)","Mon Dec 02 2024 04:36:50 GMT+0000 (GMT)",,,,,,,"PHANTM-44","",,,
+"PHANTM-111","Phantm","API Documentation","API documentation with Swagger API documentation.","Done",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","sonali@asiapacific.tech","sanduni@asiapacific.tech","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Thu Nov 21 2024 07:36:13 GMT+0000 (GMT)","Mon Dec 02 2024 04:46:00 GMT+0000 (GMT)","Tue Nov 26 2024 02:46:45 GMT+0000 (GMT)",,"Mon Dec 02 2024 04:46:00 GMT+0000 (GMT)",,,,"PHANTM-44","",,,
+"PHANTM-112","Phantm","Customer Data Request Cheat Sheet","'@jonny said:
+
+> YES!!
+> That is most excellent!
+> Stoked for this. Great news to end the week.
+>
+> We should put together an info page that guides them on how to get/give the data. @lloyd and I were talking about this earlier in the week. Not necessarily a 'follow all these steps' kind of thing. More like a list of the kinds of data that is helpful, where it usually comes from, and a few different ways we can help.","Todo",,"No priority","4e085af9-9357-4ceb-81e2-e80dc08094d4","Customer Onboarding","jonny@phantm.com","lloyd@phantm.com","",3,"Cycle 2","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Fri Dec 20 2024 13:00:00 GMT+0000 (GMT)","Fri Nov 22 2024 02:23:00 GMT+0000 (GMT)","Tue Dec 03 2024 03:35:28 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-113","Phantm","Account setup",,"Backlog",,"No priority","4e085af9-9357-4ceb-81e2-e80dc08094d4","Customer Onboarding","sonali@asiapacific.tech","sanduni@asiapacific.tech","",,,,,"Fri Nov 22 2024 02:42:51 GMT+0000 (GMT)","Tue Nov 26 2024 00:19:33 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-114","Phantm","Account creation related API's",,"Backlog",,"No priority","4e085af9-9357-4ceb-81e2-e80dc08094d4","Customer Onboarding","sonali@asiapacific.tech","sanduni@asiapacific.tech","",,,,,"Fri Nov 22 2024 02:43:45 GMT+0000 (GMT)","Tue Nov 26 2024 00:19:33 GMT+0000 (GMT)",,,,,,,"PHANTM-113","Captr",,,
+"PHANTM-115","Phantm","User management related API's",,"Backlog",,"No priority","4e085af9-9357-4ceb-81e2-e80dc08094d4","Customer Onboarding","sonali@asiapacific.tech","sanduni@asiapacific.tech","",,,,,"Fri Nov 22 2024 02:44:06 GMT+0000 (GMT)","Tue Nov 26 2024 00:19:33 GMT+0000 (GMT)",,,,,,,"PHANTM-113","Captr",,,
+"PHANTM-116","Phantm","Documentation related to account setup and user setup",,"Backlog",,"No priority","4e085af9-9357-4ceb-81e2-e80dc08094d4","Customer Onboarding","sonali@asiapacific.tech","sanduni@asiapacific.tech","",,,,,"Fri Nov 22 2024 02:44:39 GMT+0000 (GMT)","Tue Nov 26 2024 00:19:33 GMT+0000 (GMT)",,,,,,,"PHANTM-113","Captr",,,
+"PHANTM-118","Phantm","Login screen and authentication","User authentication with AWS Cognito.","Duplicate",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","sonali@asiapacific.tech","sanduni@asiapacific.tech","",1,"Iteration 0","Sun Nov 10 2024 13:00:00 GMT+0000 (GMT)","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Fri Nov 22 2024 10:37:04 GMT+0000 (GMT)","Tue Nov 26 2024 00:20:09 GMT+0000 (GMT)",,,,"Tue Nov 26 2024 00:15:16 GMT+0000 (GMT)",,,,"",,,
+"PHANTM-119","Phantm","Account API to create a new customer account","1. This api can be used only by phantm captr super users.","Code Review",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","jerome@phantm.com","sanduni@asiapacific.tech","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Mon Nov 25 2024 07:25:45 GMT+0000 (GMT)","Fri Dec 06 2024 01:06:49 GMT+0000 (GMT)","Tue Nov 26 2024 02:44:08 GMT+0000 (GMT)",,,,,,"PHANTM-109","",,,
+"PHANTM-120","Phantm","Account API to archive an account",,"Code Review",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","jerome@phantm.com","sanduni@asiapacific.tech","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Mon Nov 25 2024 07:25:55 GMT+0000 (GMT)","Fri Dec 06 2024 01:06:37 GMT+0000 (GMT)","Tue Nov 26 2024 02:44:44 GMT+0000 (GMT)",,,,,,"PHANTM-109","",,,
+"PHANTM-121","Phantm","Account API to update account information","1. This API can be accessed only by phantm captr super users","Code Review",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","jerome@phantm.com","sanduni@asiapacific.tech","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Mon Nov 25 2024 07:26:05 GMT+0000 (GMT)","Fri Dec 06 2024 01:06:29 GMT+0000 (GMT)","Tue Nov 26 2024 02:44:50 GMT+0000 (GMT)",,,,,,"PHANTM-109","",,,
+"PHANTM-122","Phantm","API to get user accounts for a given customer account",,"Backlog",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","jerome@phantm.com","sanduni@asiapacific.tech","",,,,,"Mon Nov 25 2024 07:27:41 GMT+0000 (GMT)","Mon Nov 25 2024 09:46:07 GMT+0000 (GMT)",,,,,,,"PHANTM-110","",,,
+"PHANTM-123","Phantm","API to archive user accounts in a given customer account",,"Backlog",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","jerome@phantm.com","sanduni@asiapacific.tech","",,,,,"Mon Nov 25 2024 07:27:55 GMT+0000 (GMT)","Mon Nov 25 2024 09:46:09 GMT+0000 (GMT)",,,,,,,"PHANTM-110","",,,
+"PHANTM-124","Phantm","API to update user account in a given customer account",,"Backlog",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","jerome@phantm.com","sanduni@asiapacific.tech","",,,,,"Mon Nov 25 2024 07:28:08 GMT+0000 (GMT)","Mon Nov 25 2024 09:46:12 GMT+0000 (GMT)",,,,,,,"PHANTM-110","",,,
+"PHANTM-125","Phantm","API to disable user account with a reason in a given customer account",,"Backlog",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","jerome@phantm.com","sanduni@asiapacific.tech","",,,,,"Mon Nov 25 2024 07:28:23 GMT+0000 (GMT)","Mon Nov 25 2024 09:46:15 GMT+0000 (GMT)",,,,,,,"PHANTM-110","",,,
+"PHANTM-126","Phantm","API which can be accessed by admin/super users to resend welcome email for a user",,"Backlog",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","jerome@phantm.com","sanduni@asiapacific.tech","",,,,,"Mon Nov 25 2024 07:28:57 GMT+0000 (GMT)","Mon Nov 25 2024 09:46:17 GMT+0000 (GMT)",,,,,,,"PHANTM-110","",,,
+"PHANTM-127","Phantm","User API which can be accessed by admin/super users to reset password for a user",,"Backlog",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","jerome@phantm.com","sanduni@asiapacific.tech","",,,,,"Mon Nov 25 2024 07:29:08 GMT+0000 (GMT)","Mon Nov 25 2024 09:46:21 GMT+0000 (GMT)",,,,,,,"PHANTM-110","",,,
+"PHANTM-128","Phantm","Setup AWS dev cognito pool and permission verification service",,"Done",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","jerome@phantm.com","sanduni@asiapacific.tech","",1,"Iteration 0","Sun Nov 10 2024 13:00:00 GMT+0000 (GMT)","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Nov 25 2024 07:34:02 GMT+0000 (GMT)","Tue Nov 26 2024 00:20:47 GMT+0000 (GMT)","Mon Nov 25 2024 07:35:32 GMT+0000 (GMT)",,"Tue Nov 26 2024 00:02:22 GMT+0000 (GMT)",,,,"PHANTM-98","",,,
+"PHANTM-129","Phantm","Develop front end login workflow","1. Login
+2. Username/Password validation
+3. Welcome email
+4. Password reset
+5. Forgot password workflow","Done",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","jerome@phantm.com","sanduni@asiapacific.tech","",1,"Iteration 0","Sun Nov 10 2024 13:00:00 GMT+0000 (GMT)","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Nov 25 2024 07:34:47 GMT+0000 (GMT)","Tue Nov 26 2024 00:20:47 GMT+0000 (GMT)","Mon Nov 25 2024 07:35:30 GMT+0000 (GMT)",,"Tue Nov 26 2024 00:02:20 GMT+0000 (GMT)",,,,"PHANTM-98","",,,
+"PHANTM-130","Phantm","How can we help with PREP submission?",,"Idea",,"No priority","72aa711d-12a2-476c-8abf-b94d3d91ee51","Reporting and Insights","andrew@phantm.com",,"Kmart",,,,,"Mon Nov 25 2024 23:38:35 GMT+0000 (GMT)","Tue Nov 26 2024 00:22:52 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-131","Phantm","Build flow with github actions","CI steps
+Visibility of Pull Requests","Backlog",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","jonny@phantm.com",,"",,,,,"Mon Nov 25 2024 23:57:27 GMT+0000 (GMT)","Mon Nov 25 2024 23:57:27 GMT+0000 (GMT)",,,,,,,,"",,,
+"PHANTM-132","Phantm","Auth integration backend",,"Done",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","jonny@phantm.com",,"",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Mon Nov 25 2024 23:59:20 GMT+0000 (GMT)","Tue Nov 26 2024 00:00:50 GMT+0000 (GMT)",,,"Tue Nov 26 2024 00:00:50 GMT+0000 (GMT)",,,,"PHANTM-16","",,,
+"PHANTM-133","Phantm","UI polish to authentication screens",,"Done",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","jonny@phantm.com","andrew@phantm.com","UI",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 26 2024 00:00:39 GMT+0000 (GMT)","Mon Dec 02 2024 23:18:38 GMT+0000 (GMT)","Thu Nov 28 2024 01:09:48 GMT+0000 (GMT)",,"Mon Dec 02 2024 23:18:38 GMT+0000 (GMT)",,,,"PHANTM-16","",,,
+"PHANTM-134","Phantm","Import CSV Frontend workflow",,"Todo",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","andrew@phantm.com","andrew@phantm.com","UI",,,,,"Tue Nov 26 2024 00:04:14 GMT+0000 (GMT)","Fri Dec 06 2024 06:24:45 GMT+0000 (GMT)",,,,,,,"PHANTM-41","Captr","d5c4b2b3-a2db-47e0-a21b-afff8a580368","Public Beta",
+"PHANTM-135","Phantm","Backend GET API",,"Backlog",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","andrew@phantm.com","jerome@phantm.com","",,,,,"Tue Nov 26 2024 00:04:31 GMT+0000 (GMT)","Fri Dec 06 2024 06:24:45 GMT+0000 (GMT)",,,,,,,"PHANTM-41","Captr","d5c4b2b3-a2db-47e0-a21b-afff8a580368","Public Beta",
+"PHANTM-136","Phantm","Backend indexing service",,"Backlog",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","andrew@phantm.com","jerome@phantm.com","",,,,,"Tue Nov 26 2024 00:04:43 GMT+0000 (GMT)","Fri Dec 06 2024 06:24:45 GMT+0000 (GMT)",,,,,,,"PHANTM-41","Captr","d5c4b2b3-a2db-47e0-a21b-afff8a580368","Public Beta",
+"PHANTM-137","Phantm","Composition data from TYG product data","Has some issues with Australian Context. 
+There will be a version 2","Done",,"No priority","f9caf9ea-c8c9-473c-a7b7-37f6acf283a8","Data Enrichment","jonny@phantm.com","lloyd@phantm.com","",1,"Iteration 0","Sun Nov 10 2024 13:00:00 GMT+0000 (GMT)","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 26 2024 00:06:20 GMT+0000 (GMT)","Fri Dec 06 2024 04:47:32 GMT+0000 (GMT)",,,"Tue Nov 26 2024 00:07:09 GMT+0000 (GMT)",,,,"PHANTM-30","Captr",,,
+"PHANTM-138","Phantm","Develop the POC with better AU context",,"Todo",,"No priority","f9caf9ea-c8c9-473c-a7b7-37f6acf283a8","Data Enrichment","jonny@phantm.com",,"",,,,,"Tue Nov 26 2024 00:07:44 GMT+0000 (GMT)","Fri Dec 06 2024 04:47:32 GMT+0000 (GMT)",,,,,,,"PHANTM-30","Captr",,,
+"PHANTM-139","Phantm","'Packaging Templates' to support product variants in packaging library","e.g. Glen Dimplex have mostly the same packaging for all 90cm ovens, of which there are many different variants. Similar for Thomas Foods, with all the different hams. How might we model this relationship in packaging library to make data, records, and reporting simpler?","Todo",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com","lloyd@phantm.com","Needs Conceptual Design",,,,,"Tue Nov 26 2024 00:13:26 GMT+0000 (GMT)","Tue Dec 03 2024 06:38:51 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-140","Phantm","Create initial categories of data quality",,"Todo",,"No priority","f9caf9ea-c8c9-473c-a7b7-37f6acf283a8","Data Enrichment","jonny@phantm.com","jonny@phantm.com","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 26 2024 00:22:27 GMT+0000 (GMT)","Mon Dec 02 2024 23:54:37 GMT+0000 (GMT)",,,,,,,"PHANTM-26","Captr","9a1d8fb8-567b-4774-9c00-90333beccbc7","Friends and Family",
+"PHANTM-141","Phantm","Demo Tracer with Customer Data","Why: Supports sales efforts to move customers further into the sales funnel through live demo.
+
+How: Connect the stored customer data in the backend to a configured customer account with login.","Todo",,"High","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com",,"Hide Treemap",,,,,"Tue Nov 26 2024 00:27:47 GMT+0000 (GMT)","Tue Dec 03 2024 05:20:17 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-142","Phantm","Demo account setup",,"In Progress",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com","jerome@phantm.com","",3,"Cycle 2","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Fri Dec 20 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 26 2024 00:27:56 GMT+0000 (GMT)","Tue Dec 03 2024 05:23:40 GMT+0000 (GMT)","Tue Dec 03 2024 05:16:40 GMT+0000 (GMT)",,,,,,"PHANTM-141","Captr",,,
+"PHANTM-143","Phantm","Database initiation",,"In Progress",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com","jerome@phantm.com","",3,"Cycle 2","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Fri Dec 20 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 26 2024 00:28:10 GMT+0000 (GMT)","Tue Dec 03 2024 05:23:38 GMT+0000 (GMT)","Tue Dec 03 2024 05:16:40 GMT+0000 (GMT)",,,,,,"PHANTM-141","Captr",,,
+"PHANTM-144","Phantm","Migrate static in FE objects into DB tables",,"In Progress",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com","sanduni@asiapacific.tech","",3,"Cycle 2","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Fri Dec 20 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 26 2024 00:28:24 GMT+0000 (GMT)","Fri Dec 06 2024 01:10:09 GMT+0000 (GMT)","Tue Dec 03 2024 05:16:40 GMT+0000 (GMT)",,,,,,"PHANTM-141","Captr",,,
+"PHANTM-145","Phantm","Integrate front end to backend through API",,"In Progress",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com","andrew@phantm.com","",3,"Cycle 2","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Fri Dec 20 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 26 2024 00:28:40 GMT+0000 (GMT)","Tue Dec 03 2024 05:23:21 GMT+0000 (GMT)","Tue Dec 03 2024 05:16:40 GMT+0000 (GMT)",,,,,,"PHANTM-141","Captr",,,
+"PHANTM-146","Phantm","Github action based CICD for web application rather than amplify",,"In Progress",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","jerome@phantm.com","jerome@phantm.com","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 26 2024 00:31:34 GMT+0000 (GMT)","Tue Dec 03 2024 04:49:38 GMT+0000 (GMT)","Tue Dec 03 2024 04:49:30 GMT+0000 (GMT)",,,,,,"PHANTM-13","",,,
+"PHANTM-147","Phantm","Github build action updates to slack",,"In Progress",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","jerome@phantm.com","jerome@phantm.com","",3,"Cycle 2","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Fri Dec 20 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 26 2024 00:31:50 GMT+0000 (GMT)","Tue Dec 03 2024 04:49:39 GMT+0000 (GMT)","Tue Dec 03 2024 04:49:30 GMT+0000 (GMT)",,,,,,"PHANTM-13","",,,
+"PHANTM-148","Phantm","Visualisation Donuts for Portfolio Report",,"Done",,"No priority",,,"jonny@phantm.com","andrew@phantm.com","",1,"Iteration 0","Sun Nov 10 2024 13:00:00 GMT+0000 (GMT)","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 26 2024 00:32:03 GMT+0000 (GMT)","Tue Dec 03 2024 03:05:26 GMT+0000 (GMT)",,,"Tue Nov 26 2024 00:32:03 GMT+0000 (GMT)",,,,"PHANTM-67","",,,
+"PHANTM-149","Phantm","Setup postgres database and import ""Emma Lewisham"" data",,"Backlog",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","sonali@asiapacific.tech","asitha@asiapacific.tech","",,,,,"Tue Nov 26 2024 02:24:02 GMT+0000 (GMT)","Tue Nov 26 2024 02:24:02 GMT+0000 (GMT)",,,,,,,"PHANTM-87","Captr",,,
+"PHANTM-150","Phantm","Account API to get account by account-id",,"Code Review",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","sanduni@asiapacific.tech","sanduni@asiapacific.tech","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 26 2024 02:42:51 GMT+0000 (GMT)","Fri Dec 06 2024 01:06:24 GMT+0000 (GMT)","Tue Nov 26 2024 02:44:54 GMT+0000 (GMT)",,,,,,"PHANTM-109","",,,
+"PHANTM-151","Phantm","Account API to retrieve all accounts",,"Code Review",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","sanduni@asiapacific.tech","sanduni@asiapacific.tech","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Tue Nov 26 2024 02:43:28 GMT+0000 (GMT)","Fri Dec 06 2024 01:05:42 GMT+0000 (GMT)","Tue Nov 26 2024 02:44:58 GMT+0000 (GMT)",,,,,,"PHANTM-44","",,,
+"PHANTM-152","Phantm","File Reader WebWorker to check CSV file headers",,"Todo",,"Urgent","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","andrew@phantm.com","jerome@phantm.com","",,,,,"Thu Nov 28 2024 02:00:40 GMT+0000 (GMT)","Fri Dec 06 2024 06:24:45 GMT+0000 (GMT)",,,,,,,"PHANTM-46","Captr","d5c4b2b3-a2db-47e0-a21b-afff8a580368","Public Beta",
+"PHANTM-153","Phantm","Creating Internal Domain Names","Set up internal domain names for the database and API to ensure secure and efficient communication within the system.","Backlog",,"Medium","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","sonali@asiapacific.tech","sanduni@asiapacific.tech","",,,,,"Thu Nov 28 2024 04:48:59 GMT+0000 (GMT)","Thu Nov 28 2024 05:07:37 GMT+0000 (GMT)",,,,,,,,"",,,
+"PHANTM-154","Phantm","Creating internal domain names for Database",,"Backlog",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","sonali@asiapacific.tech","sanduni@asiapacific.tech","",,,,,"Thu Nov 28 2024 04:50:08 GMT+0000 (GMT)","Thu Nov 28 2024 05:07:52 GMT+0000 (GMT)",,,,,,,"PHANTM-153","",,,
+"PHANTM-155","Phantm","Creating Internal Domain Name for API",,"Backlog",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","sonali@asiapacific.tech","sanduni@asiapacific.tech","",,,,,"Thu Nov 28 2024 04:50:13 GMT+0000 (GMT)","Thu Nov 28 2024 05:07:55 GMT+0000 (GMT)",,,,,,,"PHANTM-153","",,,
+"PHANTM-156","Phantm","Danone - First Pass Data Migration","'@jonny said:
+
+> Danone - Data
+> A hook for Slack-to-Linear Syncing.
+> Comments here get sync'd to Linear.
+> Changes in Linear get sync'd here.","In Progress",,"High","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com","lloyd@phantm.com","",3,"Cycle 2","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Fri Dec 20 2024 13:00:00 GMT+0000 (GMT)","Fri Nov 29 2024 05:20:40 GMT+0000 (GMT)","Tue Dec 03 2024 05:11:14 GMT+0000 (GMT)","Tue Dec 03 2024 04:58:35 GMT+0000 (GMT)",,,,,,"PHANTM-42","Captr",,,
+"PHANTM-157","Phantm","Material data API","This is an api to manage material management. It should allow
+
+* Creating/Updating  materials
+* Creating/Update material hierarchy
+* Retrieve materials with hierarchy
+
+### Potential use cases:
+
+* Captr individual product management screen will use this api to create/update material composition details. 
+* Captr insights screen will use this to display material hierarchy.","Backlog",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","sonali@asiapacific.tech","asitha@asiapacific.tech","",,,,,"Mon Dec 02 2024 01:56:21 GMT+0000 (GMT)","Tue Dec 03 2024 04:57:40 GMT+0000 (GMT)",,,,,,,"PHANTM-44","",,,
+"PHANTM-158","Phantm","Thomas Foods - Tamworth Data for Captr Demo","'@Elliot said:
+
+> Thanks Paul. Yes, I have spoken to @jonny and sent the data to @Ed, @andrew, @jerome and @lloyd
+> TFI is huge! We are now under NDA and have their Tamworth, NSW, data. It's our third demo to TFI. (As they say, third time is a charm!).","Todo",,"Urgent","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com","lloyd@phantm.com","",3,"Cycle 2","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Fri Dec 20 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 02 2024 02:25:44 GMT+0000 (GMT)","Tue Dec 03 2024 05:12:52 GMT+0000 (GMT)",,,,,,,"PHANTM-42","Captr",,,
+"PHANTM-159","Phantm","Creating category hierarchy data tables",,"In Progress",,"High","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","sonali@asiapacific.tech","asitha@asiapacific.tech","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 02 2024 05:01:14 GMT+0000 (GMT)","Tue Dec 03 2024 06:11:15 GMT+0000 (GMT)","Mon Dec 02 2024 05:01:14 GMT+0000 (GMT)",,,,,,"PHANTM-157","",,,
+"PHANTM-160","Phantm","Create insights API to get analytics data with the material hierarchy",,"In Progress",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","sonali@asiapacific.tech","asitha@asiapacific.tech","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 02 2024 05:14:43 GMT+0000 (GMT)","Thu Dec 05 2024 01:38:21 GMT+0000 (GMT)","Mon Dec 02 2024 05:14:43 GMT+0000 (GMT)",,,,,,"PHANTM-157","",,,
+"PHANTM-161","Phantm","Supplier Management UI Design","Initial Design of key features, using stubbed data, for demonstration and feedback only. 
+This include:","Done",,"No priority","0557f453-f120-48fb-92dd-958370df181a","Supplier Management","jonny@phantm.com","andrew@phantm.com","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 02 2024 22:03:25 GMT+0000 (GMT)","Thu Dec 05 2024 00:57:28 GMT+0000 (GMT)","Mon Dec 02 2024 22:03:33 GMT+0000 (GMT)",,"Tue Dec 03 2024 01:44:26 GMT+0000 (GMT)",,,,"PHANTM-33","Captr","ff430920-bda9-4e1e-be05-88d6320be245","Friends and Family",
+"PHANTM-162","Phantm","Adjust core data model to support Product Templates",,"Todo",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com",,"",,,,,"Mon Dec 02 2024 23:00:44 GMT+0000 (GMT)","Tue Dec 03 2024 03:03:27 GMT+0000 (GMT)",,,,,,,"PHANTM-139","Captr",,,
+"PHANTM-163","Phantm","Initial UI design to handle Packaging Templates",,"Todo",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com",,"",,,,,"Mon Dec 02 2024 23:04:06 GMT+0000 (GMT)","Mon Dec 02 2024 23:04:06 GMT+0000 (GMT)",,,,,,,"PHANTM-139","Captr",,,
+"PHANTM-164","Phantm","Add new items to Packaging Library","End user can add new products and packaging items manually in Captr","Backlog",,"Medium","85c7ae2f-705c-4d42-ab8f-d6827952683b","Packaging Library","jonny@phantm.com","andrew@phantm.com","",,,,,"Mon Dec 02 2024 23:35:05 GMT+0000 (GMT)","Tue Dec 03 2024 05:28:55 GMT+0000 (GMT)",,,,,,,"PHANTM-17","Captr","755610a2-4ebe-44a7-aeb7-be88f61b1ff7","Friends and Family",
+"PHANTM-165","Phantm","Supplier Hub Plus","Elevate supplier engagement with advanced automation and insights. From intelligent data extraction to customised supplier portals, our evolving platform will streamline complex packaging compliance workflows and deepen supplier relationships.","Backlog",,"No priority","0557f453-f120-48fb-92dd-958370df181a","Supplier Management","jonny@phantm.com",,"On Treemap",,,,,"Tue Dec 03 2024 00:18:49 GMT+0000 (GMT)","Fri Dec 06 2024 06:08:36 GMT+0000 (GMT)",,,,,,,,"Captr","330d10b3-18de-4871-ba43-99acadf61aa3","Future",
+"PHANTM-166","Phantm","Advanced Analysis and Custom Reports","Design complex reporting solutions that fit your unique needs. From scenario planning to industry benchmarks, unlock deeper insights by combining your packaging data with custom metrics and external sources.","Backlog",,"No priority","72aa711d-12a2-476c-8abf-b94d3d91ee51","Reporting and Insights","jonny@phantm.com",,"On Treemap",,,,,"Tue Dec 03 2024 00:31:38 GMT+0000 (GMT)","Fri Dec 06 2024 05:58:27 GMT+0000 (GMT)",,,,,,,,"Captr","430a59fd-ad0e-487a-8442-abedc95bbf9e","Future",
+"PHANTM-167","Phantm","Insights UI and chart calculations using locally stored stubbed data",,"Done",,"No priority","72aa711d-12a2-476c-8abf-b94d3d91ee51","Reporting and Insights","jonny@phantm.com","andrew@phantm.com","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Tue Dec 03 2024 03:08:30 GMT+0000 (GMT)","Tue Dec 03 2024 03:08:39 GMT+0000 (GMT)",,,"Tue Dec 03 2024 03:08:39 GMT+0000 (GMT)",,,,"PHANTM-67","Captr","f5dd7213-4055-4260-aca8-c0aa4ffc762f","Customer Pilot ",
+"PHANTM-168","Phantm","Connect to Material API and display customer data in insights charts",,"Todo",,"Medium","72aa711d-12a2-476c-8abf-b94d3d91ee51","Reporting and Insights","jonny@phantm.com","andrew@phantm.com","",3,"Cycle 2","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Fri Dec 20 2024 13:00:00 GMT+0000 (GMT)","Tue Dec 03 2024 03:14:06 GMT+0000 (GMT)","Fri Dec 06 2024 02:17:24 GMT+0000 (GMT)",,,,,,,"PHANTM-67","Captr","c83f4b46-73ab-402b-94a2-39f9e55c5c71","Friends and Family",
+"PHANTM-169","Phantm","Thomas Foods - Custom Demo for Sales","As per discussion 3 December with Elliot, Paul, Lloyd, Andrew, Jonny. 
+
+Thomas Foods have requested a demo. 
+Bumped to week commencing 16 December. 
+
+Their interests are:
+
+1. See their data in Captr Demo (Tamworth Data provided)
+2. Performance Insights
+   1. Green House Gas Emissions
+   2. Material breakdown by usage per facility
+   3. Aggregated view of the above, across all facilities
+   4. Multi Location Comparison e.g. Tamworth vs. Facility X
+3. Specific questions/scenarios
+   1. Retailer (e.g. Aldi) requests Thomas Foods to provide % of specific material, and/or GHG emissions related to Thomas Foods' supplied products
+
+Elliot/Paul to request additional info:
+
+* Product SKU Data
+* Any other Specific Scenarios that we might look at","Todo",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","jonny@phantm.com","andrew@phantm.com","Needs Conceptual Design",3,"Cycle 2","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Fri Dec 20 2024 13:00:00 GMT+0000 (GMT)","Tue Dec 03 2024 03:53:28 GMT+0000 (GMT)","Tue Dec 03 2024 06:38:51 GMT+0000 (GMT)",,,,,,,,"Captr",,,
+"PHANTM-171","Phantm","Create an api to get products list","API to return product details.","Code Review",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","jerome@phantm.com","sanduni@asiapacific.tech","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Tue Dec 03 2024 04:55:08 GMT+0000 (GMT)","Fri Dec 06 2024 01:05:58 GMT+0000 (GMT)","Tue Dec 03 2024 04:56:03 GMT+0000 (GMT)",,,,,,"PHANTM-108","",,,
+"PHANTM-172","Phantm","Create an api to get product details including components and material details",,"Todo",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","jerome@phantm.com",,"",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Tue Dec 03 2024 04:55:40 GMT+0000 (GMT)","Tue Dec 03 2024 04:55:40 GMT+0000 (GMT)",,,,,,,"PHANTM-108","",,,
+"PHANTM-173","Phantm","Post hog Front End and Feature Flags implemented on Dev Environment",,"Done",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","jonny@phantm.com",,"",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Tue Dec 03 2024 04:56:13 GMT+0000 (GMT)","Tue Dec 03 2024 05:25:36 GMT+0000 (GMT)",,,"Tue Dec 03 2024 05:25:36 GMT+0000 (GMT)",,,,"PHANTM-14","",,,
+"PHANTM-174","Phantm","Keys / Environment Variables for Production Host",,"Todo",,"No priority","ae9798b1-ef7a-42d1-b37d-4b05942511b2","Technical Foundation","jonny@phantm.com","jerome@phantm.com","",3,"Cycle 2","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Fri Dec 20 2024 13:00:00 GMT+0000 (GMT)","Tue Dec 03 2024 04:57:40 GMT+0000 (GMT)","Tue Dec 03 2024 04:57:40 GMT+0000 (GMT)",,,,,,,"PHANTM-14","",,,
+"PHANTM-175","Phantm","Manual Document Upload by Retailer","Manually upload documents provided by Supply to SRM","Todo",,"No priority","0557f453-f120-48fb-92dd-958370df181a","Supplier Management","jonny@phantm.com",,"Needs Interaction Design",,,,,"Tue Dec 03 2024 05:43:58 GMT+0000 (GMT)","Fri Dec 06 2024 06:21:33 GMT+0000 (GMT)",,,,,,,"PHANTM-33","Captr","b2926deb-460a-4f78-985a-bdc222f27b50","Public Beta",
+"PHANTM-176","Phantm","List recently added documents","Document, Date, Uploaded by, Comments.","Todo",,"No priority","0557f453-f120-48fb-92dd-958370df181a","Supplier Management","jonny@phantm.com",,"Needs Interaction Design",,,,,"Tue Dec 03 2024 05:46:35 GMT+0000 (GMT)","Fri Dec 06 2024 06:21:33 GMT+0000 (GMT)",,,,,,,"PHANTM-33","Captr","b2926deb-460a-4f78-985a-bdc222f27b50","Public Beta",
+"PHANTM-177","Phantm","Link Supplier Document(s) to Records in Packaging Library",,"Todo",,"No priority","0557f453-f120-48fb-92dd-958370df181a","Supplier Management","jonny@phantm.com",,"Needs Interaction Design",,,,,"Tue Dec 03 2024 05:47:27 GMT+0000 (GMT)","Fri Dec 06 2024 06:21:33 GMT+0000 (GMT)",,,,,,,"PHANTM-33","Captr","b2926deb-460a-4f78-985a-bdc222f27b50","Public Beta",
+"PHANTM-178","Phantm","Attribute mapping between ViewModel and DataModel","In the captr UI, the attributes listed below are used on the insights page. We need to map those attributes with our data model attributes to get those data from the API
+
+* globalWarmingPotential
+* waterConsumption
+* wasteToEnergyPotential
+* recyclingPotential
+* landfillPotential
+* fossilFuelUse","Todo",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","asitha@asiapacific.tech","lloyd@phantm.com","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Thu Dec 05 2024 01:38:21 GMT+0000 (GMT)","Thu Dec 05 2024 01:42:41 GMT+0000 (GMT)",,,,,,,"PHANTM-160","",,,
+"PHANTM-179","Phantm","Product API front-end integration",,"Code Review",,"No priority","c5dea51c-9dca-419c-baa3-218b60e5fb61","Data API","sonali@asiapacific.tech","sanduni@asiapacific.tech","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Thu Dec 05 2024 03:20:44 GMT+0000 (GMT)","Fri Dec 06 2024 05:52:53 GMT+0000 (GMT)","Thu Dec 05 2024 03:39:39 GMT+0000 (GMT)",,,,,,"PHANTM-108","",,,
+"PHANTM-180","Phantm","Insights API integration with frontend",,"Code Review",,"No priority","9795dab6-58bf-4eda-8602-0138f7c0e8a5","Data Integration and Migration","asitha@asiapacific.tech","asitha@asiapacific.tech","",2,"Cycle 1","Sun Nov 24 2024 13:00:00 GMT+0000 (GMT)","Mon Dec 09 2024 13:00:00 GMT+0000 (GMT)","Thu Dec 05 2024 07:39:59 GMT+0000 (GMT)","Fri Dec 06 2024 01:08:28 GMT+0000 (GMT)","Thu Dec 05 2024 07:39:59 GMT+0000 (GMT)",,,,,,,"Captr",,,

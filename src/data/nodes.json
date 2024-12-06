@@ -11,46 +11,8 @@
       "position": {
         "x": 0,
         "y": 0
-      }
-    },
-    {
-      "id": "data-integration",
-      "title": "Data Integration",
-      "description": "Project node for Data Integration",
-      "status": "Project",
-      "project": "Data Integration",
-      "target": "",
-      "position": {
-        "x": 300,
-        "y": 0
       },
-      "level": 1
-    },
-    {
-      "id": "data-enrichment",
-      "title": "Data Enrichment",
-      "description": "Project node for Data Enrichment",
-      "status": "Project",
-      "project": "Data Enrichment",
-      "target": "",
-      "position": {
-        "x": 1.8369701987210297e-14,
-        "y": 300
-      },
-      "level": 1
-    },
-    {
-      "id": "reporting-and-insights",
-      "title": "Reporting and Insights",
-      "description": "Project node for Reporting and Insights",
-      "status": "Project",
-      "project": "Reporting and Insights",
-      "target": "",
-      "position": {
-        "x": -300,
-        "y": 3.6739403974420595e-14
-      },
-      "level": 1
+      "label": "root"
     },
     {
       "id": "packaging-library",
@@ -60,237 +22,315 @@
       "project": "Packaging Library",
       "target": "",
       "position": {
-        "x": -5.510910596163089e-14,
-        "y": -300
+        "x": 300,
+        "y": 0
       },
-      "level": 1
+      "level": 1,
+      "label": "On Treemap"
     },
     {
-      "id": "PHANTM-46",
-      "title": "Data Transformation and Migration Utilities",
-      "description": "Tools and utilities for processing raw data as part of customer migration. Some are bespoke, others are reusable. \n\n* Advanced mapping scripts\n* Bulk processing scripts\n* Validation rules and test automation\n* Custom transformations",
-      "status": "Todo",
-      "project": "Data Integration",
-      "target": "Customer Pilot",
+      "id": "supplier-management",
+      "title": "Supplier Management",
+      "description": "Project node for Supplier Management",
+      "status": "Project",
+      "project": "Supplier Management",
+      "target": "",
       "position": {
-        "x": 866.0254037844386,
-        "y": -500
+        "x": 92.70509831248424,
+        "y": 285.31695488854604
       },
-      "level": 1
+      "level": 1,
+      "label": "On Treemap"
     },
     {
-      "id": "PHANTM-28",
-      "title": "Visual Indicators of data quality",
-      "description": "Make it clear when data is 'estimated' and to what degree it can be relied upon",
-      "status": "Todo",
+      "id": "data-integration-and-migration",
+      "title": "Data Integration and Migration",
+      "description": "Project node for Data Integration and Migration",
+      "status": "Project",
+      "project": "Data Integration and Migration",
+      "target": "",
+      "position": {
+        "x": -242.7050983124842,
+        "y": 176.33557568774197
+      },
+      "level": 1,
+      "label": "On Treemap"
+    },
+    {
+      "id": "data-enrichment",
+      "title": "Data Enrichment",
+      "description": "Project node for Data Enrichment",
+      "status": "Project",
       "project": "Data Enrichment",
-      "target": "Friends and Family",
+      "target": "",
       "position": {
-        "x": 410.91396458088644,
-        "y": 535.5135046965837
+        "x": -242.70509831248424,
+        "y": -176.3355756877419
       },
-      "level": 1
+      "level": 1,
+      "label": "On Treemap"
     },
     {
-      "id": "PHANTM-29",
-      "title": "Compare and improve (tuning)",
-      "description": "Run tests to measure accuracy of estimates against known data.\nCreate a mechanism to do this systematically on going (e.g. as we get real data, use it to check quality of previous estimations)",
-      "status": "Todo",
-      "project": "Data Enrichment",
-      "target": "Customer Pilot",
-      "position": {
-        "x": 382.68343236508986,
-        "y": 923.8795325112867
-      },
-      "level": 1
-    },
-    {
-      "id": "PHANTM-61",
-      "title": "Data Intelligence Co-pilot",
-      "description": "Continuous analysis and actionable recommendations based on AI-powered packaging portfolio patterns.\n\n## General Approach\n\n*Create an intelligent system that identifies opportunities and risks, providing actionable insights through pattern recognition and rules-based analysis.*\n\n* Pattern detection\n* Recommendation engine\n* Measuring improvement from action\n* Continuous improvement\n* Value prioritisation",
-      "status": "Todo",
+      "id": "reporting-and-insights",
+      "title": "Reporting and Insights",
+      "description": "Project node for Reporting and Insights",
+      "status": "Project",
       "project": "Reporting and Insights",
-      "target": "Customer Pilot ",
+      "target": "",
       "position": {
-        "x": -623.6186844451186,
-        "y": 258.31131684643566
+        "x": 92.70509831248417,
+        "y": -285.3169548885461
       },
-      "level": 1
+      "level": 1,
+      "label": "On Treemap"
     },
     {
-      "id": "PHANTM-24",
-      "title": "Data quality info and related messaging",
-      "description": "",
-      "status": "Todo",
+      "id": "PHANTM-17",
+      "title": "Material Library",
+      "description": "Meet your new packaging command centre. Material Library brings all your packaging data into one place - no more scattered spreadsheets or annual data hunts.\n\nBuild a lasting data foundation that grows with your business, making it simple to track changes, manage compliance, and respond to new regulations. Finally, a single source of truth for your packaging that's always ready when you need it.",
+      "status": "In Progress",
       "project": "Packaging Library",
       "target": "Friends and Family",
       "position": {
-        "x": -258.311316846436,
-        "y": -623.6186844451184
+        "x": 641.9631484992286,
+        "y": -208.5864712030895
       },
-      "level": 1
+      "level": 1,
+      "label": "On Treemap"
     },
     {
-      "id": "PHANTM-27",
-      "title": "Use Case Mapping",
-      "description": "What level of data quality is recommended for different use cases for the data\ne.g. Identifying an area for further investigation vs. APCO report vs. LCA",
-      "status": "Todo",
-      "project": "Data Enrichment",
+      "id": "PHANTM-33",
+      "title": "Supplier Hub",
+      "description": "Transform chaotic supplier communications into organised, accessible information. Our central hub helps your team collect and manage packaging specifications, supplier documents, and contact details - all in one place.\n\nStop losing vital data when people change roles. Simple tools for requests, reminders, and document management mean your whole team can collaborate effectively, building a lasting information asset over time.",
+      "status": "In Progress",
+      "project": "Supplier Management",
+      "target": "Public Beta",
+      "position": {
+        "x": 646.5637775217205,
+        "y": 889.9186938124421
+      },
+      "level": 1,
+      "label": "Needs Interaction Design, On Treemap"
+    },
+    {
+      "id": "PHANTM-42",
+      "title": "Full Service Data Migration",
+      "description": "Take the headache out of data migration. Our expert team handles the heavy lifting - working with your data in whatever format it exists, while our packaging specialists ensure everything is captured correctly.\n\nFrom simple data uploads to complex enterprise migrations requiring on-site expertise, we scale our approach to fit your needs. Our unique blend of packaging knowledge, technical tools and hands-on support ensures a smooth transition to Captr.",
+      "status": "In Progress",
+      "project": "Data Integration and Migration",
+      "target": "Friends and Family",
+      "position": {
+        "x": -337.49999999999983,
+        "y": 584.5671475544962
+      },
+      "level": 1,
+      "label": "On Treemap"
+    },
+    {
+      "id": "PHANTM-45",
+      "title": "Advanced Data Integration",
+      "description": "Seamless data connections that fit your business. Whether you need automated data feeds from suppliers, integration with your existing systems, or custom connections to specialised tools - we'll find the right approach without disrupting your operations.\n\nWe grow our integration options based on customer needs, prioritising solutions that deliver the most value. Until then, our expert migration service ensures you're up and running quickly.",
+      "status": "Backlog",
+      "project": "Data Integration and Migration",
       "target": "Customer Pilot",
       "position": {
-        "x": 130.5261922200517,
-        "y": 991.4448613738103
+        "x": -667.4390203593316,
+        "y": 484.9228331412904
       },
-      "level": 1
+      "level": 1,
+      "label": "On Treemap"
     },
     {
-      "id": "PHANTM-26",
-      "title": "Data Scoring Rubric",
-      "description": "What are the key factors for determining a score?\n\nWhat levels are there?\n\nWhat does it look like to get from Level 1 to Level 3?",
+      "id": "PHANTM-46",
+      "title": "Data Migration Toolkit (Self Service)",
+      "description": "Simple self-service tools to help your team prepare and import packaging data. From basic templates to advanced import utilities, choose the tools that match your team's capabilities and preferences.",
       "status": "Todo",
-      "project": "Data Enrichment",
-      "target": "Friends and Family",
+      "project": "Data Integration and Migration",
+      "target": "Public Beta",
       "position": {
-        "x": -88.10517974853468,
-        "y": 669.2252814273221
+        "x": -1075.962360807186,
+        "y": 228.7028598995357
       },
-      "level": 1
-    },
-    {
-      "id": "PHANTM-31",
-      "title": "Expert moderation of Best Guess results",
-      "description": "Solutions Team eyeball it, and normalise the results. \nAdjust prompts to 'train' the model. ",
-      "status": "Todo",
-      "project": "Data Enrichment",
-      "target": "Friends and Family",
-      "position": {
-        "x": -258.31131684643555,
-        "y": 623.6186844451186
-      },
-      "level": 1
+      "level": 1,
+      "label": "On Treemap"
     },
     {
       "id": "PHANTM-47",
       "title": "Progressive Data Enhancement",
-      "description": "Flexible menu of data improvement methods allowing teams to incrementally enhance their packaging data through a combination of automated tools, benchmarks, and collaborative options.\n\n## General Direction\n\n* Automated enhancement tools\n* Rule-based pattern detection\n* Micro-questions for continuous data enrichment\n* Targeted data interventions to maximise customer value\n* External reference data\n* Category matching algorithms\n* Reference data (e.g. customers like you…)\n* Validation frameworks\n* 'Human in the loop' mechanisms\n\n```markdown\nAdd Sub-tasks as they become clear\n```",
+      "description": "Turn overwhelming packaging data challenges into manageable steps. Our Progressive Data Enhancement approach spots patterns and makes targeted suggestions to help your team improve data quality steadily over time.\n\nWe'll guide you to the most impactful quick wins, using intelligent analysis to highlight gaps and validate information as you work. No magic wands - just practical support that makes continuous improvement achievable.",
       "status": "Todo",
       "project": "Data Enrichment",
-      "target": "Customer Pilot",
+      "target": "Public Beta",
       "position": {
-        "x": -608.7614290087207,
-        "y": 793.3533402912352
+        "x": -889.9186938124421,
+        "y": -646.5637775217203
       },
-      "level": 1
+      "level": 1,
+      "label": "On Treemap, Needs Feasibility Assessment"
+    },
+    {
+      "id": "PHANTM-51",
+      "title": "Material Library Plus",
+      "description": "Unlock advanced packaging data capabilities as your needs grow. From complex packaging hierarchies to automated data reconciliation, our evolving feature set helps mature businesses manage increasingly sophisticated packaging operations.",
+      "status": "Backlog",
+      "project": "Packaging Library",
+      "target": "Future",
+      "position": {
+        "x": 1283.9262969984572,
+        "y": 417.172942406179
+      },
+      "level": 1,
+      "label": "Needs Conceptual Design, On Treemap"
+    },
+    {
+      "id": "PHANTM-61",
+      "title": "Data Intelligence Co-Pilot",
+      "description": "Make smarter packaging decisions with AI-powered guidance at your fingertips. Co-Pilot continuously analyses your data, suggesting small, achievable improvements you can action today.\n\nYou're always in control - easily accept or dismiss recommendations that fit your priorities. No more overwhelming annual reviews; just steady progress towards your sustainability goals.",
+      "status": "Todo",
+      "project": "Reporting and Insights",
+      "target": "Public Beta",
+      "position": {
+        "x": -206.1194460442971,
+        "y": -1080.5159758015575
+      },
+      "level": 1,
+      "label": "Needs Conceptual Design, On Treemap"
     },
     {
       "id": "PHANTM-67",
       "title": "Phantm Portfolio Report",
-      "description": "Instant access to professional-grade packaging analysis that typically requires expensive consulting, powered by customer's own data on-file.\n\n## General Direction\n\n*Focus on automated generation of comprehensive analysis, with clear communication of data confidence levels and insights validity.*\n\n* Simple Reports\n* Data confidence integration\n* Automated calculations",
-      "status": "In Progress",
+      "description": "Transform weeks of expert analysis into instant insights. Get a professional-grade assessment of your packaging portfolio's impact the moment your data lands in Captr.\n\nPaired with our Packaging Solutions Consulting, these automated reports help our experts deliver high-value recommendations faster, accelerating your journey to improved sustainability.",
+      "status": "Todo",
       "project": "Reporting and Insights",
-      "target": "Customer Pilot ",
-      "position": {
-        "x": -623.6186844451187,
-        "y": -258.3113168464355
-      },
-      "level": 1
-    },
-    {
-      "id": "PHANTM-42",
-      "title": "'White glove' data migration services",
-      "description": "Customer provides their data in whatever format they have it, \nPhantm team transforms it to correct structure, and works alongside customer to migrate it to Captre",
-      "status": "In Progress",
-      "project": "Data Integration",
       "target": "Friends and Family",
       "position": {
-        "x": 675,
-        "y": 0
+        "x": 42.383600682286165,
+        "y": -673.6680416890833
       },
-      "level": 1
+      "level": 1,
+      "label": "On Treemap, Needs Backend Integration"
     },
     {
-      "id": "PHANTM-30",
-      "title": "Generate packaging data with Public LLMs using real Sales/Product Data",
+      "id": "PHANTM-68",
+      "title": "Compliance Ready Reports",
+      "description": "Meet compliance requirements with confidence. Our managed reports - starting with APCO submissions - turn months of manual work into automated reporting ready in minutes.\n\nAs new regulations emerge, we analyse requirements and create proven reporting solutions, ensuring you're always ahead of compliance needs.",
+      "status": "Backlog",
+      "project": "Reporting and Insights",
+      "target": "Future",
+      "position": {
+        "x": 417.1729424061788,
+        "y": -1283.9262969984575
+      },
+      "level": 1,
+      "label": "On Treemap"
+    },
+    {
+      "id": "PHANTM-69",
+      "title": "APCO Report Automation",
       "description": "",
-      "status": "In Progress",
-      "project": "Data Integration",
-      "target": "Friends and Family",
+      "status": "Backlog",
+      "project": "Reporting and Insights",
+      "target": "Future",
       "position": {
-        "x": 584.5671475544962,
-        "y": 337.4999999999999
+        "x": 723.3661732216457,
+        "y": -1139.8426994277202
       },
-      "level": 1
+      "level": 1,
+      "label": "Needs Interaction Design, On Treemap, All"
     },
     {
-      "id": "PHANTM-17",
-      "title": "Material Library - Basic",
-      "description": "### **Customer Value**\n\nCentral command centre for packaging materials data, enabling teams to explore, analyse, and manage their complete packaging portfolio through a single, intuitive interface.\n\n### **General Direction**\n\n*Focus on intuitive data exploration and management, emphasising critical data and clear visual indicators to help business users find the right information and understand it*\n\n* Simple add/edit (e.g. one item at a time)\n* Component-based material breakdown\n* Integrated supplier documentation\n* Search and filter optimisation\n* Data quality indicators\n* Bulk data management tools",
-      "status": "In Progress",
-      "project": "Packaging Library",
-      "target": "Friends and Family",
+      "id": "PHANTM-165",
+      "title": "Supplier Hub Plus",
+      "description": "Elevate supplier engagement with advanced automation and insights. From intelligent data extraction to customised supplier portals, our evolving platform will streamline complex packaging compliance workflows and deepen supplier relationships.",
+      "status": "Backlog",
+      "project": "Supplier Management",
+      "target": "Future",
       "position": {
-        "x": 258.3113168464358,
-        "y": -623.6186844451184
+        "x": 8.266365894244634e-14,
+        "y": 1350
       },
-      "level": 1
+      "level": 1,
+      "label": "On Treemap"
+    },
+    {
+      "id": "PHANTM-166",
+      "title": "Advanced Analysis and Custom Reports",
+      "description": "Design complex reporting solutions that fit your unique needs. From scenario planning to industry benchmarks, unlock deeper insights by combining your packaging data with custom metrics and external sources.",
+      "status": "Backlog",
+      "project": "Reporting and Insights",
+      "target": "Future",
+      "position": {
+        "x": 984.1076470189051,
+        "y": -924.1385930037301
+      },
+      "level": 1,
+      "label": "On Treemap"
     }
   ],
   "edgesData": [
     {
-      "source": "data-integration",
-      "target": "PHANTM-46"
-    },
-    {
-      "source": "data-enrichment",
-      "target": "PHANTM-28"
-    },
-    {
-      "source": "data-enrichment",
-      "target": "PHANTM-29"
-    },
-    {
-      "source": "reporting-and-insights",
-      "target": "PHANTM-61"
-    },
-    {
       "source": "packaging-library",
-      "target": "PHANTM-24"
+      "target": "PHANTM-17"
     },
     {
-      "source": "data-enrichment",
-      "target": "PHANTM-27"
+      "source": "supplier-management",
+      "target": "PHANTM-33"
     },
     {
-      "source": "data-enrichment",
-      "target": "PHANTM-26"
+      "source": "data-integration-and-migration",
+      "target": "PHANTM-42"
     },
     {
-      "source": "data-enrichment",
-      "target": "PHANTM-31"
+      "source": "data-integration-and-migration",
+      "target": "PHANTM-45"
+    },
+    {
+      "source": "data-integration-and-migration",
+      "target": "PHANTM-46"
     },
     {
       "source": "data-enrichment",
       "target": "PHANTM-47"
     },
     {
+      "source": "packaging-library",
+      "target": "PHANTM-51"
+    },
+    {
+      "source": "reporting-and-insights",
+      "target": "PHANTM-61"
+    },
+    {
       "source": "reporting-and-insights",
       "target": "PHANTM-67"
     },
     {
-      "source": "data-integration",
-      "target": "PHANTM-42"
+      "source": "reporting-and-insights",
+      "target": "PHANTM-68"
     },
     {
-      "source": "data-integration",
-      "target": "PHANTM-30"
+      "source": "reporting-and-insights",
+      "target": "PHANTM-69"
     },
     {
-      "source": "packaging-library",
-      "target": "PHANTM-17"
+      "source": "supplier-management",
+      "target": "PHANTM-165"
+    },
+    {
+      "source": "reporting-and-insights",
+      "target": "PHANTM-166"
     },
     {
       "source": "root",
-      "target": "data-integration"
+      "target": "packaging-library"
+    },
+    {
+      "source": "root",
+      "target": "supplier-management"
+    },
+    {
+      "source": "root",
+      "target": "data-integration-and-migration"
     },
     {
       "source": "root",
@@ -299,10 +339,6 @@
     {
       "source": "root",
       "target": "reporting-and-insights"
-    },
-    {
-      "source": "root",
-      "target": "packaging-library"
     }
   ]
 }

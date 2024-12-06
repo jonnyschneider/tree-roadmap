@@ -16,9 +16,9 @@ const LAYOUT_RADIUS = {
   root: 0,
   level1: 300, // Increased spacing for Project Nodes
   friendsAndFamily: 675, // Increased spacing
-  customerPilot: 1000, // Increased spacing
-  publicBeta: 1350, // Increased spacing
-  future: 1600, // Increased spacing
+  customerPilot: 825, // Increased spacing
+  publicBeta: 1100, // Increased spacing
+  future: 1350, // Increased spacing
 } as const;
 
 const nodesFilePath = path.join(__dirname, '..', 'data', 'nodes.json');

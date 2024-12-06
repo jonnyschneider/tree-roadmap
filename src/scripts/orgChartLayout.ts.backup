@@ -1,0 +1,85 @@
+import * as fs from 'fs';
+import * as path from 'path';
+
+interface Node {
+  id: string;
+  position: { x: number; y: number };
+  level: number;
+  target?: 'Friends and Family' | 'Customer Pilot' | 'Public Beta' | 'Future';
+}
+
+interface Edge {
+  source: string;
+  target: string;
+}
+
+const NODE_SPACING_Y = 400;
+const NODE_SPACING_X = 300; // Define NODE_SPACING_X
+
+const nodesFilePath = path.join(__dirname, '..', 'data', 'nodes.json');
+
+function loadJSON(filePath: string): any {
+  const data = fs.readFileSync(filePath, 'utf-8');
+  return JSON.parse(data);
+}
+
+function saveJSON(filePath: string, data: any): void {
+  const jsonData = JSON.stringify(data, null, 2);
+  fs.writeFileSync(filePath, jsonData, 'utf-8');
+}
+
+export function layoutOrgChart(
+  nodes: Node[],
+  edges: Edge[],
+) {
+  console.log('Starting layout calculation...');
+  console.log('Initial nodes:', nodes);
+  console.log('Initial edges:', edges);
+
+  // Position root at top center
+  const root = nodes.find((n) => n.id === 'root')!;
+  root.position = { x: 0, y: 0 };
+  console.log('Root node positioned:', root);
+
+  // Recursive function to position nodes
+  function positionNodes(nodeId: string, offsetX: number) {
+
+    const children = edges
+      .filter((e) => e.source === nodeId)
+      .map((e) => e.target);
+    console.log(`Children of ${nodeId}:`, children);
+
+    const totalWidth = (children.length - 1) * NODE_SPACING_X;
+    const startX = offsetX - totalWidth / 2;
+
+    children.forEach((childId, index) => {
+      const child = nodes.find((n) => n.id === childId)!;
+      child.position = {
+        x: startX + index * NODE_SPACING_X,
+        y: child.level * NODE_SPACING_Y,
+      };
+      console.log(`Child node positioned: ${childId}`, child);
+
+      // Position the children of the current child node
+      positionNodes(childId, child.position.x);
+    });
+  }
+
+  // Start positioning from the root node
+  positionNodes('root', 0);
+
+  console.log('Final nodes:', nodes);
+  return nodes;
+}
+
+async function main() {
+  const data = loadJSON(nodesFilePath);
+  const nodes = data.nodesData;
+  const edges = data.edgesData;
+
+  const updatedNodesOrgChart = layoutOrgChart(nodes, edges);
+
+  saveJSON(nodesFilePath, { nodesData: updatedNodesOrgChart, edgesData: edges });
+}
+
+main().catch((error) => console.error(error));
